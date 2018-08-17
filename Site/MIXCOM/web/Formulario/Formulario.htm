@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Formulário de Contato</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<style>
+
+.texto {font: 17px Verdana; text-decoration: none; color: #999999}
+
+.texto_peq {font: 17px Verdana; text-decoration: none; color: #999999}
+
+.titulos {font: bold 24px Verdana; text-decoration: none; color: #999999}
+
+.form_campos {
+	background-color: #FFFFFF;
+	font: 15px Verdana;
+	border-style: groove
+}
+
+.form_botao {
+	background-color: #FFCC33;
+	font: 15px Verdana;
+	border-style: outset
+}
+
+.style1 {
+	color: #000000;
+	font-size: 14px;
+}
+.style2 {
+	text-decoration: none;
+	font: 17px Verdana;
+	font-size: 14px;
+}
+body {
+	background-image: url(../images/content-bg.jpg);
+}
+.style7 {font: 17px Verdana; text-decoration: none; color: #000000; font-size: 14px; }
+.style8 {color: #FF0000}
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#999999" link="#0000FF" vlink="#FF0000" alink="#FFFF00">
+
+<p>&nbsp;</p>
+<center>
+</center>
+
+<form name="formulario" method="post" action="enviar.php">
+<div align="left"></div>
+<div align="left"></div>
+<table width="401" border="0" align="left" cellpadding="0" cellspacing="0" background="../images/content-bga.png" bgcolor="#FFFFFF"><!--DWLayoutTable-->
+<tr bgcolor="#F3F3F3">
+<td width="100" valign="middle" nowrap bgcolor="#FFFFFF">
+<p class="style1"><font class="style2">Nome:</font></p></td>
+<td width="301" bgcolor="#FFFFFF">
+  <input name="nome" type="text" class="form_campos" value="" size="34"></td>
+</tr>
+<tr bgcolor="#F3F3F3">
+  <td valign="middle" nowrap bgcolor="#FFFFFF"><font class="style7">Telefone:</font></td>
+  <td bgcolor="#FFFFFF"><input name="telefone" type="text" class="form_campos" value="(    )          -        /(    )          -         " size="30">
+    <span class="style8">*</span></td>
+</tr>
+<tr bgcolor="#F3F3F3">
+<td valign="middle" nowrap bgcolor="#FFFFFF"><font class="style7">Cidade:</font></td>
+<td bgcolor="#FFFFFF">
+<input class="form_campos" type="text" name="cidade" size="30">
+<span class="style8">*</span></td>
+</tr>
+<tr bgcolor="#F3F3F3">
+<td valign="middle" nowrap bgcolor="#FFFFFF"><font class="style7">Estado:</font></td>
+<td bgcolor="#FFFFFF">
+<select class="form_campos" name="estado">
+<option value="Escolha seu Estado">Escolha seu Estado</option>
+<option value="AC">AC</option>
+<option value="AL">AL</option>
+<option value="AM">AM</option>
+<option value="AP">AP</option>
+<option value="BA">BA</option>
+<option value="CE">CE</option>
+<option value="DF">DF</option>
+<option value="ES">ES</option>
+<option value="GO">GO</option>
+<option value="MA">MA</option>
+<option value="MG">MG</option>
+<option value="MT">MT</option>
+<option value="MS">MS</option>
+<option value="PA">PA</option>
+<option value="PB">PB</option>
+<option value="PE">PE</option>
+<option value="PI">PI</option>
+<option value="PR">PR</option>
+<option value="RJ">RJ</option>
+<option value="RN">RN</option>
+<option value="RO">RO</option>
+<option value="RR">RR</option>
+<option value="RS">RS</option>
+<option value="SC">SC</option>
+<option value="SE">SE</option>
+<option value="SP">SP</option>
+<option value="TO">TO</option>
+</select>
+<span class="style8">*</span></td>
+</tr>
+<tr bgcolor="#F3F3F3">
+<td valign="middle" nowrap bgcolor="#FFFFFF"><font class="style7">E-mail:</font></td>
+<td bgcolor="#FFFFFF">
+<input class="form_campos" type="text" name="e-mail" size="34"></td>
+</tr>
+<tr bgcolor="#F3F3F3">
+<td valign="middle" nowrap bgcolor="#FFFFFF"><font class="style7">Assunto:</font></td>
+<td bgcolor="#FFFFFF">
+<select class="form_campos" name="assunto_mensagem">
+ 
+  <option value="Sugest&atilde;o">Sugest&atilde;o</option>
+<option value="Parceria">Parceria</option>
+<option value="Or&ccedil;amento">Or&ccedil;amento</option>
+<option value="Seja Representante"></option>
+</select></td>
+</tr>
+<tr bgcolor="#000000">
+<td align="center" valign="middle" bgcolor="#FFFFFF"><div align="left"><font class="style7">Mensagem:</font></div></td>
+<td bgcolor="#FFFFFF">
+<textarea name="mensagem" cols="34" rows="4" class="form_campos"></textarea></td>
+</tr>
+<tr bgcolor="#F3F3F3">
+<td colspan="2" valign="middle" bgcolor="#FFFFFF">
+<!-- <font class="texto">* campos obrigatórios</font> -->
+<br>
+<div align="center">
+  <input name="Enviar" type="submit" class="style7" value="Enviar ">
+  <input class="style7" type="reset" name="Limpar" value="Limpar">
+</div></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+</form>
+<body>
+</html>
