@@ -6,14 +6,32 @@ use MIXCOM;
 create table Usuario(
 
 	idUsuario int not null auto_increment,
-    nomeUsuario varchar (50),
-    loginUsuario varchar (15),
+	loginUsuario varchar (15),
     senhaUsuario varchar (35),
-    emailUsuario varchar (50),
-    telefoneUsuario int (11),
-    enderecoUsuario varchar (60),
     primary key (idUsuario)
+
+) default charset = utf8;
+
+
+create table Pessoa(
+
+	idPessoa int not null auto_increment,
+    nome varchar (50),
+    email varchar (50),
+    telefone int (11),
+    primary key (idPessoa),
+    foreign key (idUsuario) references idUsuario
 	
+) default charset = utf8;
+
+create table Endereco(
+	
+    rua varchar (80),
+    bairro varchar (50),
+    cep varchar (9),
+    cidade varchar (50),
+    estado varchar (50)
+
 ) default charset = utf8;
 
 create table if not exists PessoaFisica(
@@ -23,7 +41,8 @@ create table if not exists PessoaFisica(
     cpf int (11),
     dataNascimento date,
     primary key (idPessoaFisica),
-    foreign key (idUsuario) references idUsuario 
+    foreign key (idUsuario) references idUsuario,
+    foreign key (idPessoa) references idPessoa
 
 ) default charset = utf8;
 
@@ -33,7 +52,8 @@ create table PessoaJuridica(
     idPessoaJuridica int not null auto_increment,
 	cnpj int (15),
     primary key (idPessoaJuridica),
-    foreign key (idUsuario) references idUsuario
+    foreign key (idUsuario) references idUsuario,
+    foreign key (idPessoa) references idPessoa
     
 ) default charset = utf8;
 
@@ -50,7 +70,7 @@ create table Compra(
 
 create table Compra_Usuario (
 
-	idComprar int,
+	idCompra int,
     idUsuario int,
     foreign key (idComprar) references idComprar,
     foreign key (idUsuario) references idUsuario
@@ -67,7 +87,8 @@ create table Produtos(
     valorProduto decimal (6,2),
 	marcaProduto varchar (35),
     nomeProduto varchar (100),
-    primary key(idProduto)
+    primary key(idProduto),
+    foreign key(codigoCategoria) references codigoCategoria
     
 ) default charset = utf8;
 
@@ -77,5 +98,14 @@ create table Categoria(
     nomeCategoria varchar (50),
 	primary key(codigoCategoria)
     
+) default charset = utf8;
+
+create table Venda(
+	
+    codigoVenda int not null auto_increment,
+    primary key(codigoVenda),
+    foreign key (idUsuario) references Usuario,
+    foreign key (idProduto) references Produto
+
 ) default charset = utf8;
 
