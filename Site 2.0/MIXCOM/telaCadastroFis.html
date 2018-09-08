@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--
+* Desenvolvido por: Marcelo Moreira de Oliveira e Lucas de Sousa
+-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MIXCOM Relógios de Ponto - Feira de Santana - Bahia</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="#" href="imagens/logo.png">
+</head>
+
+<body class="cor-fundo">
+    <!--Barra de navegação-->
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style=" background-color: #e3f2fd; ">
+            <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="imagens/logo.png" width="150px" class="img-responsive" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-navegacao"
+                aria-controls="barra-navegacao" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barra-navegacao">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Produtos">A Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre-nos">Linha de Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre-nos">Nossos Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Sobre-nos">Cliente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Fale-conosco">Fale conosco</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Login">Login</a>
+                    </li>
+                    <!--      <form class="form-inline my-5 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form> -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Fim Barra de navegação-->
+    <!--Inicio Form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <h1 class="display-4 my-5"> Cadastre-se</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control" id="inputCPF" placeholder="CPF">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="date" class="form-control" id="inputData_nasc">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control" id="inputTel" placeholder="Telefone com o DD">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="form-grup col-sm-6">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Confirme o seu Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="password" class="form-control" id="inputSenha2" placeholder="Repetir Senha">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-group mr-auto">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Desejo receber novidades por
+                                    e-mail
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary mr-2">Voltar</button>
+                        <button type="submit" class="btn btn-outline-success mr-2">Cadastrar</button>
+                        <!-- Se quiser colocar um popover como uma ajuda pra preencher o formulário é uma ideia também, só pesquisar mais sobre -->
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Fim Form-->
+    <!--Inicio Rodapé-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <hr>
+            </div>
+            <div class="col-md-4 ml-5">
+                <h3 class="title">Localização</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124767.7071291072!2d-38.997715674099524!3d-12.248898366774933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71437971e302841%3A0xf1ba858abc569a83!2sMixcom+Controle+de+Ponto+e+Acesso!5e0!3m2!1spt-BR!2sbr!4v1535730800761"></iframe>
+                </div>
+            </div>
+            <div class=" col-sm-4 ml-3">
+                <h3>Contatos</h3>
+                <div class="list-group text-center">
+                    <p class="text-left">Telefone:(75) 3626.8508</p>
+                    <p class="text-left">Alex Lira</p>
+                    <p class="text-left">alexlira@mixcom.net.br</p>
+                    <p class="text-left">Lívia Andrade</p>
+                    <p class="text-left">livia@mixcom.net.br</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <h3>Social</h3>
+                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                    <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a class="btn btn-outline-warning" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <blockquote class="blockquote text-center">
+                    <a href="#" class="blockquote-footer">&copy; 2018 Desenvolvido pela <cite title="Titulo"> Equipe de
+                            PFC
+                            - MIXCOM</cite></a>
+                </blockquote>
+
+            </div>
+
+        </div>
+    </div>
+    <!--Fim Rodapé-->
+    <!--Inicio modal fale conosco-->
+    <div class="modal fade" id="Fale-conosco" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <label for="idEmailLogin">Email</label>
+                    <input type="email" name="E-mail" class="form-control my-2" placeholder="nome@exemplo.com">
+                    <label for="#">Comentários</label>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite aqui seus comentérios."
+                            rows="3"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" type="submit">Enviar</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim modal fale conosco-->
+    <!--Inicio modal login-->
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="" for="idEmailLogin">Email</label>
+                            <input type="email" class="form-control" id="idEmailLogin" aria-describedby="emailHelp"
+                                placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="idSenhaLogin">Senha</label>
+                            <input type="password" class="form-control" id="idSenhaLogin" placeholder="Digite sua Senha">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="idLogin">
+                            <label class="form-check-label" for="idLogin">Manter conectado</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-success" type="submit">Entrar</button>
+                        <div class="modal-footer my-4">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim modal login-->
+    <div class="scrollup ">
+        <a href="# ">
+            <i class="icon-up-open"></i>
+        </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery-3.3.1.min.js "></script>
+</body>
+
+</html>
