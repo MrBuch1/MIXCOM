@@ -17,6 +17,7 @@ create table Pessoa(
 
 	idPessoa int not null auto_increment,
     nome varchar (50),
+    sobrenome varchar (50),
     email varchar (50),
     telefone int (11),
     primary key (idPessoa),
@@ -50,6 +51,7 @@ create table PessoaJuridica(
 
 	idUsuario int,
     idPessoaJuridica int not null auto_increment,
+    rsocial varchar (100),
 	cnpj int (15),
     primary key (idPessoaJuridica),
     foreign key (idUsuario) references idUsuario,
