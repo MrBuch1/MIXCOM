@@ -13,13 +13,14 @@
         type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/stylesProdutos.css" rel="stylesheet">
     <link rel="#" href="imagens/logo.png">
 </head>
 
 <body class="cor-fundo">
     <!--Barra de navegação-->
     <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style=" background-color: #e3f2fd; ">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style=" background-color: #e3f2fd; ">
             <a class="navbar-brand" href="#">
                 <img class="img-responsive" src="imagens/logo.png" width="150px" class="img-responsive" alt=""></a>
 
@@ -35,9 +36,75 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#Produtos">A Empresa</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Sobre-nos">Linha de Produtos</a>
+                  
+                    <li class="nav-item dropdown">
+                <a href="#" id="menu" data-toggle="dropdown" class="nav-link dropdown-toggle">Produtos</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item dropdown-submenu dropright">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">CONTROLE DE ACESSOS</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="produtocatraca.html">CATRACAS</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CONTROLADOR DE ACESSO POR BIOMETRIA FACIAL</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CONTROLADOR DE ACESSO</a>
+                            </li>
+                        </ul>
                     </li>
+                    <li class="dropdown-item dropdown-submenu dropright">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">RELÓGIOS DE PONTOS</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="#">REGISTRADOR ELETRÓNICO DE PONTO(REP)</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CARTOGRAFICO</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">ESTACIONAMENTO</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown-item dropdown-submenu dropright">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">SOFTWARES</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="#">CONTROLE DE PONTO</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CONTROLE DE ACESSO</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown-item dropdown-submenu dropright">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">ACESSÓRIOS</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a href="#">BOBINAS TÉRIMCAS PARA REP</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CHAPEIRAS</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CARTÕES 100 UND</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">CRACHÁS</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">FITAS</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#Sobre-nos">Nossos Serviços</a>
                     </li>
@@ -342,6 +409,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
+    <script type = "text/javascript" src="js/produtos.js "></script>
     <script src="js/jquery-3.3.1.min.js "></script>
 </body>
 
