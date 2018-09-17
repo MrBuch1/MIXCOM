@@ -10,3 +10,13 @@ $('.dropdown').on("hidden.bs.dropdown", function() {
     $('.dropdown-menu.show').removeClass('show');
 });
 
+function funcaoComprar()
+{
+alert("Produto adicionado ao carrinho!");
+}
+$().alert('close')
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 9000
+    })
+  });
