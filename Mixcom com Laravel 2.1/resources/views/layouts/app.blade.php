@@ -16,7 +16,7 @@
 
 </head>
 <body>  <!--Barra de navegação-->
-    <div class="container-fluid" style="margin-bottom: 100px">
+    <div class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="{{route('index')}}">
                 <img class="img-responsive" src="{{asset('imagens/logo.png')}}" width="150px" class="img-responsive"
