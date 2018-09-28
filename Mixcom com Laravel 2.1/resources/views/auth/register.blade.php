@@ -13,9 +13,19 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="form-row">
-                    <div class="form-group col-sm-12">
-                        <input id="rsocial" type="text" placeholder="Razão Social" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                    <div class="form-group col-sm-6">
+                        <input id="name" type="text" placeholder="Nome completo" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
                             name="name" value="{{ old('name') }}" required autofocus>
+
+                        @if ($errors->has('name'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('name') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input id="rsocial" type="text" placeholder="Razão Social" class="form-control{{ $errors->has('rsocial') ? ' is-invalid' : '' }}"
+                            name="rsocial" value="{{ old('rsocial') }}" required autofocus>
 
                         @if ($errors->has('rsocial'))
                         <span class="invalid-feedback" role="alert">
@@ -60,12 +70,12 @@
                         @endif
                     </div>
                     <div class="form-grup col-sm-6">
-                        <input id="email" type="email" placeholder="Confirme o seu Email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                            name="email" value="{{ old('email') }}" required>
+                        <input id="email2" type="email2" placeholder="Confirme o seu Email" class="form-control{{ $errors->has('email2') ? ' is-invalid' : '' }}"
+                            name="email2" value="{{ old('email2') }}" required>
 
-                        @if ($errors->has('email'))
+                        @if ($errors->has('email2'))
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('email') }}</strong>
+                            <strong>{{ $errors->first('email2') }}</strong>
                         </span>
                         @endif
                     </div>
