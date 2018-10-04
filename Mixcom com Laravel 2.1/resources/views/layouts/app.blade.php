@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -9,13 +10,15 @@
     <link href="{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext')}}" rel='stylesheet'
         type='text/css'>
     <link rel="stylesheet" href="{{ asset('https://use.fontawesome.com/releases/v5.2.0/css/all.css')}}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/stylesProdutos.css') }}" rel="stylesheet">
     <link rel="#" href="{{ asset('imagens/logo.png')}}">
 
 </head>
-<body>  <!--Barra de navegação-->
+
+<body>
+    <!--Barra de navegação-->
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
             <a class="navbar-brand" href="{{route('index')}}">
@@ -41,7 +44,7 @@
                                 <a href="#" data-toggle="dropdown" class="text-dark dropdown-toggle">CONTROLE DE ACESSO</a>
                                 <ul class="dropdown-menu">
                                     <li class="text-dark dropdown-item">
-                                    <a href="{{route('produtoCatraca')}}">CATRACAS</a>
+                                        <a href="{{route('produtoCatraca')}}">CATRACAS</a>
                                     </li>
                                     <li class="text-dark dropdown-item">
                                         <a href="#">CONTROLADOR DE ACESSO POR BIOMETRIA FACIAL</a>
@@ -121,28 +124,30 @@
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#Cadastrar">Cadastrar</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="btn btn-outline-primary  my-2 my-sm-0" type="submit">Pesquisar</button>
-                </form>
                 @else
-                <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }} <span class="caret"></span>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->rsocial }} <span class="caret"></span>
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 {{ __('Sair') }}
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
+                            
                             </form>
                         </div>
                     </li>
+                </ul>
                 @endguest
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-outline-primary  my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
             </div>
         </nav>
     </div>
@@ -150,8 +155,8 @@
     <div>
         @yield('content')
     </div>
-<!--Inicio Rodapé-->
-<div class="container">
+    <!--Inicio Rodapé-->
+    <div class="container">
         <div class="row">
             <div class="col-12 mb-3">
                 <hr>
@@ -159,7 +164,8 @@
             <div class="col-md-4 ml-5">
                 <h3 class="title">Localização</h3>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15595.526552345184!2d-38.9544543!3d-12.2562883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1ba858abc569a83!2sMixcom+Controle+de+Ponto+e+Acesso!5e0!3m2!1spt-BR!2sbr!4v1538017256563" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15595.526552345184!2d-38.9544543!3d-12.2562883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1ba858abc569a83!2sMixcom+Controle+de+Ponto+e+Acesso!5e0!3m2!1spt-BR!2sbr!4v1538017256563"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
             <div class=" col-sm-4 ml-3">
@@ -277,4 +283,5 @@
     <script src="{{ URL::to('js/app.js') }}" type="text/javascript"></script>
     <script src="{{ URL::to('js/produtos.js') }}" type="text/javascript"></script>
 </body>
+
 </html>
