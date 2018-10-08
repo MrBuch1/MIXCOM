@@ -4,6 +4,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/teste', function () {
+    return view('cadastrarEndereco');
+});
+
+
 Auth::routes();
 
 Route::get('/Inicio', function () {
