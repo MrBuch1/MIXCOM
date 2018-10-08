@@ -50,6 +50,8 @@ class RegisterEndController extends Controller
     {
         return Validator::make($data, [
             'rua' => 'required|string|max:255',
+            'num' => 'required|int|',
+            'comp' => 'string|max:255',
             'bairro' => 'required|string|max:255',
             'cep' => 'required|int|email|max:8|unique:users',
             'cidade' => 'required|string|max:255|confirmed',
@@ -65,8 +67,10 @@ class RegisterEndController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return Endereco::create([
             'rua' => $data['rua'],
+            'num' => $data['num'],
+            'comp' => $data['comp'],
             'bairro' => $data['bairro'],
             'cep' => $data['cep'],
             'cidade' => $data['cidade'],

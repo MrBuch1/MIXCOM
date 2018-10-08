@@ -78,7 +78,7 @@
                                             <h3 class=" distancia card-title mb-2 my-3">R$999,00</h3>
                                             <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55
                                                 sem juros</p>
-                                            <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
+                                            <input type="button" class=" btn btn-outline-primary botao2 " onclick="funcaoComprar()"
                                                 value="Comprar">
                                         </center>
                                         <br>
@@ -92,7 +92,7 @@
 
                                             <input class="form-control mr-sm-2" type="search" placeholder="_______-___"
                                                 aria-label="Pesquisar">
-                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">OK</button>
+                                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">OK</button>
                                         </form>
                                     </td>
                                 </tr>

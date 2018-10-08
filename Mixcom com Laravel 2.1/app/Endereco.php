@@ -14,6 +14,6 @@ class Endereco extends Model
      * @var array
      */
     protected $fillable = [
-        'rua', 'numero', 'bairro', 'cep', 'cidade', 'estado'
+        'rua', 'numero', 'comp', 'bairro', 'cep', 'cidade', 'estado'
     ];
 }

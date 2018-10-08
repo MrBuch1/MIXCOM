@@ -28,6 +28,12 @@ Route::get('/cadastroJuridico', function () {
 Route::get('\cadastroJuridico', 'RegisterController@validator');
 Route::post('\cadastroJuridico', 'RegisterController@create');
 
+Route::get('\CadastroEndereco', function(){
+    return view('cadastrarEndereco');
+});
+Route::get('\CadastroEndereco', 'RegisterEndController@validator');
+Route::post('\CadastroEndereco', 'RegisterEndController@create');
+
 Route::get('/Cadastrar', function(){
     return view('auth/register');
 });
