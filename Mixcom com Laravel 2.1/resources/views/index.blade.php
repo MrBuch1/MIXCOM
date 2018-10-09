@@ -38,7 +38,7 @@
                         <img class="img-responsive img-fluid d-block w-100" src="imagens/banner.jpg" alt="">
                         <div class="carousel-caption d-none d-md-block">
                             <div class="carousel-caption d-none d-md-block">
-                                <img src="imagens/Produtos/banner02.png" width="200px" class="rounded-circle img-responsive col-5"
+                                <img src="imagens/Produtos/banner02.png" width="500px" class="rounded-circle img-responsive col-5"
                                     style="margin-bottom: -100px; margin-left: 650px; width: 700px;">
                                 <div class="col-8 text-justify">
                                     <h1>Catraca RBC 5905 </h1>
@@ -87,7 +87,7 @@
     <h1 class="display-3 text-center my-5">Produtos</h1>
             <div class="card-deck">
                 <div class="card">
-                    <img class="img-responsive card-img-top" src="imagens/100-salgados-fritos-para-festa.jpg" alt="">
+                    <img class="img-responsive card-img-top" style="width:295px" src="{{ asset('imagens\Produtos/Evo.jpg')}}" alt="">
                     <div class="card-body">
                         <h5 class="card-title">MD REP EVO</h5>
                         <p class="card-subtitle text-muted my-3">Madis MD REP REVO é o relógio perfeito para quem quer a segurança dos dados
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="img-responsive card-img-top" src="imagens/esfirra-aberta-de-carne-para-diabeticos.jpg" alt="">
+                    <img class="img-responsive card-img-top my-3" style="width:300px" src="{{ asset('imagens\Produtos/inner.png')}}" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Inner Rep Plus</h5>
                         <p class="card-subtitle mb-2 text-muted my-3">Uma das melhores marcas no mercado, a TopData lançou 
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="img-responsive card-img-top my-auto" src="imagens/quibe-de-bacalhau.jpg " alt="">
+                    <img class="img-responsive card-img-top my-auto" style="width:222px; align-self: center" src="{{ asset('imagens\Produtos/ipointline.png')}}" alt="">
                     <div class="card-body">
                         <h5 class="card-title">iPointline</h5>
                         <p class="card-subtitle mb-2 text-muted my-3">A RW Tech vem sempre inovando em seus aparelhos.

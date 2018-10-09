@@ -11,7 +11,7 @@
 
             <div id="main-menu" class=" list-group ">
                 <a href="#sub-menu" class=" sidebar-header list-group-item active" data-toggle="collapse" data-parent="#main-menu">CONTROLE
-                    DE ACESSOS<span class="caret"></span></a>
+                    DE ACESSO<span class="caret"></span></a>
 
                 <div class="Estilomenu collapse list-group-level1" id="sub-menu">
                     <a href="produtocatraca.html" class="list-group-item" data-parent="#sub-menu">
@@ -23,7 +23,7 @@
                 </div>
 
                 <a href="#sub-menu1" class=" sidebar-header list-group-item active" data-toggle="collapse" data-parent="#main-menu">RELÓGIOS
-                    DE PONTOS<span class="caret"></span></a>
+                    DE PONTO<span class="caret"></span></a>
                 <div class="collapse list-group-level1" id="sub-menu1">
                     <a href="registradoreletro.html" class="list-group-item" data-parent="#sub-menu1">REGISTRADOR
                         ELETRÓNICO DE PONTO(REP)</a>
