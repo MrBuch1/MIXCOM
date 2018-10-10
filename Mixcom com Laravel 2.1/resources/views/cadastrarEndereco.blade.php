@@ -78,7 +78,36 @@
                     </div>
                     <div class="form-group col-sm-2">
                         <select id="estado" type="text" placeholder="estado" class="form-control{{ $errors->has('estado') ? ' is-invalid' : '' }}"
-                            name="estado" value="{{ old('estado') }}" required autofocus></select>
+                            name="estado" value="{{ old('estado') }}" required autofocus>
+                            <option value=""></option>
+                            <option value="acre"> AC </option>
+                            <option value="alagoas"> AL </option>
+                            <option value="amapa"> AP </option>
+                            <option value="amazonas"> AM </option>
+                            <option value="bahia"> BA </option>
+                            <option value="ceara"> CE </option>
+                            <option value="distrito federal"> DF </option>
+                            <option value="espirito santo"> ES </option>
+                            <option value="goias"> GO </option>
+                            <option value="maranhao"> MA </option>
+                            <option value="mato grosso"> MT </option>
+                            <option value="mato grosso do sul"> MS </option>
+                            <option value="minas gerais"> MG </option>
+                            <option value="para"> PA </option>
+                            <option value="paraiba"> PB </option>
+                            <option value="parana"> PR </option>
+                            <option value="pernambuco"> PE </option>
+                            <option value="piaui"> PI </option>
+                            <option value="rio de janeiro"> RJ </option>
+                            <option value="rio grande do norte"> RN </option>
+                            <option value="rio grande do sul"> RS </option>
+                            <option value="rondonia"> RO </option>
+                            <option value="roraima"> RR </option>
+                            <option value="santa catarina"> SC </option>
+                            <option value="sao paulo"> SP </option>
+                            <option value="sergipe"> SE </option>
+                            <option value="tocantins"> TO </option>
+                            </select>
 
                         @if ($errors->has('estado'))
                         <span class="invalid-feedback" role="alert">
