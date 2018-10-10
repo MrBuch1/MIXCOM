@@ -79,7 +79,7 @@
                     <div class="form-group col-sm-2">
                         <select id="estado" type="text" placeholder="estado" class="form-control{{ $errors->has('estado') ? ' is-invalid' : '' }}"
                             name="estado" value="{{ old('estado') }}" required autofocus>
-                            <option value=""></option>
+                            <option value=""> Estado </option>
                             <option value="acre"> AC </option>
                             <option value="alagoas"> AL </option>
                             <option value="amapa"> AP </option>
