@@ -17,6 +17,10 @@ Route::get('/testeFinalizarCompra', function () {
     return view('finalizarCompra');
 });
 
+Route::get('/produtoTeste', function () {
+    return view('produtoTeste');
+});
+
 
 Auth::routes();
 
