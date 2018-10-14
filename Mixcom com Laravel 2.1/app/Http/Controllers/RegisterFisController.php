@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use App\Userfis;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -28,7 +28,7 @@ class RegisterFisController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    //protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -62,13 +62,15 @@ class RegisterFisController extends Controller
      * @param  array  $data
      * @return \App\UserFis
      */
-    protected function create(array $data)
+    protected function store(Request $request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'cpf' => $data['cpf'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $userfis = new Userfis();
+        $userjur->nome     = $request->get('nome');
+        $userjur->cpf      = $request->get('cpf');
+        $userjur->email    = $request->get('email');
+        $userjur->password = $request->get('password');
+        $endereco->save();
+
+        return redirect('/Inicio');
     }
 }

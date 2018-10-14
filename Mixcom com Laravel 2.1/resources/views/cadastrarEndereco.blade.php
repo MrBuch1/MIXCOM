@@ -10,7 +10,7 @@
     </div>
     <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('end') }}">
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-5">
@@ -30,16 +30,6 @@
                         @if ($errors->has('num'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('num') }}</strong>
-                        </span>
-                        @endif
-                    </div>
-                    <div class="form-group col-sm-5">
-                        <input id="complemento" type="text" placeholder="Complemento" class="form-control{{ $errors->has('complemento') ? ' is-invalid' : '' }}"
-                            name="complemento" value="{{ old('complemento') }}" required autofocus>
-
-                        @if ($errors->has('complemento'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('complemento') }}</strong>
                         </span>
                         @endif
                     </div>
@@ -76,13 +66,13 @@
                         </span>
                         @endif
                     </div>
-                    <div class="form-group col-sm-2">
-                        <select id="estado" type="text" placeholder="estado" class="form-control{{ $errors->has('estado') ? ' is-invalid' : '' }}"
-                            name="estado" value="{{ old('estado') }}" required autofocus></select>
+                    <div class="form-group col-sm-4">
+                        <input id="estado" type="text" placeholder="Estado" class="form-control{{ $errors->has('estado') ? ' is-invalid' : '' }}"
+                            name="estado" value="{{ old('estado') }}" required autofocus>
 
-                        @if ($errors->has('estado'))
+                        @if ($errors->has('cidade'))
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('estado') }}</strong>
+                            <strong>{{ $errors->first('cidade') }}</strong>
                         </span>
                         @endif
                     </div>

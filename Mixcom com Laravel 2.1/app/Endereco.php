@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class Endereco extends Model
 {
@@ -14,6 +15,6 @@ class Endereco extends Model
      * @var array
      */
     protected $fillable = [
-        'rua', 'numero', 'comp', 'bairro', 'cep', 'cidade', 'estado'
+        'rua', 'numero', 'cep', 'bairro', 'cidade', 'estado'
     ];
 }

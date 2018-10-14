@@ -37,16 +37,18 @@ class RegisterJurController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return \App\Userjur
      */
-    protected function create(array $data)
+    protected function store(Request $request)
     {
-        return User::create([
-            'nome' => $data['name'],
-            'rsocial' => $data['rsocial'],
-            'cnpj' => $data['cnpj'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $userjur = new Userjur();
+        $userjur->nome     = $request->get('nome');
+        $userjur->rsocial  = $request->get('rsocial');
+        $userjur->cnpj     = $request->get('cnpj');
+        $userjur->email    = $request->get('email');
+        $userjur->password = $request->get('password');
+        $endereco->save();
+
+        return redirect('/Inicio');
     }
 }

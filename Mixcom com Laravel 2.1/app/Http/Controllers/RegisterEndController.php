@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
-use App\User;
+use App\Endereco;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
 
 class RegisterEndController extends Controller
 {
+
+    //protected $redirectTo = '/index';
+    
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -20,25 +21,6 @@ class RegisterEndController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-
-    use RegistersUsers;
-
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
 
     /**
      * Get a validator for an incoming registration request.
@@ -51,9 +33,8 @@ class RegisterEndController extends Controller
         return Validator::make($data, [
             'rua' => 'required|string|max:255',
             'num' => 'required|int|',
-            'comp' => 'string|max:255',
-            'bairro' => 'required|string|max:255',
             'cep' => 'required|int|email|max:8|unique:users',
+            'bairro' => 'required|string|max:255',
             'cidade' => 'required|string|max:255|confirmed',
             'estado' => 'required|string|max:255',
         ]);
@@ -65,16 +46,17 @@ class RegisterEndController extends Controller
      * @param  array  $data
      * @return \App\Endereco
      */
-    protected function create(array $data)
+    protected function store(Request $request)
     {
-        return Endereco::create([
-            'rua' => $data['rua'],
-            'num' => $data['num'],
-            'comp' => $data['comp'],
-            'bairro' => $data['bairro'],
-            'cep' => $data['cep'],
-            'cidade' => $data['cidade'],
-            'estado' => $data['estado'],
-        ]);
+        $endereco = new Endereco();
+        $endereco->rua    = $request->get('rua');
+        $endereco->numero = $request->get('num');
+        $endereco->cep    = $request->get('cep');
+        $endereco->bairro = $request->get('bairro');
+        $endereco->cidade = $request->get('cidade');
+        $endereco->estado = $request->get('estado');
+        $endereco->save();
+
+        return redirect('/Inicio');
     }
 }

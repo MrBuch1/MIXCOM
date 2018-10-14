@@ -30,14 +30,13 @@ Route::prefix('/Cadastro')->group(function () {
 Route::get('/cadastroJuridico', function () {
     return view('telaCadastroJur');
 });
-Route::get('\cadastroJuridico', 'RegisterController@validator');
-Route::post('\cadastroJuridico', 'RegisterController@create');
+Route::get('\cadastroJuridico', 'Auth\RegisterController@validator');
+Route::post('\cadastroJuridico', 'Auth\RegisterController@create');
 
-Route::get('\CadastroEndereco', function(){
+Route::get('CadastroEndereco', function(){
     return view('cadastrarEndereco');
-});
-Route::get('\CadastroEndereco', 'RegisterEndController@validator');
-Route::post('\CadastroEndereco', 'RegisterEndController@create');
+})->name('end');
+Route::post('CadastroEndereco', 'RegisterEndController@store');
 
 Route::get('/Cadastrar', function(){
     return view('auth/register');
@@ -57,6 +56,6 @@ Route::get('ComprarCatracas', function () {
 });
 
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
