@@ -7,6 +7,15 @@ Route::get('/', function () {
 Route::get('/teste', function () {
     return view('cadastrarEndereco');
 });
+Route::get('/testeCarrinho', function () {
+    return view('carrinho');
+});
+Route::get('/testeMeusDados', function () {
+    return view('meusDados');
+});
+Route::get('/testeFinalizarCompra', function () {
+    return view('finalizarCompra');
+});
 
 
 Auth::routes();

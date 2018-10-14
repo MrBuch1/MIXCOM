@@ -82,9 +82,9 @@
 
                         </table>
                     </div>
-                    <div class="card-footer btn btn-primary">
+                    <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -107,9 +107,9 @@
 
                         </table>
                     </div>
-                    <div class="card-footer btn btn-primary ">
-                        <small class="text-muted ">
-                            <center><a href="#">Saiba Mais</a></center>
+                    <div class="card-footer cor1">
+                        <small class="text-muted">
+                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -134,9 +134,9 @@
 
                         </table>
                     </div>
-                    <div class="card-footer btn btn-primary">
+                   <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a href="#">Saiba Mais</a></center>
+                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -162,9 +162,9 @@
 
                         </table>
                     </div>
-                    <div class="card-footer btn btn-primary">
+                    <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a href="#">Saiba Mais</a></center>
+                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -187,9 +187,9 @@
 
                         </table>
                     </div>
-                    <div class="card-footer btn btn-primary">
+                    <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a href="#">Saiba Mais</a></center>
+                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -212,9 +212,9 @@
 
                         </table>
                     </div>
-                    <div class="card-footer btn btn-primary">
+                    <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a href="#">Saiba Mais</a></center>
+                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>
                     </div>
                 </div>

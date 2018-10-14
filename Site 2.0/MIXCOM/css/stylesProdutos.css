@@ -11,7 +11,9 @@
 .Estilo14 {font-size: 14px}
 .Estilo15 {color: #FFFFFF}
 .Tamanhodropdown{width: 240px; height: 35px }
-
+.corradio{
+    background-color: #1a75ff;
+}
 .a{
     margin: 0;
     padding: 0;
@@ -71,6 +73,10 @@
     line-height:10px;
 
 }
+.distancia7{
+    line-height:10px;
+    padding-left: 15px;
+}
 .corCard{
     background-color: #D8D8D8;
      
@@ -91,17 +97,33 @@
     width: 8px;
     height: 8px;
 }
+.distancia4{
+    padding-left: 10px;
+    line-height:1px;
+}
 
+.distancia3{
+    padding: 10px;
+}
 .blog .carousel-indicators .active {
 background: #707070;
+}
+.tamanhoQuantidade{
+    width: 50px;
+    height: 25px;
 }
 .espaco{
     padding-right:40px;
 }
 .distancia2{
+
     line-height:10px;
     padding-left:30px; 
     
 }
-
-
+.cortexto{
+      color:#1a75ff;
+}
+.distancia5{
+    padding-top: 37px;
+}

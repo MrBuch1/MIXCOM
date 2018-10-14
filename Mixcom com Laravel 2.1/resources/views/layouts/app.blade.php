@@ -44,13 +44,13 @@
                                 <a href="#" data-toggle="dropdown" class="text-dark dropdown-toggle">CONTROLE DE ACESSO</a>
                                 <ul class="dropdown-menu">
                                     <li class="text-dark dropdown-item">
-                                        <a href="{{route('produtoCatraca')}}">CATRACAS</a>
+                                        <a class="text-dark" href="{{route('produtoCatraca')}}">CATRACAS</a>
                                     </li>
                                     <li class="text-dark dropdown-item">
-                                        <a href="#">CONTROLADOR DE ACESSO POR BIOMETRIA FACIAL</a>
+                                        <a class="text-dark" href="#">CONTROLADOR DE ACESSO POR BIOMETRIA FACIAL</a>
                                     </li>
                                     <li class="text-dark dropdown-item">
-                                        <a href="#">CONTROLADOR DE ACESSO</a>
+                                        <a class="text-dark" href="#">CONTROLADOR DE ACESSO</a>
                                     </li>
                                 </ul>
                             </li>
