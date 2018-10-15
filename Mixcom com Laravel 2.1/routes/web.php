@@ -68,6 +68,7 @@ Route::get('ComprarCatracas', function () {
 
 });
 
+<<<<<<< HEAD
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
@@ -75,6 +76,8 @@ Route::get('/editarPerfil', function(){
 Route::get('/editarPerfilFisica', function(){
     return view('editarPerfilPFisica');
 });
+=======
+>>>>>>> f524834dea1954166bec3f908f1df6b02976ae9c
 
 //Auth::routes();
 
