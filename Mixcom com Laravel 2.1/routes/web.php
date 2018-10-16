@@ -17,11 +17,6 @@ Route::get('/testeFinalizarCompra', function () {
     return view('finalizarCompra');
 });
 
-Route::get('/produtoTeste', function () {
-    return view('produtoTeste');
-});
-
-
 Auth::routes();
 
 Route::get('/Inicio', function () {
@@ -68,6 +63,15 @@ Route::get('ComprarCatracas', function () {
 
 });
 
+
+
+
+Route::get('/produtoTeste', function () {
+    return view('produtoTeste');
+});
+Route::get('/produtoTeste/{id}', 'ProdutoController@detalharProduto');
+
+/*
 <<<<<<< HEAD
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
@@ -82,3 +86,4 @@ Route::get('/editarPerfilFisica', function(){
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+*/

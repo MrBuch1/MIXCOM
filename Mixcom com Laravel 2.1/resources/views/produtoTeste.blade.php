@@ -65,14 +65,14 @@
                     </td>
                     <td width="571" valign="top">
                         <p>
-                            <h5><strong>{{$info[0]}}</strong></h5>
-                            <p align="justify" class="Estilo2">{{$info[1]}}</p>
+                            <h5><strong>{{$info[0][1]}}</strong></h5>
+                            <p align="justify" class="Estilo2">{{$info[1][1]}}</p>
                             <br>
                             <table class="table  table-bordered table-condensed">
                                 <tr>
                                     <td>
                                         <center>
-                                            <h3 class=" distancia card-title mb-2 my-3">{{$info[2]}}</h3>
+                                            <h3 class=" distancia card-title mb-2 my-3">{{$info[2][1]}}</h3>
                                             <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55
                                                 sem juros</p>
                                             <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
