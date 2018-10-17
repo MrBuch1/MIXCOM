@@ -13,7 +13,7 @@ class ProdutoController extends Controller {
     $preco = ["900,00","998,00"];
     $imagem = ["/imagens/imagensRedimencionadas/catraca1.png","/imagens/imagensRedimencionadas/catraca2.png"];
     $info = ['nome'=> $nome[$id], 'descricao'=> $descricao[$id], 'preco'=> $preco[$id], 'imagem'=> $imagem[$id]];
-    return view('produtoTeste', compact($info));
+    return view('produtoTeste', compact('info'));
   }
 
 }

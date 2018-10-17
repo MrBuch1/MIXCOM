@@ -69,6 +69,10 @@ Route::get('ComprarCatracas', function () {
 Route::get('/produtoTeste', function () {
     return view('produtoTeste');
 });
+
+
+
+
 Route::get('/produtoTeste/{id}', 'ProdutoController@detalharProduto');
 
 /*

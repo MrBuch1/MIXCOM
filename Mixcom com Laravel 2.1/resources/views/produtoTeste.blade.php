@@ -3,6 +3,9 @@
 <!--Inicio Corpo-->
 <br><br><br><br>
 <div class="container">
+    @if(!isset($info))
+        <h1>não definido</h1>
+    @else
     <div class="row">
         <div class="caixa col-md-3 col-sm-3 col-xs-3">
             <div class="col-12 mb-3">
@@ -65,14 +68,14 @@
                     </td>
                     <td width="571" valign="top">
                         <p>
-                            <h5><strong>{{$info[0][1]}}</strong></h5>
-                            <p align="justify" class="Estilo2">{{$info[1][1]}}</p>
+                            <h5><strong>{{$info['nome']}}</strong></h5>
+                            <p align="justify" class="Estilo2">{{$info['descricao']}}</p>
                             <br>
                             <table class="table  table-bordered table-condensed">
                                 <tr>
                                     <td>
                                         <center>
-                                            <h3 class=" distancia card-title mb-2 my-3">{{$info[2][1]}}</h3>
+                                            <h3 class=" distancia card-title mb-2 my-3">{{$info['preco']}}</h3>
                                             <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55
                                                 sem juros</p>
                                             <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
@@ -277,5 +280,6 @@
                     </div>
                 </div>
 
+@endif
                 <!--Fim Corpo-->
                 @endsection
