@@ -17,7 +17,6 @@ Route::get('/testeFinalizarCompra', function () {
     return view('finalizarCompra');
 });
 
-
 Auth::routes();
 
 Route::get('/Inicio', function () {
@@ -69,6 +68,30 @@ Route::get('alterar-senha', function () {
 })->name('altersenha');
 
 
+
+
+Route::get('/produtoTeste', function () {
+    return view('produtoTeste');
+});
+
+
+
+
+Route::get('/produtoTeste/{id}', 'ProdutoController@detalharProduto');
+
+/*
+<<<<<<< HEAD
+Route::get('/editarPerfil', function(){
+    return view('editarPerfil');
+});
+
+Route::get('/editarPerfilFisica', function(){
+    return view('editarPerfilPFisica');
+});
+=======
+>>>>>>> f524834dea1954166bec3f908f1df6b02976ae9c
+
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+*/

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face{
 	font-family: MinhaFont;
 	src: url('OpenSans-Italic.ttf');
@@ -32,4 +33,40 @@
 width:20px;
     height:10px;
 
+=======
+@font-face{
+	font-family: MinhaFont;
+	src: url('OpenSans-Italic.ttf');
+}
+.botao{background-color:#b3e4ef;}
+.tbotao{color:#ffffff;width: 186px; height: 15px}
+.imagem1{margin-top:-19px}
+.texto{color:#00b3b3}
+.texto2{color:#000000; font-family:MinhaFont}
+.tabela{background-color:#b3e4ef;}
+.campo{width: 150px; height: 20px}
+.botaoentrar{width: 70px; height: 25px}
+.esquerda{margin-left:583px}
+.esquerda2{margin-left:715px}
+.esquerda3{margin-left:16px}
+.botaomenu{
+	padding: 10px;
+}
+.carouselimagem{
+    width:20px;
+    height:10px;
+}
+.Estilotexto {
+    color: #CBC8C5
+}
+.lpcarousel{
+	color:red; 
+	font-family:MinhaFont;
+
+}
+.imagemprodutos{	
+width:20px;
+    height:10px;
+
+>>>>>>> f524834dea1954166bec3f908f1df6b02976ae9c
 }
