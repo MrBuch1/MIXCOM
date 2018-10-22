@@ -64,6 +64,10 @@ Route::get('ComprarCatracas', function () {
 
 });
 
+Route::get('alterar-senha', function () {
+    return view('passwords\reset');
+})->name('altersenha');
+
 
 //Auth::routes();
 
