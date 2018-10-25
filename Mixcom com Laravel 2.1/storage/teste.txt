@@ -9,9 +9,6 @@ Duas entradas para leitores de códigos de barras padrão 25 intercalado ou Code 3
 Sistema supervisor para proteção dos dados da memória RAM e Watchdog Timer para correção de eventuais problemas de processamento
 Alimentação por fonte chaveada Full Range com tensão de entrada de 90 a 240 Vac/50 ou 60 Hz
 Um leitor Biométrico para verificação de impressões digitais
-
-Software Residente:
-
 Controle através de lista de cartões permitidos
 Possibilidade de parametrizar o controle, sendo ele apenas por cartão ou por cartão e impressão digital
 Bloqueio de marcações fora do horário programado
@@ -28,9 +25,6 @@ Função de coleta Backup para recuperação de marcações
 O tamanho das listas internas de dados é programável, permitindo a otimização do uso da memória para cada cliente. Para cartões de 6 dígitos e uma lista de 1.000 cartões permitidos, o buffer de coleta pode armazenar até 50.000 registros
 Memória com capacidade de armazenamento para 1400 impressões digitais
 Possibilidade de cadastro de mais de uma impressão digital por usuário, com reconhecimento automático entre as digitais cadastradas
-
-Software de Comunicação:
-
 Programação dos equipamentos e coleta dos dados
 Cadastro de funcionários no sistema
 Emissão de listagens dos cadastros
