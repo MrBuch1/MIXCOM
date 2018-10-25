@@ -93,6 +93,7 @@
                                             <input class="form-control mr-sm-2" type="search" placeholder="_______-___"
                                                 aria-label="Pesquisar">
                                             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">OK</button>
+                                            <a style="padding:10px" href="http://www.buscacep.correios.com.br/sistemas/buscacep/">Não sei meu cep</a>
                                         </form>
                                     </td>
                                 </tr>
