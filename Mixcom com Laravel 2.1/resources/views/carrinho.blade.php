@@ -3,7 +3,7 @@
 
 <br><br><br>
 
- <link href="css/stylesProdutos.css" rel="stylesheet">
+
 <div class="container">
     <div class="row">
     <div class="caixa col-md-9 col-sm-9 col-xs-9">
