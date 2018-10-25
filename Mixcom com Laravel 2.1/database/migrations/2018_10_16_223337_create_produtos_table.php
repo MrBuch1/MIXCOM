@@ -22,6 +22,7 @@ class CreateProdutosTable extends Migration
             $table->string('categoria');
             $table->string('descricao');
             $table->string('imagem');
+            $table->text('caracteristica');
             $table->rememberToken();
             $table->timestamps();
         });

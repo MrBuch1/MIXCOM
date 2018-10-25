@@ -1,0 +1,40 @@
+Display LCD com 2 linhas de 20 caracteres cada, proporcionando excelente visualização horária, com sua exclusiva formatação de dígitos. O display possui back-light
+Microprocessador 16 bits.
+Memória RAM de 512 Kb para listas e registros, protegida por bateria de NiCd com possibilidade de reter as informações por até 2 anos
+Relógio calendário não volátil
+Bateria de NiMh que possibilita a total operacionalidade do produto por até 6 horas, na falta de energia elétrica
+Porta serial opcional para comunicação RS-232, RS-485 ou TCP-IP
+Duas entradas para leitores de cartão magnético (padrão ABA) ou proximidade (ABA ou Weigand 26 bit’s)
+Duas entradas para leitores de códigos de barras padrão 25 intercalado ou Code 39 (4 à 20 dígitos)
+Sistema supervisor para proteção dos dados da memória RAM e Watchdog Timer para correção de eventuais problemas de processamento
+Alimentação por fonte chaveada Full Range com tensão de entrada de 90 a 240 Vac/50 ou 60 Hz
+Um leitor Biométrico para verificação de impressões digitais
+
+Software Residente:
+
+Controle através de lista de cartões permitidos
+Possibilidade de parametrizar o controle, sendo ele apenas por cartão ou por cartão e impressão digital
+Bloqueio de marcações fora do horário programado
+Controle de horário através de até 255 faixas horárias de 6 intervalos diários, podendo ser combinadas para formar até 255 jornadas semanais, mensais ou periódicas
+40 funções digitadas no teclado para diferenciação de registros, com mensagens ao usuário
+7 mensagens programáveis que podem ser vinculadas aos cartões dos usuários
+Programação do texto das mensagens do sistema
+99 toques de sinaleiro programáveis, podendo ser habilitados ou desabilitados para cada dia da semana. Estes toques podem ser internos (buzzer) ou externos (opcional)
+Registro de eventos com log de data e hora
+Detector de revista com porcentagem de sorteio programável
+Até 5 cartões podem ser programados como supervisores, com possibilidade de alterarem parâmetros do relógio pelo teclado
+Acerto automático para horário de verão
+Função de coleta Backup para recuperação de marcações
+O tamanho das listas internas de dados é programável, permitindo a otimização do uso da memória para cada cliente. Para cartões de 6 dígitos e uma lista de 1.000 cartões permitidos, o buffer de coleta pode armazenar até 50.000 registros
+Memória com capacidade de armazenamento para 1400 impressões digitais
+Possibilidade de cadastro de mais de uma impressão digital por usuário, com reconhecimento automático entre as digitais cadastradas
+
+Software de Comunicação:
+
+Programação dos equipamentos e coleta dos dados
+Cadastro de funcionários no sistema
+Emissão de listagens dos cadastros
+Emissão de relatórios de acesso
+Importação e exportação de dados do cadastro
+Gerador de código de barras
+Compatível com Sistema Operacional Windows98 SE ou superior, exceto para versões Server
