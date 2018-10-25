@@ -3,7 +3,7 @@
 <!--Inicio Corpo-->
 <br><br><br><br>
 <div class="container">
-    @if(!isset($info))
+    @if(!isset($p))
         <h1>não definido</h1>
     @else
     <div class="row">
@@ -68,16 +68,15 @@
                     </td>
                     <td width="571" valign="top">
                         <p>
-                            <h5><strong>{{$info['nome']}}</strong></h5>
-                            <p align="justify" class="Estilo2">{{$info['descricao']}}</p>
+                            <h5><strong>{{$p->nome}}</strong></h5>
+                            <p align="justify" class="Estilo2">{{$p->descricao}}</p>
                             <br>
                             <table class="table  table-bordered table-condensed">
                                 <tr>
                                     <td>
                                         <center>
-                                            <h3 class=" distancia card-title mb-2 my-3">{{$info['preco']}}</h3>
-                                            <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55
-                                                sem juros</p>
+                                            <h3 class=" distancia card-title mb-2 my-3">{{$p->preco}}</h3>
+                                            <p class=" distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
                                             <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
                                                 value="Comprar">
                                         </center>
@@ -214,69 +213,14 @@
                                 <hr>
                             </div>
                             <p><strong>Caractéristicas</strong></p>
-                            <p align="justify" class="Estilo2">
-                                • Display LCD com 2 linhas de 20 caracteres cada, proporcionando excelente visualização
-                                horária, com sua exclusiva formatação de dígitos. O display possui back-light<br>
-                                • Microprocessador 16 bits.<br>
-                                • Memória RAM de 512 Kb para listas e registros, protegida por bateria de NiCd com
-                                possibilidade de reter as informações por até 2 anos<br>
-                                • Relógio calendário não volátil<br>
-                                • Bateria de NiMh que possibilita a total operacionalidade do produto por até 6 horas,
-                                na falta de energia elétrica<br>
-                                • Porta serial opcional para comunicação RS-232, RS-485 ou TCP-IP<br>
-                                • Duas entradas para leitores de cartão magnético (padrão ABA) ou proximidade (ABA ou
-                                Weigand 26 bit’s)<br>
-                                • Duas entradas para leitores de códigos de barras padrão 25 intercalado ou Code 39 (4
-                                à 20 dígitos)<br>
-                                • Sistema supervisor para proteção dos dados da memória RAM e Watchdog Timer para
-                                correção de eventuais problemas de processamento<br>
-                                • Alimentação por fonte chaveada Full Range com tensão de entrada de 90 a 240 Vac/50 ou
-                                60 Hz<br>
-                                • Um leitor Biométrico para verificação de impressões digitais
-                            </p>
-                            <p><strong>Software Residente:</strong></p>
-                            <p align="justify" class="Estilo2">
-                                • Controle através de lista de cartões permitidos<br>
-                                • Possibilidade de parametrizar o controle, sendo ele apenas por cartão ou por cartão e
-                                impressão digital<br>
-                                • Bloqueio de marcações fora do horário programado<br>
-                                • Controle de horário através de até 255 faixas horárias de 6 intervalos diários,
-                                podendo ser combinadas para formar até 255 jornadas semanais, mensais ou periódicas<br>
-                                • 40 funções digitadas no teclado para diferenciação de registros, com mensagens ao
-                                usuário<br>
-                                • 7 mensagens programáveis que podem ser vinculadas aos cartões dos usuários<br>
-                                • Programação do texto das mensagens do sistema<br>
-                                • 99 toques de sinaleiro programáveis, podendo ser habilitados ou desabilitados para
-                                cada dia da semana. Estes toques podem ser internos (buzzer) ou externos (opcional)<br>
-                                • Registro de eventos com log de data e hora<br>
-                                • Detector de revista com porcentagem de sorteio programável<br>
-                                • Até 5 cartões podem ser programados como supervisores, com possibilidade de alterarem
-                                parâmetros do relógio pelo teclado<br>
-                                • Acerto automático para horário de verão<br>
-                                • Função de coleta Backup para recuperação de marcações<br>
-                                • O tamanho das listas internas de dados é programável, permitindo a otimização do uso
-                                da memória para cada cliente. Para cartões de 6 dígitos e uma lista de 1.000 cartões
-                                permitidos, o buffer de coleta pode armazenar até 50.000 registros<br>
-                                • Memória com capacidade de armazenamento para 1400 impressões digitais<br>
-                                • Possibilidade de cadastro de mais de uma impressão digital por usuário, com
-                                reconhecimento automático entre as digitais cadastradas<br>
-                            </p>
-
-                            <p><strong>Software de Comunicação:</strong></p>
-                            <p align="justify" class="Estilo2">
-                                • Programação dos equipamentos e coleta dos dados<br>
-                                • Cadastro de funcionários no sistema<br>
-                                • Emissão de listagens dos cadastros<br>
-                                • Emissão de relatórios de acesso<br>
-                                • Importação e exportação de dados do cadastro<br>
-                                • Gerador de código de barras<br>
-                                • Compatível com Sistema Operacional Windows98 SE ou superior, exceto para versões
-                                Server
-
-
-
-                            </p>
+                            <ul>
+                                @foreach($array as $arr)
+                                <li><p align="justify" class="Estilo2">
+                                    {{$arr}}</p></li>
+                                @endforeach
+                            </ul>
                         </div>
+
                     </div>
                 </div>
 

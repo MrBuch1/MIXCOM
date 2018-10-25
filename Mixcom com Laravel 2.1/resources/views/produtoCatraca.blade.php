@@ -212,7 +212,7 @@
 
                         </table>
                     </div>
-                    <div class="card-footer cor1">
+                    <div type="button" class="card-footer button cor1">
                         <small class="text-muted">
                             <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
                         </small>

@@ -82,7 +82,7 @@ Route::get('test', function()
 });
 
 
-Route::get('/produtoTeste/{id}', 'ProdutoController@detalharProduto');
+Route::get('/produtoTeste/{id}', 'ProdutoController@index');
 
 /*
 <<<<<<< HEAD
