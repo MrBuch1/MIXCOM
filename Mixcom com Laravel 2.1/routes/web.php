@@ -19,6 +19,8 @@ Route::get('/testeFinalizarCompra', function () {
 
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/Inicio', function () {
     return view('index');
 })->name('index');
@@ -74,7 +76,10 @@ Route::get('/produtoTeste', function () {
     return view('produtoTeste');
 });
 
-
+Route::get('test', function()
+{
+    dd(Config::get('mail'));
+});
 
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@detalharProduto');
