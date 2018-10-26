@@ -75,7 +75,7 @@
                                 <tr>
                                     <td>
                                         <center>
-                                            <h3 class=" distancia card-title mb-2 my-3">{{$p->preco}}</h3>
+                                            <h3 class=" distancia card-title mb-2 my-3">{{$p->valor}}</h3>
                                             <p class=" distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
                                             <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
                                                 value="Comprar">
@@ -213,12 +213,10 @@
                                 <hr>
                             </div>
                             <p><strong>Caractéristicas</strong></p>
-                            <ul>
                                 @foreach($array as $arr)
-                                <li><p align="justify" class="Estilo2">
-                                    {{$arr}}</p></li>
+                                <p align="justify" class="Estilo2">
+                                    {{$arr}}</p>
                                 @endforeach
-                            </ul>
                         </div>
 
                     </div>

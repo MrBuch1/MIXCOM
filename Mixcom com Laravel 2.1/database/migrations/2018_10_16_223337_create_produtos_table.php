@@ -20,7 +20,7 @@ class CreateProdutosTable extends Migration
             $table->string('marca');
             $table->string('valor');
             $table->string('categoria');
-            $table->string('descricao');
+            $table->text('descricao');
             $table->string('imagem');
             $table->text('caracteristica');
             $table->rememberToken();

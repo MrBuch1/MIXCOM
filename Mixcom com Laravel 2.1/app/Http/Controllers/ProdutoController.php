@@ -10,10 +10,11 @@ class ProdutoController extends Controller {
   public function index($id){
 
   	$p = Produto::find($id);
-  	$array = explode("</br>",$p->caracteristica);
+  	$array = explode('</br>',$p->caracteristica);
   	return view('produtoTeste', compact('p', 'array'));
 
   }
+
 
 
 }
