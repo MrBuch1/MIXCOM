@@ -58,6 +58,7 @@ Route::get('Catracas', function () {
     return view('produtoCatraca');
 })->name('produtoCatraca');
 
+
 Route::get('ComprarCatracas', function () {
     return view('catraca');
 })->name('catraca');
