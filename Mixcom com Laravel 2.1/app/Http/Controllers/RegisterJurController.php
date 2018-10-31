@@ -51,4 +51,21 @@ class RegisterJurController extends Controller
 
         return redirect('/Inicio');
     }
+
+    public function edit($id)
+    {
+        $usuario = Userjur::find($id);
+        return view("editarPerfilJur", compact('usuario'));
+    }
+
+    public function update($id)
+    {
+        $usuario = Userfis::find($id);
+        $userjur->nome     = $request->get('nome');
+        $userjur->cpf      = $request->get('cpf');
+        $userjur->email    = $request->get('email');
+        $userjur->password = $request->get('password');
+        $endereco->save();
+    }
+
 }

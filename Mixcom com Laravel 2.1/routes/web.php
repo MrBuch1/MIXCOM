@@ -85,19 +85,16 @@ Route::get('test', function()
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@index');
 
-/*
-<<<<<<< HEAD
+
+
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
 
-Route::get('/editarPerfilFisica', function(){
-    return view('editarPerfilPFisica');
+Route::get('/editarPerfilJur', function(){
+    return view('editarPerfilJur');
 });
-=======
->>>>>>> f524834dea1954166bec3f908f1df6b02976ae9c
 
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-*/
