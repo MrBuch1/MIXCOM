@@ -37,11 +37,10 @@ Route::prefix('/Cadastro')->group(function () {
 
 });
 
-Route::get('/cadastroJuridico', function () {
-    return view('telaCadastroJur');
-});
-Route::get('\cadastroJuridico', 'Auth\RegisterController@validator');
-Route::post('\cadastroJuridico', 'Auth\RegisterController@create');
+Route::get('cadastroJuridico', function () {
+    return view('auth\telaCadastroJur');
+})->name('cadastrojur');
+Route::post('cadastroJuridico', 'RegisterJurController@store');
 
 Route::get('CadastroEndereco', function(){
     return view('cadastrarEndereco');
