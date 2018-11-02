@@ -17,23 +17,6 @@ class RegisterJurController extends Controller
     }
 
     /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'rsocial' => 'required|string|max:255',
-            'cnpj' => 'required|int|min:14',
-            'email' => 'required|string|email|max:255|unique:usersjur',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-    }
-
-    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
@@ -42,13 +25,33 @@ class RegisterJurController extends Controller
     protected function store(Request $request)
     {
         $userjur = new Userjur();
-        $userjur->nome     = $request->get('nome');
-        $userjur->rsocial  = $request->get('rsocial');
-        $userjur->cnpj     = $request->get('cnpj');
-        $userjur->email    = $request->get('email');
-        $userjur->password = $request->get('password');
-        $endereco->save();
+        $userjur->nome     = $request->input('nome');
+        $userjur->rsocial  = $request->input('rsocial');
+        $userjur->cnpj     = $request->input('cnpj');
+        $userjur->telefone = $request->input('telefone');
+        $userjur->email    = $request->input('email');
+        $userjur->password = $request->input('password');
+        $userjur->save();
 
         return redirect('/Inicio');
     }
+
+    public function edit($id)
+    {
+        $userjur = Userjur::find($id);
+        return view("editarPerfilJur", compact('userjur'));
+    }
+
+    public function update($id)
+    {
+        $userjur = Userjur::find($id);
+        $userjur->nome     = $request->get('nome');
+        $userjur->rsocial  = $request->get('rsocial');
+        $userjur->cnpj     = $request->get('cnpj');
+        $userjur->telefone = $request->get('telefone');
+        $userjur->email    = $request->get('email');
+        $userjur->password = $request->get('password');
+        $userjur->save();
+    }
+
 }

@@ -275,7 +275,7 @@
 
                         <div class="row ml-1 my-4">
                             <div class="ml-5">
-                                <a href="{{route('register')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
+                                <a href="{{route('cadastrojur')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
                             </div>
                         </div>
                     </div>
