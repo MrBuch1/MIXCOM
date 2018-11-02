@@ -87,37 +87,10 @@
         </div>
     </div>
     <!--Fim modal fale conosco-->
-    <!--Inicio modal Cadastro-->
-    <div class="modal fade" id="Cadastrar" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container">
-                        <h3 class="display-6 text-center">Como deseja se cadastrar?</h3>
-                        <div class="row ml-2 my-4">
-                            <div class="ml-5">
-                                <a href="#" class="btn btn-outline-primary">Pessoa Fisica</a>
-                            </div>
-                        </div>
-
-                        <div class="container text-center">
-                            <hr>
-                            <blockquote class="blockquote text-center">Ou</blockquote>
-                            <hr>
-                        </div>
-
-                        <div class="row ml-1 my-4">
-                            <div class="ml-5">
-                                <a href="/register" class="btn btn-outline-primary">Pessoa Juridica</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Fim modal Cadastro-->
+    @component('components.component-form-cadastroUser') @endcomponent
+    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
     <script src="{{ URL::to('js/app.js') }}" type="text/javascript"></script>
     <script src="{{ URL::to('js/produtos.js') }}" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>

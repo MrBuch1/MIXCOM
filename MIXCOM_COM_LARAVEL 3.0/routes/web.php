@@ -14,6 +14,6 @@
 Route::get('/', function () { return view('index'); });
 Route::get('/Produto/Catraca', function () { return view('produto-principal'); });
 Route::get('/Produtos', function () { return view('produto-catraca'); });
-
+Route::get('/nada', function (){return view('button_full'); });
 Auth::routes();
 Route::get('/home', 'HomeController@index');

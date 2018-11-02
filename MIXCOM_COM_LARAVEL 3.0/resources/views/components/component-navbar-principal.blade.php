@@ -101,7 +101,7 @@
                         <a class="nav-link" href="/login">{{ __('Login') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#Cadastrar">Cadastrar</a>
+                        <a class="nav-link" href="/register">Cadastrar</a>
                     </li>
                 </ul>
                 @else
@@ -124,10 +124,10 @@
                     </li>
                 </ul>
                 @endguest
-                <form class="form-inline my-2 my-lg-0">
+                <div class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
                     <button class="btn btn-outline-primary  my-2 my-sm-0" type="submit">Pesquisar</button>
-                </form>
+                </div>
             </div>
         </nav>
     </div>
