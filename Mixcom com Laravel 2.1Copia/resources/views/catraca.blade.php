@@ -1,9 +1,6 @@
 @extends('layouts.app')
 @section('content')
 <!--Inicio Corpo-->
-
-</script>
-
 <br><br><br><br>
 <div class="container">
     <div class="row">
@@ -91,16 +88,13 @@
                                 <tr>
                                     <td>
                                         <p>Calcule frete e prazo </p>
-                                        <form class="form-inline my-5 my-lg-0" action="" method="post">
+                                        <form action="" method="post" class="form-inline my-5 my-lg-0">
 
-                                            <input class="form-control mr-sm-2" type="text" placeholder="Seu cep" id="cep_destino"/> 
-                                            <a onclick="calcular();" class="btn btn-outline-primary my-2 my-sm-0">OK</a>
-                                            
+                                            <input class="form-control mr-sm-2" type="search" placeholder="_______-___" id="cep_destino" aria-label="Pesquisar">
+                                                <a onclick="calcular();" class="btn btn-outline-primary my-2 my-sm-0">OK</a>
+
                                             <a style="padding:10px" href="http://www.buscacep.correios.com.br/sistemas/buscacep/">Não sei meu cep</a>
                                         </form>
-                                        <div id="retorno">
-                                            
-                                        </div>
                                     </td>
                                 </tr>
 
@@ -286,6 +280,16 @@
                         </div>
                     </div>
                 </div>
-
+<script src="html://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    function calcular(){
+        var cep_destino = $("#cep_destino").val();
+        /*$.post('layouts/correios.php',{cep_destino: cep_destino}, function(data){
+            alert(data);
+        });*/
+        var link = "/calcula/" + cep_destino;  
+        window.location.replace(link);
+    }
+</script>
                 <!--Fim Corpo-->
                 @endsection

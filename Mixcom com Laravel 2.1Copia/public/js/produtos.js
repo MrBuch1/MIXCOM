@@ -156,11 +156,7 @@ else {
     //cep sem valor, limpa formulário.
     limpa_formulário_cep();
 }
-        function calcular(){
-            var cep_destino = $("#cep_destino").val();
-            $.post('compras.php',{cep_destino: cep_destino}, function(data)
-            alert(data);        
-        });
-        
+};
+
 
 };

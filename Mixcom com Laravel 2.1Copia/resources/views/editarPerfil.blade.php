@@ -10,11 +10,12 @@
     </div>
     <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8">
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="/telaCadastroJur/{{$usuario->id}}">
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input id="name" type="text" placeholder="Nome completo" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                        <label>Nome:</label>
+                        <input id="name" type="text" placeholder="{{$userjur->nome}}" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
                             name="name" value="{{ old('name') }}" required autofocus>
 
                         @if ($errors->has('name'))
@@ -24,7 +25,8 @@
                         @endif
                     </div>
                     <div class="form-group col-sm-6">
-                        <input id="rsocial" type="text" placeholder="Razão Social" class="form-control{{ $errors->has('rsocial') ? ' is-invalid' : '' }}"
+                        <label>Razão Social:</label>
+                        <input id="rsocial" type="text" placeholder="{{$userjur->rsocial}}" class="form-control{{ $errors->has('rsocial') ? ' is-invalid' : '' }}"
                             name="rsocial" value="{{ old('rsocial') }}" required autofocus>
 
                         @if ($errors->has('rsocial'))
@@ -37,17 +39,19 @@
 
                 <div class="form-row">
                     <div class="form-group col-sm-7">
-                        <input id="cpf" type="text" placeholder="CPF" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}"
-                            name="cpf" value="{{ old('cpf') }}" required autofocus>
+                        <label>CNPJ:</label>
+                        <input id="cnpj" type="text" placeholder="{{$userjur->cnpj}}" class="form-control{{ $errors->has('cnpj') ? ' is-invalid' : '' }}"
+                            name="cnpj" value="{{ old('cnpj') }}" required autofocus>
 
-                        @if ($errors->has('cpf'))
+                        @if ($errors->has('cnpj'))
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('cpf') }}</strong>
+                            <strong>{{ $errors->first('cnpj') }}</strong>
                         </span>
                         @endif
                     </div>
                     <div class="form-group col-sm-5">
-                        <input id="telefone" type="text" placeholder="Telefone com o DD" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}"
+                        <label>Telefone com o DDD:</label>
+                        <input id="telefone" type="text" placeholder="{{$userjur->telefone}}" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}"
                             name="telefone" value="{{ old('telefone') }}" required autofocus>
 
                         @if ($errors->has('telefone'))

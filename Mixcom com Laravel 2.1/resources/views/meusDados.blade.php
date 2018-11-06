@@ -52,7 +52,7 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Rua (nome da rua) Número (número da casa) <a href="#" class="distancia2">Modificar</a></p>
+            <p class="distancia2">Rua (nome da rua) Número (número da casa) <a href="#" class="distancia2">Excluir</a></p>
             <p class="distancia2">Cep (numero do cep)</p>
             <p class="distancia2">Cidade (nome da cidade) Estado (sigla do estado)</p>
             
