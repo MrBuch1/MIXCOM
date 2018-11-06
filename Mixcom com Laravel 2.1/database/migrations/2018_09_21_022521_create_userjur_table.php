@@ -13,7 +13,7 @@ class CreateUsersjurTable extends Migration
      */
     public function up()
     {
-        Schema::create('usersjur', function (Blueprint $table) {
+        Schema::create('userjur', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
             $table->string('rsocial')->unique();
@@ -34,6 +34,6 @@ class CreateUsersjurTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usersjur');
+        Schema::dropIfExists('userjur');
     }
 }

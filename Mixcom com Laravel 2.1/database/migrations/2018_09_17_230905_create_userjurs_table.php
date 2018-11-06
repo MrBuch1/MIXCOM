@@ -13,7 +13,7 @@ class CreateUserjursTable extends Migration
      */
     public function up()
     {
-        Schema::create('userjurs', function(Blueprint $table){
+        Schema::create('userjur', function(Blueprint $table){
             $table->increments('id');
             $table->string('nome');
             $table->string('rsocial')->unique();

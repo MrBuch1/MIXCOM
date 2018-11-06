@@ -10,7 +10,7 @@
     </div>
     <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8">
-            <form method="POST" action="/telaCadastroJur/{{$usuario->id}}">
+            <form method="POST" action="/editarPerfilJur/{{$userjur->id}}">
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-6">
