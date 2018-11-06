@@ -14,7 +14,7 @@
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <label>Nome:</label>
+                        <label>Nome Fantasia:</label>
                         <input id="name" type="text" placeholder="{{$userjur->nome}}" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
                             name="name" value="{{ old('name') }}" required autofocus>
 
@@ -89,7 +89,7 @@
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                     <label>Senha:</label>
-                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                        <input id="password" type="password" placeholder="•••••••••••••" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                             name="password" required>
 
                         @if ($errors->has('password'))

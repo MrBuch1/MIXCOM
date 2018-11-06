@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersjurTable extends Migration
+class CreateUserjursTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateUsersjurTable extends Migration
      */
     public function up()
     {
-        Schema::create('userjur', function (Blueprint $table) {
+        Schema::create('userjurs', function(Blueprint $table){
             $table->increments('id');
-            $table->string('nome');
+            $table->string('nome')->nullable();
             $table->string('rsocial')->unique();
             $table->string('cnpj')->unique();
-            //$table->string('telefone');
             $table->string('email')->unique();
-            //$table->timestamp('email_verified_at')->nullable();
+            $table->string('telefone')->nullable();
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
@@ -34,6 +34,7 @@ class CreateUsersjurTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('userjur');
+        Schema::dropIfExists('userjurs');
     }
 }
+
