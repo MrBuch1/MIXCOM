@@ -97,3 +97,5 @@ Route::get('/editarPerfilJur', function(){
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('calcula/{cep}', 'CorreiosController@calcula');
