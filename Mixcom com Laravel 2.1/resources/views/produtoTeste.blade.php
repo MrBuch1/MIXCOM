@@ -212,7 +212,7 @@
                             <div class="col-12 mb-3">
                                 <hr>
                             </div>
-                            <p><strong>Caractéristicas</strong></p>
+                            <p><strong>Características</strong></p>
                                 @foreach($array as $arr)
                                 <p align="justify" class="Estilo2">
                                     {{$arr}}</p>

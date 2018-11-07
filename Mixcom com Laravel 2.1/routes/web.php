@@ -76,6 +76,8 @@ Route::get('/produtoTeste', function () {
     return view('produtoTeste');
 });
 
+
+
 Route::get('test', function()
 {
     dd(Config::get('mail'));
@@ -83,7 +85,6 @@ Route::get('test', function()
 
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@index');
-
 
 
 Route::get('/editarPerfil', function(){

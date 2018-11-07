@@ -1,0 +1,31 @@
+°Este equipamento permite cadastramento de até 15 mil colaboradores e sua memória armazena até oito milhões de registros, o que prolonga a vida útil. Sua bobina de 300 metros imprime até 8.500 comprovantes (tickets) e faz do Prisma SUPER FÁCIL econômico até em sua utilização.
+ 
+
+°O equipamento está homologado de acordo com a Portaria n° 1.510/2009 MTE, disponível em 4 modelos: 
+- Prisma Super Fácil R01 - Display gráfico (biometria + código de barras + proximidade RFID e Mifare); 
+- Prisma Super Fácil R02 - Display alfa numérico (biometria + proximidade Unique); 
+- Prisma Super Fácil R03 - Display alfa numérico (código de barras + proximidade RFID); 
+- Prisma Super Fácil R04 - Display alfa numérico (biometria); 
+
+°Utiliza sistema embarcado de gerenciamento, sem necessidade de instalação de software na máquina cliente, fornece interface de controle através de navegador web; 
+°Possui sistema de impressão corte parcial e total do papel; 
+°A impressão tem durabilidade de no mínimo 5 anos; 
+°Os dados são gravados em memória não volátil tanto para a memória de trabalho (MT) como para a memória de registro permanente (MRP); 
+°Permite o cadastro das informações do empregador, local de trabalho e funcionários; 
+°Armazena na MRP todos os eventos: registro do empregador, marcação de ponto, alteração de data e hora e cadastro de funcionário; 
+°Capacidade de gerenciamento de até 15.000 colaboradores na memória de trabalho (MT); 
+°Capacidade para armazenamento de registros em memória (MRP): 8.000.000; 
+°Trabalha com vários tipos de comunicação, tornando-se um equipamento moldável à necessidade do cliente e adaptável ao ambiente; 
+°Calendário perpétuo, com opção de ajuste da data e hora e configuração do horário de verão; 
+°O equipamento trabalha com leitura automática da quantidade de dígitos dos crachás (3 a 20 dígitos); 
+°Possui botão para relação da emissão instantânea dos eventos de ponto realizados nas 24 horas precedentes; 
+°Para maior segurança das configurações do equipamento, utiliza-se uma senha, configurável, de segurança no menu; 
+°Sistema de No-break opcional com recurso de corte inteligente de energia quando o nível de energia baixar demais; 
+°Capacidades de armazenamento de digitais: 300, 1.900, 9.500 ou 15.000 digitais; 
+°Opera com Auto On (biometria com recurso de toque único), função que permite realizar a identificação da digital somente colocando o dedo no sensor, sem a necessidade de digitar a matricula, utilizar o crachá ou a tecla de verificação disponível no teclado; 
+°Possui porta fiscal USB para coleta do arquivo AFD para auditoria dos dados do equipamento pelo fiscal do trabalho; 
+°Sistema de importação e exportação de dados via segunda porta USB. Através desta porta podem ser realizadas as configuração do equipamento, do empregador, de colaboradores, de biometrias e coleta de eventos; 
+°Sistema de identificação de status e eventos no equipamento: pelo próprio equipamento, aplicativo embarcado ou software gerenciador; 
+°Possui sistema de gerenciamento inteligente. Valida as informações recebidas e as salva se precisar, dessa forma otimiza a utilização da memória, não gravando eventos desnecessários; 
+°Possui sensor de papel que indica através de mensagem no display, aviso sonoro e até mesmo no software gerenciador caso o papel esteja acabando; 
+°Possui contador de tickets restantes (valor aproximado), de forma que o empregador saiba quantos tickets ainda podem ser impressos com determinada bobina de papel.
