@@ -37,11 +37,10 @@ Route::prefix('/Cadastro')->group(function () {
 
 });
 
-Route::get('/cadastroJuridico', function () {
-    return view('telaCadastroJur');
-});
-Route::get('\cadastroJuridico', 'Auth\RegisterController@validator');
-Route::post('\cadastroJuridico', 'Auth\RegisterController@create');
+Route::get('cadastroJuridico', function () {
+    return view('auth\telaCadastroJur');
+})->name('cadastrojur');
+Route::post('cadastroJuridico', 'RegisterJurController@store');
 
 Route::get('CadastroEndereco', function(){
     return view('cadastrarEndereco');
@@ -85,19 +84,18 @@ Route::get('test', function()
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@index');
 
-/*
-<<<<<<< HEAD
+
+
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
 
-Route::get('/editarPerfilFisica', function(){
-    return view('editarPerfilPFisica');
+Route::get('/editarPerfilJur', function(){
+    return view('editarPerfilJur');
 });
-=======
->>>>>>> f524834dea1954166bec3f908f1df6b02976ae9c
 
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-*/
+
+Route::get('calcula/{cep}', 'CorreiosController@calcula');

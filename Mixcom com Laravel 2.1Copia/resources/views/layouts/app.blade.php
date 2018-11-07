@@ -275,7 +275,7 @@
 
                         <div class="row ml-1 my-4">
                             <div class="ml-5">
-                                <a href="{{route('register')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
+                                <a href="{{route('cadastrojur')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
                             </div>
                         </div>
                     </div>
@@ -286,11 +286,6 @@
     <!--Fim modal Cadastro-->
     <script src="{{ URL::to('js/app.js') }}" type="text/javascript"></script>
     <script src="{{ URL::to('js/produtos.js') }}" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    <?php
-require'compras.php';
-?></script>
 </body>
 
 </html>
