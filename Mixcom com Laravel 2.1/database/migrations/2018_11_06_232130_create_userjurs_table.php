@@ -15,10 +15,11 @@ class CreateUserjursTable extends Migration
     {
         Schema::create('userjurs', function(Blueprint $table){
             $table->increments('id');
-            $table->string('nome');
+            $table->string('nome')->nullable();
             $table->string('rsocial')->unique();
-            $table->integer('cnpj')->unique();
+            $table->string('cnpj')->unique();
             $table->string('email')->unique();
+            $table->string('telefone')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
@@ -36,3 +37,4 @@ class CreateUserjursTable extends Migration
         Schema::dropIfExists('userjurs');
     }
 }
+

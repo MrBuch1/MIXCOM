@@ -90,9 +90,8 @@ Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
 
-Route::get('/editarPerfilJur', function(){
-    return view('editarPerfilJur');
-});
+Route::get('editarPerfilJur/{id}', 'RegisterJurController@edit');
+Route::post('editarPerfilJur/{id}', 'RegisterJurController@update');
 
 //Auth::routes();
 
