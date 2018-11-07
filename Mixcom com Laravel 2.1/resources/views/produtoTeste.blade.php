@@ -68,14 +68,14 @@
                     </td>
                     <td width="571" valign="top">
                         <p>
-                            <h5><strong>{{$p->nome}}</strong></h5>
+                            <h4 align="center"><strong>{{$p->nome}}</strong></h4><br>
                             <p align="justify" class="Estilo2">{{$p->descricao}}</p>
                             <br>
                             <table class="table  table-bordered table-condensed">
                                 <tr>
                                     <td>
                                         <center>
-                                            <h3 class=" distancia card-title mb-2 my-3">{{$p->valor}}</h3>
+                                            <h3 class=" distancia card-title mb-2 my-3">R$ {{$p->valor}}</h3>
                                             <p class=" distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
                                             <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
                                                 value="Comprar">
