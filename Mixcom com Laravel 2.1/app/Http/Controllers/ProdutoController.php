@@ -15,7 +15,11 @@ class ProdutoController extends Controller {
 
   }
 
-
+  public function productList($tipo){
+  	$produtos = Produto::where('tipo', $tipo)->get();
+  	
+  	return view('produtoCatraca', compact('produtos'));
+  }
 
 }
 ?>
