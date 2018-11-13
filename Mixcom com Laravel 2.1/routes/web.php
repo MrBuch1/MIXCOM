@@ -70,14 +70,6 @@ Route::get('alterar-senha', function () {
 })->name('altersenha');
 
 
-
-
-Route::get('/produtoTeste', function () {
-    return view('produtoTeste');
-});
-
-
-
 Route::get('test', function()
 {
     dd(Config::get('mail'));
@@ -99,3 +91,5 @@ Route::post('editarPerfilJur/{id}', 'RegisterJurController@update');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('calcula/{cep}', 'CorreiosController@calcula');
+
+Route::get('/produtosteste/{tipo}', 'ProdutoController@productList');

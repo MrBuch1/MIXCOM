@@ -21,9 +21,9 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Usuário  (cod do usuário) <a href="#" style="padding-left:28px">Modificar</a></p>
-            <p class="distancia2">E-mail  (e-mail do usuário) <a href="# " style="padding-left:19px">Modificar</a></p>
-            <p class="distancia2">Senha (senha do usuário) <a href="#" style="padding-left:25px">Modificar</a></p>
+            <p class="distancia2">Usuário  (cod do usuário)</p>
+            <p class="distancia2">E-mail  (e-mail do usuário)</p>
+            <p class="distancia2">Senha (senha do usuário) </p>
 
             <br>
             <h5  class="cortexto">Dados Pessoais</h5>
@@ -31,9 +31,9 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Nome e sobrenome (nome do usuário) <a href="#" style="padding-left:18px">Modificar</a></p>
-            <p class="distancia2">Documento (documento do usuário) <a href="#" style="padding-left:36px">Modificar</a></p>
-            <p class="distancia2">Telefone (telefone do usuário) <a href="#" style="padding-left:85px">Modificar</a><a href="#" style="padding-left:20px">Adicionar</a></p>
+            <p class="distancia2">Nome e sobrenome (nome do usuário) </p>
+            <p class="distancia2">Documento (documento do usuário) </p>
+            <p class="distancia2">Telefone (telefone do usuário) </p>
 
             <br>
             <h5 class="cortexto">Cartões de crédito</h5>
@@ -41,10 +41,9 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Numero do cartão (3 ultimos números do cartão) <a href="#" class="distancia2">Excluir</a></p>
+            <p class="distancia2">Numero do cartão (3 ultimos números do cartão) </p>
             <p class="distancia2">Bandeira (bandeira do cartão) </p>
-            <p class="distancia2">Telefone (telefone do usuário) </p>
-            <p><a href="#" class="distancia2">Adicionar cartão</a></p>
+            <p class="distancia2">Telefone (telefone do usuário) </p></p>
 
             <br>
             <h5  class="cortexto">Endereços</h5>
