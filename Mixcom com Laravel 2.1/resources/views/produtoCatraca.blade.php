@@ -62,17 +62,17 @@
                 
                
                 @foreach($produtos as $p)
-                    <div class="card" >
+                    <div class="card" style="max-width: 18rem;">
                     <br>
 
-                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}" alt="">
+                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}"alt="">
                     <div class="card-body">
 
                         <a href="{{route('catraca')}}">
                             <h5 class="card-title text-dark my-3 ">{{$p->nome}}</h5>
                         </a>
                         <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
-                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">{{$p->valor}}</h5>
                         <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
 
                         <table>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="/Catracas">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
