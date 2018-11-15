@@ -54,18 +54,16 @@
             </div>
         </div>
         <div class="caixa col-md-8 col-sm-8 col-xs-8">
-            <div class="col-12 mb-3">
+            <div class="card-group"></div>
+            <div class="col-12 md-3">
                 <hr>
             </div>
             <h3 class=" text-center">CATRACAS</h3>
-            <div class="card-deck ">
-                
-               
+            
                 @foreach($produtos as $p)
-                    <div class="card" style="max-width: 18rem;">
+                <div class="card" style="width: 35%;">
                     <br>
-
-                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}"alt="">
+                    <img class="img-responsive card-img-top" style="width: 55%;" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}"alt="">
                     <div class="card-body">
 
                         <a href="{{route('catraca')}}">
@@ -95,20 +93,6 @@
                 
                
             </div>
-        </div>
-        <div class="caixa col-md-1 col-sm-1 col-xs-1">
-            <div class="col-12 mb-3">
-                <hr>
-            </div>
-            <table>
-                <tr>
-
-                    <td><a href="#"><img class="img-responsive" src="{{ asset('imagens/carrinho.png')}}" title="Carrinho!"></a></td>
-
-
-                </tr>
-
-            </table>
         </div>
     </div>
 
