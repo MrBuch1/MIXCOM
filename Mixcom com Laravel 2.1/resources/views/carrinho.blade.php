@@ -82,15 +82,30 @@
          <br>
         <table>
                                     <tr>
-                                      <td>
-                                        
-                                        <form class="form-inline my-5 my-lg-0">
-                                            <p class="distancia3">Calcule frete </p>
-                                        <input class="form-control mr-sm-2 " type="search" placeholder="_______-___" aria-label="Pesquisar">
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">OK</button>
+                                    <td>
+                                        <p>Calcule frete e prazo </p>
+                                        <form action="" method="post" class="form-inline my-5 my-lg-0">
+
+                                            <input class="form-control mr-sm-2" type="search" placeholder="_______-___" id="cep_destino" aria-label="Pesquisar">
+                                                <a onclick="calcular();" class="btn btn-outline-primary my-2 my-sm-0">OK</a>
+
+                                            <a style="padding:10px" href="http://www.buscacep.correios.com.br/sistemas/buscacep/">Não sei meu cep</a>
+
                                         </form>
-                                      </td>
+                                    </td>
+                                    <tr>
+                                        <td>
+                                            <div id="retorno">
+                                                @if(isset($valor) && isset($prazo))
+                                                    <p>Valor: R$ {{$valor}}
+                                                    Prazo: {{$prazo}} Dias</p>
+                                                @endif
+
+                                            </div>
+                                        </td>
                                     </tr>
+                                </tr>
+
                                 </table>
     </div>
     <div class="caixa col-md-3 col-sm-3 col-xs-3">
@@ -217,5 +232,16 @@
 
                 
     </div>
+<script src="html://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    function calcular(){
+        var cep_destino = $("#cep_destino").val();
+
+        var link = "/calcula/" + cep_destino;  
+        window.location.replace(link);
+
+        
+    }
+</script>
 
 @endsection
