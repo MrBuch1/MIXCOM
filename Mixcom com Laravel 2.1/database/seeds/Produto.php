@@ -365,6 +365,157 @@ class Produto extends Seeder
             'diametro' => '',
             ]);
 
+        //CONTROLE DE PONTO
+
+        DB::table('produtos')->insert([
+
+            'nome' => 'iPonto',
+            'tipo' => 'controle de ponto',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'O IPONTO é um software para Gerenciamento e Coleta de Ponto. Intuitivo, prático, flexível e de simples operação, o programa dispõe de diversos módulos de cadastro onde se pode controlar: empresas, funcionários, cargos, setores, departamentos e centros de custo, que possibilitarão filtrar os dados quando necessário, além de variados tipos de relatórios.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+
+        DB::table('produtos')->insert([
+
+            'nome' => 'Ponto Secullum 4',
+            'tipo' => 'controle de ponto',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'Apresenta interface amigável, agilidade e flexibilidade no controle de horas trabalhistas (horas normais, faltas, extras, DSR, adicional noturno, etc.). Agora disponível também na modalidade de mensalidade, contemplando Backup Remoto, Atualizações automáticas e direito a evolução do produto. Além de algumas funcionalidades já presentes na versão anterior, como Banco de Horas, Escala de Revezamento Cíclica, Exportação para qualquer folha de pagamento, o novo sistema conta com novidades antes presentes apenas em módulos adicionais, tais como tratamento de quatro horários flexíveis, módulo de consulta de dados via Web, entre outros. Principais Características - Ponto Secullum 4 Adequado à portaria 1.510 do Ministério do Trabalho e Emprego; Todas as funcionalidades já presentes na versão anterior(*); Controle de dias de folga com cálculo especial de percentual de extra; Opção para cálculo diferenciado de extra para um dia e funcionário específico; Restrições por usuários para determinadas empresas, departamentos e abonos; Gravação do registro de ponto original e equipamento que originou o registro; Opção para conexão com banco de dados MS SQL Server, Oracle, entre outros. Otimizado para conexões remotas; Criação e impressão de etiquetas para crachás de identificação com layout personalizável; Integração automática com sistema Secullum Acesso.Net; Importação de dados da versão anterior para fácil migração.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        DB::table('produtos')->insert([
+
+            'nome' => 'Recursos Humanos RHID',
+            'tipo' => 'controle de ponto',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'Nosso revolucionário SREP baseado no mais novo conceito "SaaS" permite aos gestores um controle total com fácil usabilidade para administrar a frequência de seus colaboradores. O inovador conceito de "Software as a service, SaaS" permite que o usuario acesse todo o sistema sem que seja necessário a instalação local do programa. Desta forma o sistema de TI das empresas trafega menos informações pela sua rede interna. Outro ponto fundamental é a liberdade de acesso remoto de qualquer ponto, basta ter acesso a internet e o gestor poderá acessa-lo de qualquer lugar via computador, celular ou tablet. Além disso, as atualizações do sistema são feitas em "real time", ou seja, em tempo real, não sendo necessário que o departamento de RH preocupe-se em instalar atualizações a cada nova versão. Isso é feito automaticamente.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        //CONTROLE DE ACESSO
+
+         DB::table('produtos')->insert([
+
+            'nome' => 'Secullum Acesso',
+            'tipo' => 'controle de acesso',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'O sistema Secullum Acesso.Net tem por finalidade controlar e gerenciar diversas situações relacionadas a segurança, podendo ser aplicado em: - Indústrias e comércios; - Empresas públicas ou privadas; - Condomínios; - Escolas e universidades; - Refeitórios. Através de uma interface simples, compatível com os sistemas operacionais Windows Vista, ou interface WEB, podemos efetuar funcionalidades diversas, que compreendem cadastramentos, configurações de equipamentos e consulta a relatórios. Disponível também na modalidade de mensalidade, contemplando Backup Remoto, Atualizações automáticas e direito a evolução do produto.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+         DB::table('produtos')->insert([
+
+            'nome' => 'Secullum Clube',
+            'tipo' => 'controle de acesso',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'O sistema Secullum Clube.Net foi projetado para atender todos os tipos de clubes ou associações. Através de uma interface amigável ele centraliza tarefas de controle de acesso, segurança e controle financeiro de maneira objetiva, tornando-se uma ferramenta ideal para o controle total do seu clube.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+         DB::table('produtos')->insert([
+
+            'nome' => 'Secullum Escola',
+            'tipo' => 'controle de acesso',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'Secullum Escola.Net O Secullum Escola.Net tem por finalidade controlar e gerenciar o acesso de alunos, professores e outras pessoas, bem como auxiliar na gestão administrativa, podendo ser aplicado em:
+            - Escolas; Faculdades; Cursos Profissionalizantes; Cursos Pré-vestibulares; Cursos de Idiomas; Supletivos; Através de uma interface simples, compatível com os sistemas operacionais Windows, podemos efetuar funcionalidades diversas, que compreendem cadastramentos, configurações de equipamentos e consulta a relatórios. Este software está disponível apenas na modalidade de mensalidade, contemplando Backup Remoto, Atualizações automáticas e direito a evolução do produto.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+         DB::table('produtos')->insert([
+
+            'nome' => 'Secullum Estacionamento',
+            'tipo' => 'controle de acesso',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'Os sistemas de estacionamento desenvolvidos pela Secullum estão disponíveis em duas versões: Mini Estacionamento.Net, comercializado na modalidade de venda e Estacionamento.Net comercializado na modalidade de mensalidade.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+         DB::table('produtos')->insert([
+
+            'nome' => 'Secullum Academia',
+            'tipo' => 'controle de acesso',
+            'codtipo' => '',
+            'marca' => '',
+            'valor' => '000,00',
+            'categoria' => 'software',
+            'descricao' => 'Controle o acesso de alunos e instrutores bloqueando inadimplentes. O sistema controla a gestão da sua academia, bem como as avaliações físicas e treinamentos. Disponível modalidade de mensalidade, contemplando Backup Remoto, Atualizações automáticas e direito a evolução do produto.',
+            'imagem' => '',
+            'caracteristica' => utf8_encode($this->readData('cartografico04.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+         //
     }
 
     public function readData($nomeArquivo){
