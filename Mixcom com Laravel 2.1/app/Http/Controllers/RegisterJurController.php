@@ -16,6 +16,10 @@ class RegisterJurController extends Controller
         $userjur = Userjur::all();
         return view('auth\telaCadastroJur');
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     /**
      * Create a new user instance after a valid registration.
      *
@@ -26,6 +30,7 @@ class RegisterJurController extends Controller
     {
         $user    = new User();
         $userjur = new Userjur();
+<<<<<<< HEAD
         $user->nome       = $request->input('name');
         $user->telefone   = $request->input('teleone');
         $user->email      = $request->input('email');
@@ -36,5 +41,35 @@ class RegisterJurController extends Controller
         $user->Userjur()->save($userjur);
 
         return redirect('/Inicio');
+=======
+        $userjur->nome     = $request->input('nome');
+        $userjur->rsocial  = $request->input('rsocial');
+        $userjur->cnpj     = $request->input('cnpj');
+        $userjur->telefone = $request->input('telefone');
+        $userjur->email    = $request->input('email');
+        $userjur->password = $request->input('password');
+        $userjur->save();
+
+        return redirect('/Inicio');
     }
+
+    public function edit($id)
+    {
+        $userjur = Userjur::find($id);
+        return view("editarPerfilJur", compact('userjur'));
+    }
+
+    public function update($id)
+    {
+        $userjur = Userjur::find($id);
+        $userjur->nome     = $request->get('nome');
+        $userjur->rsocial  = $request->get('rsocial');
+        $userjur->cnpj     = $request->get('cnpj');
+        $userjur->telefone = $request->get('telefone');
+        $userjur->email    = $request->get('email');
+        $userjur->password = $request->get('password');
+        $userjur->save();
+>>>>>>> master
+    }
+
 }

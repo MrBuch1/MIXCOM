@@ -27,8 +27,16 @@ class RegisterFisController extends Controller
     protected function store(Request $request)
     {
         $userfis = new Userfis();
+<<<<<<< HEAD
         $userfis->cpf = $request->input('cpf');
         $userfis->save();
+=======
+        //$userjur->nome     = $request->get('nome');
+        //$userjur->cpf      = $request->get('cpf');
+        //$userjur->email    = $request->get('email');
+        //$userjur->password = $request->get('password');
+        $endereco->save();
+>>>>>>> master
 
         return redirect('/Inicio');
     }

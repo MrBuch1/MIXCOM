@@ -14,7 +14,7 @@
                     DE ACESSO<span class="caret"></span></a>
 
                 <div class="Estilomenu collapse list-group-level1" id="sub-menu">
-                    <a href="produtocatraca.html" class="list-group-item" data-parent="#sub-menu">
+                    <a href="/produtosteste/Catraca" class="list-group-item" data-parent="#sub-menu">
                         CATRACAS</a>
                     <a href="controleface.html" class="list-group-item" data-parent="#sub-menu">CONTROLADOR DE ACESSO
                         POR BIOMETRIA FACIAL</a>
@@ -54,22 +54,23 @@
             </div>
         </div>
         <div class="caixa col-md-8 col-sm-8 col-xs-8">
-            <div class="col-12 mb-3">
+            <div class="card-group"></div>
+            <div class="col-12 md-3">
                 <hr>
             </div>
             <h3 class=" text-center">CATRACAS</h3>
-            <div class="card-deck ">
-                <div class="card">
+            
+                @foreach($produtos as $p)
+                <div class="card" style="width: 35%;">
                     <br>
-
-                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}" alt="">
+                    <img class="img-responsive card-img-top" style="width: 55%;" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}"alt="">
                     <div class="card-body">
 
                         <a href="{{route('catraca')}}">
-                            <h5 class="card-title text-dark my-3 ">Catraca de Inox RBC 5905</h5>
+                            <h5 class="card-title text-dark my-3 ">{{$p->nome}}</h5>
                         </a>
                         <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
-                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">{{$p->valor}}</h5>
                         <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
 
                         <table>
@@ -84,7 +85,8 @@
                     </div>
                     <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
+<<<<<<< HEAD
                         </small>
                     </div>
                 </div>
@@ -109,7 +111,7 @@
                     </div>
                     <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -136,7 +138,7 @@
                     </div>
                    <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -164,7 +166,7 @@
                     </div>
                     <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -189,7 +191,7 @@
                     </div>
                     <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
                         </small>
                     </div>
                 </div>
@@ -214,25 +216,16 @@
                     </div>
                     <div type="button" class="card-footer button cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="{{route('catraca')}}">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
+=======
+>>>>>>> master
                         </small>
                     </div>
                 </div>
+                @endforeach           
+                
+               
             </div>
-        </div>
-        <div class="caixa col-md-1 col-sm-1 col-xs-1">
-            <div class="col-12 mb-3">
-                <hr>
-            </div>
-            <table>
-                <tr>
-
-                    <td><a href="#"><img class="img-responsive" src="{{ asset('imagens/carrinho.png')}}" title="Carrinho!"></a></td>
-
-
-                </tr>
-
-            </table>
         </div>
     </div>
 

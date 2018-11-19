@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12 text-center my-4">
-            <h1 class="display-4 my-5"> {{ __('Edite seu perfil')}}</h1>
+            <h1 class="display-4 my-5"> {{ __('Cadastre-se')}}</h1>
         </div>
     </div>
     <div class="row justify-content-center mb-5">
@@ -37,12 +37,12 @@
 
                 <div class="form-row">
                     <div class="form-group col-sm-7">
-                        <input id="cpf" type="text" placeholder="CPF" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}"
-                            name="cpf" value="{{ old('cpf') }}" required autofocus>
+                        <input id="cnpj" type="text" placeholder="CNPJ" class="form-control{{ $errors->has('cnpj') ? ' is-invalid' : '' }}"
+                            name="cnpj" value="{{ old('cnpj') }}" required autofocus>
 
-                        @if ($errors->has('cpf'))
+                        @if ($errors->has('cnpj'))
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('cpf') }}</strong>
+                            <strong>{{ $errors->first('cnpj') }}</strong>
                         </span>
                         @endif
                     </div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
-                    <button type="submit" class="btn btn-outline-primary mr-2">{{ __('Salvar')}}</button>
+                    <button type="submit" class="btn btn-outline-primary mr-2">{{ __('Cadastrar')}}</button>
                 </div>
 
 

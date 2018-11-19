@@ -1,75 +1,39 @@
-@extends('layouts.app')
+@extends('layout')
+@section('pagina_titulo', 'Login' )
 
-@section('content')
-<br><br><br><br>
+@section('pagina_conteudo')
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+    <div class="row">
+        <div class="col l6 offset-l3 s12 m10 offset-m2">
+            
+            <h4>Login</h4>
+            <form method="POST" action="{{ url('/login') }}">
+                {{ csrf_field() }}
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+                @include('auth._form_email')
+                @include('auth._form_password')
 
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('Email') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Manter conectado') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-outline-success">
-                                    {{ __('Entrar') }}
-                                </button>
-                                <a href="/inicio" class="btn btn-outline-primary">
-                                        {{ __('Voltar') }}
-                                </a>
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Esqueceu a sua senha?') }}
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                <div class="row">
+                    <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : ''}} id="remember" />
+                    <label for="remember">Lembre-se de mim</label>
                 </div>
-            </div>
+
+                <div class="row">
+                    <button type="submit" class="btn blue col l8 s12 m8">
+                        Entrar
+                    </button>
+                </div>
+
+                <div class="row">
+                    <a class="" href="{{ url('/password/reset') }}">
+                        Esqueceu sua senha?
+                    </a>
+                </div>
+
+            </form>
         </div>
+
     </div>
 </div>
-<br><br><br><br><br>
 @endsection

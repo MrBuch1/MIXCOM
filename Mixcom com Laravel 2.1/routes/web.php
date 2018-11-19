@@ -35,11 +35,10 @@ Route::prefix('/Cadastro')->group(function () {
 
 });
 
-Route::get('/cadastroJuridico', function () {
-    return view('telaCadastroJur');
-});
-Route::get('\cadastroJuridico', 'Auth\RegisterController@validator');
-Route::post('\cadastroJuridico', 'Auth\RegisterController@create');
+Route::get('cadastroJuridico', function () {
+    return view('auth\telaCadastroJur');
+})->name('cadastrojur');
+Route::post('cadastroJuridico', 'RegisterJurController@store');
 
 Route::get('CadastroEndereco', function(){
     return view('cadastrarEndereco');
@@ -56,6 +55,7 @@ Route::get('Catracas', function () {
     return view('produtoCatraca');
 })->name('produtoCatraca');
 
+
 Route::get('ComprarCatracas', function () {
     return view('catraca');
 })->name('catraca');
@@ -68,12 +68,6 @@ Route::get('alterar-senha', function () {
 })->name('altersenha');
 
 
-
-
-Route::get('/produtoTeste', function () {
-    return view('produtoTeste');
-});
-
 Route::get('test', function()
 {
     dd(Config::get('mail'));
@@ -82,20 +76,32 @@ Route::get('test', function()
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@index');
 
+<<<<<<< HEAD
 Route::get('mercadopago', function(){
     return view('mercadopago');
 });
 
 /*
+=======
+
+>>>>>>> master
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
 
+<<<<<<< HEAD
 Route::get('/editarPerfilFisica', function(){
     return view('editarPerfilPFisica');
 });
+=======
+Route::get('editarPerfilJur/{id}', 'RegisterJurController@edit');
+Route::post('editarPerfilJur/{id}', 'RegisterJurController@update');
+>>>>>>> master
 
 //Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-*/
+
+Route::get('calcula/{cep}', 'CorreiosController@calcula');
+
+Route::get('/produtosteste/{tipo}', 'ProdutoController@productList');

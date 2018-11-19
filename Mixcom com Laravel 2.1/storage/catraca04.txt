@@ -1,0 +1,44 @@
+Mecânica:
+°Hidráulica (exclusivo Tecnibra)
+-Sistema Exclusivo da Tecnibra, permite um giro ultraleve e uma parada mais suave devido ao sistema de amortecimento inovador, evitando os trancos. Em testes de exaustão alcançou 1.300.000 (Um milhão e trezentos mil) giros sem sinais de desgastes porque essa mecânica é toda construída sem qualquer atrito.
+
+Eletrônica:
+
+°IHM
+-A eletrônica IHM trabalha em modo On-Line (conectado a um computador/software/rede) que libera o acesso mediante a um comando do sistema ou quando sistema não está operando por falha de comunicação e/ou falta de eletricidade, a catraca opera com a memória interna que permite até 4.000 registros;
+-Sua comunicação é feita por cabo de rede (TCP/IP ou Serial);
+-Permite identificação por leitor biométrico (impressão digital) com memória para 1900 ou 9500 cadastros, teclado, cartão/crachá com código de barras ouproximidade. Os leitores de identificação podem ser usados separadamente ou simultaneamente;
+-Possui display alfanumérico interativo com o usuário, de cristal líquido com 2 linhas de 16 caracteres cada, com luz de fundo azul brilhante.
+-Catraca SW1 - Tecnologia de ponta aliada a um layout exclusivo e futurista
+
+Opcionais
+*Consulte nossa Central de Atendimento para verificar a possibilidade de montar itens opcionais como:
+
+°Contador de Giros
+°Cofre Coletor de Cartões/Crachás
+ 
+
+Outras características:
+
+°Até 4 leitores simultâneos: Teclado, Barras, Proximidade RFID, MIFARE, HID, INDALA, Magnético e Biometria (impressão digital);
+°Comunicação serial e Ethernet (TCP/IP);
+°Informa se o braço girou ou não e o sentido do giro;
+°Atualização de firmware em campo;
+°Configuração dos leitores via software;
+°Mensagem no display configurável para cada acesso;
+°Mensagem de Virada do Minuto;
+°Exibe mensagens direcionadas no display a qualquer momento;
+°Módulos biométricos com capacidade para 1900 ou 9500 digitais;
+°Aciona Buzzer na tentativa de giro não autorizado;
+°Relé auxiliar acionado diretamente pelo software para sirene, revista, etc;
+°Autenticação de digitação diretamente no servidor (opcional);
+°Pictograma Lateral.
+°Possibilidade da liberação do giro por controle remoto.
+
+Especificações Técnicas:
+
+°Alimentação: 127 ou 220 VAC 60 Hz com variação de 10%;
+°Display: alfanumérico interativo com o usuário, de cristal líquido com 2 linhas de 16 caracteres cada, com luz de fundo azul brilhante, proporcionando fino acabamento ao produto inclusive em ambientes de pouca iluminação;
+°Memória: EEPROM de 64 Kb não volátil com proteção de dados;
+°Dimensões: 31L x 110A x 70P cm;
+°Leitores opcionais: código de barras; proximidade, teclado e biométrico para 1900 ou 9500 digitais.

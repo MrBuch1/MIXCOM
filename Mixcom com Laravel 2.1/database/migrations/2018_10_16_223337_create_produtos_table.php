@@ -17,12 +17,18 @@ class CreateProdutosTable extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->string('tipo');
+            $table->string('codtipo');
             $table->string('marca');
             $table->string('valor');
             $table->string('categoria');
             $table->text('descricao');
             $table->string('imagem');
             $table->text('caracteristica');
+            $table->string('peso');
+            $table->string('altura');
+            $table->string('largura');
+            $table->string('comprimento');
+            $table->string('diametro');
             $table->rememberToken();
             $table->timestamps();
         });

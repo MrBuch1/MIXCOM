@@ -21,9 +21,9 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Usuário  (cod do usuário) <a href="#" style="padding-left:28px">Modificar</a></p>
-            <p class="distancia2">E-mail  (e-mail do usuário) <a href="# " style="padding-left:19px">Modificar</a></p>
-            <p class="distancia2">Senha (senha do usuário) <a href="#" style="padding-left:25px">Modificar</a></p>
+            <p class="distancia2">Usuário  (cod do usuário)</p>
+            <p class="distancia2">E-mail  (e-mail do usuário)</p>
+            <p class="distancia2">Senha (senha do usuário) </p>
 
             <br>
             <h5  class="cortexto">Dados Pessoais</h5>
@@ -31,9 +31,9 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Nome e sobrenome (nome do usuário) <a href="#" style="padding-left:18px">Modificar</a></p>
-            <p class="distancia2">Documento (documento do usuário) <a href="#" style="padding-left:36px">Modificar</a></p>
-            <p class="distancia2">Telefone (telefone do usuário) <a href="#" style="padding-left:85px">Modificar</a><a href="#" style="padding-left:20px">Adicionar</a></p>
+            <p class="distancia2">Nome e sobrenome (nome do usuário) </p>
+            <p class="distancia2">Documento (documento do usuário) </p>
+            <p class="distancia2">Telefone (telefone do usuário) </p>
 
             <br>
             <h5 class="cortexto">Cartões de crédito</h5>
@@ -41,10 +41,13 @@
             <hr>
             </div>
             <br>
+<<<<<<< HEAD
             <p class="distancia2">Numero do cartão (**** **** **** 1234) <a href="#" class="distancia2">Excluir</a></p>
+=======
+            <p class="distancia2">Numero do cartão (3 ultimos números do cartão) </p>
+>>>>>>> master
             <p class="distancia2">Bandeira (bandeira do cartão) </p>
-            <p class="distancia2">Telefone (telefone do usuário) </p>
-            <p><a href="#" class="distancia2">Adicionar cartão</a></p>
+            <p class="distancia2">Telefone (telefone do usuário) </p></p>
 
             <br>
             <h5  class="cortexto">Endereços</h5>
@@ -52,7 +55,7 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Rua (nome da rua) Número (número da casa) <a href="#" class="distancia2">Modificar</a></p>
+            <p class="distancia2">Rua (nome da rua) Número (número da casa) <a href="#" class="distancia2">Excluir</a></p>
             <p class="distancia2">Cep (numero do cep)</p>
             <p class="distancia2">Cidade (nome da cidade) Estado (sigla do estado)</p>
             
@@ -75,24 +78,61 @@
       <div class="modal-body">
              <!-- Inicio do formulario -->
       <form method="get" action=".">
-        <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" />
-         
-        <input type="button" class=" btn btn-outline-primary  " onclick="meu_callback()"
-            value="Pesquisar"></label><br />
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="50" /></label><br />
-        <label>N°:
-        <input name="num" type="int" id="num" size="10" /></label><br />
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" /></label><br />
-        <label>IBGE:
-        <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Cep:</label>
+            <div class="col-sm-10">
+                <table>
+                    <tr>
+                        <td>
+                            <input class="form-control" style="width:200px"  name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value);"/>
+                        </td>
+                        <td>
+                           <input type="button" class=" btn btn-outline-primary  " onclick="meu_callback()"
+                        value="Pesquisar"></label><br />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label ">Rua</label>
+            <div class="col-sm-10">
+            <input class="form-control" name="rua" type="text" id="rua" size="50" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">N°:</label>
+            <div class="col-sm-10">
+            <input style="width:50px" class="form-control" name="num" type="int" id="num" size="10" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Bairro:</label>
+            <div class="col-sm-10">
+            <input class="form-control"  name="bairro" type="text" id="bairro" size="40" />
+            </div>
+        </div>
+         <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Cidade:</label>
+            <div class="col-sm-10">
+            <input class="form-control"  name="cidade" type="text" id="cidade" size="40" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Estado:</label>
+            <div class="col-sm-10">
+            <input style="width:50px"  class="form-control"  name="uf" type="text" id="uf" size="2" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">IBGE:</label>
+            <div class="col-sm-10">
+            <input class="form-control"  name="ibge" type="text" id="ibge" size="8" />
+            </div>
+        </div>
+        
         
       </form>
       </div>
