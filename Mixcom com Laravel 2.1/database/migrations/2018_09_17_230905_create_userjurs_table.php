@@ -14,14 +14,11 @@ class CreateUserjursTable extends Migration
     public function up()
     {
         Schema::create('userjurs', function(Blueprint $table){
-            $table->increments('id');
-            $table->string('nome');
             $table->string('rsocial')->unique();
-            $table->integer('cnpj')->unique();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('cnpj')->unique();
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->primary('user_id');
             $table->timestamps();
         });
     }

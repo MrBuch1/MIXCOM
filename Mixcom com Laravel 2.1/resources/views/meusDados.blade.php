@@ -41,7 +41,7 @@
             <hr>
             </div>
             <br>
-            <p class="distancia2">Numero do cartão (3 ultimos números do cartão) <a href="#" class="distancia2">Excluir</a></p>
+            <p class="distancia2">Numero do cartão (**** **** **** 1234) <a href="#" class="distancia2">Excluir</a></p>
             <p class="distancia2">Bandeira (bandeira do cartão) </p>
             <p class="distancia2">Telefone (telefone do usuário) </p>
             <p><a href="#" class="distancia2">Adicionar cartão</a></p>

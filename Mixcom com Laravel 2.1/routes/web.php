@@ -4,12 +4,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/teste', function () {
+Route::get('/cadastroEndereco', function () {
     return view('cadastrarEndereco');
 });
-Route::get('/testeCarrinho', function () {
-    return view('carrinho');
-});
+Route::get('/testeCarrinho', 'CarrinhoController@index');
+Route::get('testeCarrinho', 'CarrinhoController@adicionar');
+
 Route::get('/testeMeusDados', function () {
     return view('meusDados');
 });
@@ -27,13 +27,11 @@ Route::get('/Inicio', function () {
 
 Route::prefix('/Cadastro')->group(function () {
 
-    Route::get('telaCadastroFisica', function () {
-        return view('telaCadastroFis');
-    })->name('telaCadastroFis');
+    Route::get('cadastroFisico', 'RegisterFisController@index')->name('CadastroFis');
+    Route::post('cadastroFisico', 'RegisterFisController@store');
 
-    Route::get('cadastroJuridico', function () {
-        return view('telaCadastroJur');
-    })->name('telaCadastroJur');
+    Route::get('cadastroJuridico', 'RegisterJurController@index')->name('telaCadastroJur');
+    Route::post('cadastroJuridico', 'RegisterJurController@store');
 
 });
 
@@ -84,8 +82,11 @@ Route::get('test', function()
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@index');
 
+Route::get('mercadopago', function(){
+    return view('mercadopago');
+});
+
 /*
-<<<<<<< HEAD
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
@@ -93,8 +94,6 @@ Route::get('/editarPerfil', function(){
 Route::get('/editarPerfilFisica', function(){
     return view('editarPerfilPFisica');
 });
-=======
->>>>>>> f524834dea1954166bec3f908f1df6b02976ae9c
 
 //Auth::routes();
 

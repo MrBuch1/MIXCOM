@@ -263,7 +263,7 @@
                         <h3 class="display-6 text-center">Como deseja se cadastrar?</h3>
                         <div class="row ml-2 my-4">
                             <div class="ml-5">
-                                <a href="{{route('telaCadastroFis')}}" class="btn btn-outline-primary">Pessoa Fisica</a>
+                                <a href="{{route('CadastroFis')}}" class="btn btn-outline-primary">Pessoa Fisica</a>
                             </div>
                         </div>
 
@@ -275,7 +275,7 @@
 
                         <div class="row ml-1 my-4">
                             <div class="ml-5">
-                                <a href="{{route('register')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
+                                <a href="{{route('telaCadastroJur')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
                             </div>
                         </div>
                     </div>

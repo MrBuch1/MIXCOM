@@ -14,13 +14,15 @@ class CreateEnderecosTable extends Migration
     public function up()
     {
         Schema::create('enderecos', function (Blueprint $table) {
-            $table->increments('id');
             $table->string('rua');
             $table->integer('numero');
             $table->string('bairro');
             $table->integer('cep');
             $table->string('cidade');
             $table->string('estado');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->primary('user_id');
             $table->timestamps();
         });
     }

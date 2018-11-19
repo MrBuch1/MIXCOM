@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Userjur;
+use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -13,26 +14,8 @@ class RegisterJurController extends Controller
 {
     public function index(){
         $userjur = Userjur::all();
-        return view('telaCadastroJur');
+        return view('auth\telaCadastroJur');
     }
-
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'rsocial' => 'required|string|max:255',
-            'cnpj' => 'required|int|min:14',
-            'email' => 'required|string|email|max:255|unique:usersjur',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-    }
-
     /**
      * Create a new user instance after a valid registration.
      *
@@ -41,13 +24,16 @@ class RegisterJurController extends Controller
      */
     protected function store(Request $request)
     {
+        $user    = new User();
         $userjur = new Userjur();
-        $userjur->nome     = $request->get('nome');
-        $userjur->rsocial  = $request->get('rsocial');
-        $userjur->cnpj     = $request->get('cnpj');
-        $userjur->email    = $request->get('email');
-        $userjur->password = $request->get('password');
-        $endereco->save();
+        $user->nome       = $request->input('name');
+        $user->telefone   = $request->input('teleone');
+        $user->email      = $request->input('email');
+        $user->password   = $request->input('password');
+        $userjur->rsocial = $request->input('rsocial');
+        $userjur->cnpj    = $request->input('cnpj');
+        $user->save();
+        $user->Userjur()->save($userjur);
 
         return redirect('/Inicio');
     }

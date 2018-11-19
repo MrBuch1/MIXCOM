@@ -3,6 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\UserFis;
+use App\UserJur;
+use Illuminate\Http\Request;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -10,69 +14,29 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
+    
+    public function store(Request $request){
 
-    use RegistersUsers;
+        $user = new User();
 
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
+        $user->nome = $request->input('nome');
+        $user->email = $request->input('email');
+        $user->telefone = $request->input('telefone');
+        $user->password = $request->input('password');
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest');
+        if (valor == 1){
+            $userfis = new UserFis();
+
+            $userfis->cpf = $request->input('cpf');
+        }
+        else{
+            $userjur = new UserJur();
+
+            $userjur->cnpj = $request->input('cnpj');
+            $userjur->rsocial = $request->input('rsocial');
+        }
+
+        $user->save();
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'rsocial' => 'required|string|max:255',
-            'cnpj' => 'required|string',
-            'telefone' => 'required|string',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
-    }
-
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'rsocial' => $data['rsocial'],
-            'cnpj' => $data['cnpj'],
-            'telefone' => $data['telefone'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
-    }
 }

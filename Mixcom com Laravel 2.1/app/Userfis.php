@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Userfis extends Model
 {
-    use Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -14,7 +13,7 @@ class Userfis extends Model
      * @var array
      */
     protected $fillable = [
-        'nome', 'cpf', 'email', 'password',
+        'cpf',
     ];
 
     /**
@@ -25,4 +24,8 @@ class Userfis extends Model
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function User(){
+        return $this->hasOne('App\User');
+    }
 }
