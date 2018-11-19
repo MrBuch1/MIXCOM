@@ -298,7 +298,7 @@
     function calcular(){
         var cep_destino = $("#cep_destino").val();
 
-        var link = "/calcula/" + cep_destino;  
+        var link = "/calcula2/" + cep_destino;  
         window.location.replace(link);
 
         

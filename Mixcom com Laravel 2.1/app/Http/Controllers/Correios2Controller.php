@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 session_start();
 class CorreiosController extends Controller
 {
-    public function calcula($cep){
+    public function calcula2($cep){
     
     	$cep_destino = $cep;
 		$cep_origem = '44075445';
@@ -36,7 +36,7 @@ class CorreiosController extends Controller
 		$frete = $xml->cServico;
 		$valor = $frete->Valor;
 		$prazo = $frete->PrazoEntrega;
-    	return view("catraca",compact("valor","prazo"));
+    	return view("carrinho",compact("valor","prazo"));
     	
 
     }

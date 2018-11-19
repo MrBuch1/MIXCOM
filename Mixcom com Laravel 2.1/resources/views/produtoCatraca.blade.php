@@ -54,25 +54,23 @@
             </div>
         </div>
         <div class="caixa col-md-8 col-sm-8 col-xs-8">
-            <div class="col-12 mb-3">
+            <div class="card-group"></div>
+            <div class="col-12 md-3">
                 <hr>
             </div>
             <h3 class=" text-center">CATRACAS</h3>
-            <div class="card-deck ">
-                
-               
+            
                 @foreach($produtos as $p)
-                    <div class="card" >
+                <div class="card" style="width: 35%;">
                     <br>
-
-                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}" alt="">
+                    <img class="img-responsive card-img-top" style="width: 55%;" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}"alt="">
                     <div class="card-body">
 
                         <a href="{{route('catraca')}}">
                             <h5 class="card-title text-dark my-3 ">{{$p->nome}}</h5>
                         </a>
                         <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
-                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">{{$p->valor}}</h5>
                         <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
 
                         <table>
@@ -87,7 +85,140 @@
                     </div>
                     <div class="card-footer cor1">
                         <small class="text-muted">
-                            <center><a class="text-light" href="/Catracas">Saiba Mais</a>
+                            <center><a class="text-light" href="">Saiba Mais</a>
+<<<<<<< HEAD
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <br>
+                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca2.png')}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2 text-dark my-3">Catraca Balcão</h5>
+                        <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="button" class="btn btn-outline-success botao2" onclick="funcaoComprar()"
+                                        value="Comprar">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="card-footer cor1">
+                        <small class="text-muted">
+                            <center><a class="text-light" href="">Saiba Mais</a>
+                        </small>
+                    </div>
+                </div>
+                <div class="card">
+                    <br>
+                    <img class="img-responsive card-img-top my-auto" src="{{ asset('imagens\imagensRedimencionadas/catraca3.png')}}"
+                        alt="">
+                    <div class="card-body">
+
+                        <h5 class="card-title mb-2 text-dark my-3">Catraca SW1</h5>
+                        <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="button" class="btn btn-outline-success botao2" onclick="funcaoComprar()"
+                                        value="Comprar">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                   <div class="card-footer cor1">
+                        <small class="text-muted">
+                            <center><a class="text-light" href="">Saiba Mais</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-deck">
+                <div class="card ">
+                    <br>
+                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca4.png')}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark my-3">Catraca MDC 2900</h5>
+                        <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="button" class="btn btn-outline-success botao2" onclick="funcaoComprar()"
+                                        value="Comprar">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="card-footer cor1">
+                        <small class="text-muted">
+                            <center><a class="text-light" href="">Saiba Mais</a>
+                        </small>
+                    </div>
+                </div>
+                <div class="card ">
+                    <br>
+                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca5.png')}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2 text-dark my-3">Catraca Hi-Tech</h5>
+                        <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="button" class="btn btn-outline-success botao2" onclick="funcaoComprar()"
+                                        value="Comprar">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="card-footer cor1">
+                        <small class="text-muted">
+                            <center><a class="text-light" href="">Saiba Mais</a>
+                        </small>
+                    </div>
+                </div>
+                <div class="card ">
+                    <br>
+                    <img class="img-responsive card-img-top" src="{{ asset('imagens\imagensRedimencionadas/catraca1.png')}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2 text-dark my-3">Catraca de Inox RBC 5905</h5>
+                        <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
+                        <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
+                        <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
+                        <table>
+
+                            <tr>
+                                <td>
+                                    <input type="button" class="btn btn-outline-success botao2" onclick="funcaoComprar()"
+                                        value="Comprar">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div type="button" class="card-footer button cor1">
+                        <small class="text-muted">
+                            <center><a class="text-light" href="">Saiba Mais</a>
+=======
+>>>>>>> master
                         </small>
                     </div>
                 </div>
@@ -95,20 +226,6 @@
                 
                
             </div>
-        </div>
-        <div class="caixa col-md-1 col-sm-1 col-xs-1">
-            <div class="col-12 mb-3">
-                <hr>
-            </div>
-            <table>
-                <tr>
-
-                    <td><a href="#"><img class="img-responsive" src="{{ asset('imagens/carrinho.png')}}" title="Carrinho!"></a></td>
-
-
-                </tr>
-
-            </table>
         </div>
     </div>
 
