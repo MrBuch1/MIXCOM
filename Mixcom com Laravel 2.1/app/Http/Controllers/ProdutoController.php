@@ -20,6 +20,5 @@ class ProdutoController extends Controller {
   	
   	return view('produtoCatraca', compact('produtos'));
   }
-
 }
 ?>

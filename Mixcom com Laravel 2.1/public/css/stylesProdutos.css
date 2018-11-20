@@ -234,3 +234,8 @@ background: #707070;
     
     border-radius: 10px;
     }
+.p {
+    width: 13em; 
+    background: gold; 
+    word-wrap: break-word;
+}
