@@ -1,0 +1,21 @@
+°Controle de Acesso: Digitação de senha, Código de Barras, Proximidade, MiFare e Biometria;
+
+°Captura de Imagens: Câmeras IP, WebCam, ou sistema de Câmeras analógicas ou IP (revisar compatibilidade com fabricante);
+
+°Cadastro de alunos, professores, funcionários e qualquer outro tipo de pessoa;
+
+°Opção para bloqueio de inadimplentes;
+
+°Controle de serviços ou cursos oferecidos e geração de mensalidades;
+
+°Gestão de contas a pagar; 
+
+°Gestão de contas a receber com opções para geração de recibos, boletos e controle de cheques;
+
+°Cadastro e controle de Turmas com limites de pessoas;
+
+°Envio de email/SMS para os pais dos alunos, contendo informações de acesso;
+
+°Registro de ocorrências;
+
+°Módulo de consumo para lancherias, vendas de material didático e controle básico de estoque;

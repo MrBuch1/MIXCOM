@@ -1,0 +1,22 @@
+°Contempla TODAS as funcionalidades do Mini Estacionamento.Net;
+
+°Geração de NFS-e e cupom fiscal (*);
+
+°Modulo de Consumo para comercialização de produtos e serviços adicionais do estacionamento (lavagens, extintores, lanches, etc);
+
+°Controla painéis configuráveis para exibição de quantidade de vagas (*);
+
+°Registro de Avarias em veículos antes de entrar no estacionamento;
+
+°Registro de Ocorrências do estacionamento como acidentes, furtos entre outros;
+
+°Acompanhamento por Planta Baixa permitindo visão geral dos eventos; 
+
+°Controle de Rotas permitindo indicar uma sequência de acesso aos equipamentos;
+
+°Integração com Circuito Fechado de TV (*);
+
+°Captura de Placas de Veículos para cadastro automático (*);
+
+°Controle instantâneo de vagas de estacionamento utilizando sensores ou CFTV para identificar a disponibilidade de vagas (*);
+

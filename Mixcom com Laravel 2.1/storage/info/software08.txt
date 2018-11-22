@@ -1,0 +1,31 @@
+°Permite cadastro de pessoas ilimitadas (verificar licença);
+
+°Avaliação Física;
+
+°Cadastro e Controle de Treinamentos;
+
+°Gráficos de Antropometria;
+
+°Compatível com as tecnologias: - Controle de Acesso: Digitação de senha, Código de Barras, Proximidade, MiFare e Biometria; 
+
+°Circuito Fechado de TV: Câmeras IP, WebCam, ou sistema de Câmeras analógicas ou IP (revisar compatibilidade com fabricante);
+
+°Cadastro de Alunos, Funcionários e quaisquer tipos de pessoas envolvidas com a academia; 
+
+°Impressão de Etiquetas para Malas Diretas com layout totalmente configurável; 
+
+°Controle de Serviços oferecidos e geração de mensalidades; 
+
+°Gestão de Contas a Pagar; 
+
+°Gestão de Contas a Receber com opções para geração de Recibos, Boletos e controle de Cheques; 
+
+°Relatórios de Fluxo de Caixa previstos, realizados e gráfico de evolução periódico; 
+
+°Controle de Fichas de Anamnese para acompanhamento dos alunos; 
+
+°Cadastro e controle de Turmas com limites de pessoas; 
+
+°Configurações de avisos sobre vencimentos de mensalidades nos equipamentos de acesso; 
+
+°Tela especial simplificada para quitação de mensalidades e pesquisa de informações de pessoas.
