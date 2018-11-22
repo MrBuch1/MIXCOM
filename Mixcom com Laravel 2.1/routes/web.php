@@ -92,5 +92,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('calcula/{cep}', 'CorreiosController@calcula');
 
-Route::get('/produtosteste/{tipo}', 'ProdutoController@productList');
+Route::get('/produtosteste/{codtipo}', 'ProdutoController@productList');
 

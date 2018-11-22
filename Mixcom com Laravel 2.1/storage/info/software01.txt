@@ -1,0 +1,14 @@
+Especificações:
+
+°Desenvolvido sob a tecnologia Cliente/Servidor (Firebird 1.5.1), confiável e freeware;
+°Possui versão multiusuário (vários computadores simultaneamente);
+°Permite o controle de ponto de várias empresas no mesmo banco de dados;
+°Totalmente adequado a Portaria 1.510 do MTE;
+°Efetua todos os cálculos de horas trabalhadas, extras e faltosas;
+°Comunicação direta com os REPs mais utilizados no mercado;
+°Permite a importação do Arquivo AFD, podendo assim ser utilizado com qualquer REP do Mercado;
+°Exportação de dados para folha de pagamento;
+°Banco de Horas;
+°Módulo Web, onde os funcionários podem visualizar seu ponto e solicitar abonos;
+°Serviço de Backup automático no mesmo computador, na rede interna, ou para um servidor FTP;
+°Diversos relatórios gerências;

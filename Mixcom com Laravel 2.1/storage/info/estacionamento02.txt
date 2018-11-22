@@ -1,0 +1,11 @@
+	
+As cancelas MADIS poderão ser acionadas e fechadas de diversas maneiras:
+
+*Laço indutivo:
+Dispositivo instalado abaixo do piso por onde passam os veículos, cuja função é detectar a presença de um corpo metálico (veículo), acionando automaticamente a abertura da cancela. 
+Este dispositivo mantém a cancela aberta enquanto o veículo estiver em cima do laço, evitando que a mesma feche em cima do veículo.
+A cancela fecha automaticamente após a passagem do veículo pelo laço.
+
+*Botoeira:
+Geralmente usada em locais que possuem guarita de segurança com vigia que controla o fluxo, a entrada e a saída de veículos. 
+É um dispositivo que, através de um botão, aciona a abertura da cancela.
