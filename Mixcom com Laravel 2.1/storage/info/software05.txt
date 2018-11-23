@@ -1,0 +1,19 @@
+°Cadastro de Titulares, Dependentes, Funcionários, Visitantes e quaisquer tipos de pessoas envolvidas com o clube;
+
+°Cadastro e controle de Turmas com limites de pessoas;
+
+°Impressão de Etiquetas para Malas Diretas com layout totalmente configurável;
+
+°Controle de Ocorrências e acompanhamento da Planta Baixa do clube em tempo real; 
+
+°Controle de Produtos e Serviços oferecidos e geração de mensalidades;
+
+°Gestão de Contas a Pagar;
+
+°Gestão de Contas a Receber com opções para geração de Recibos, Boletos e controles de Cheques;
+
+°Relatórios de Fluxo de Caixa previstos, realizados e gráfico de evolução periódico;
+
+°Impressão de Boletos e integração com bancos;
+
+°Tela especial simplificada para quitação de mensalidades e pesquisa de informações de pessoas; 

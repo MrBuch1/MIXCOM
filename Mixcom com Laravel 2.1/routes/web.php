@@ -74,7 +74,7 @@ Route::get('test', function()
 });
 
 
-Route::get('/produtoTeste/{id}', 'ProdutoController@index');
+Route::get('/produto/{id}', 'ProdutoController@index');
 
 Route::get('mercadopago', function(){
     return view('mercadopago');
@@ -98,4 +98,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('calcula/{cep}', 'CorreiosController@calcula');
 
-Route::get('/produtosteste/{tipo}', 'ProdutoController@productList');
+Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
+
