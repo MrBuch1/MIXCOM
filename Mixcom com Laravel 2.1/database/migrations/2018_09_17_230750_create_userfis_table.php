@@ -17,7 +17,7 @@ class CreateUserfisTable extends Migration
             $table->string('cpf')->unique();
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->primary('user_id');
+            $table->increments('id');
             $table->timestamps();
         });
     }

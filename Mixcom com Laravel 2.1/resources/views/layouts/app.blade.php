@@ -279,11 +279,7 @@
 
                         <div class="row ml-1 my-4">
                             <div class="ml-5">
-<<<<<<< HEAD
                                 <a href="{{route('telaCadastroJur')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
-=======
-                                <a href="{{route('cadastrojur')}}" class="btn btn-outline-primary">Pessoa Juridica</a>
->>>>>>> master
                             </div>
                         </div>
                     </div>

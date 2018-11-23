@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Userjur extends Model
 {
-<<<<<<< HEAD
 
     /**
      * The attributes that are mass assignable.
@@ -29,7 +28,4 @@ class Userjur extends Model
     public function User(){
         return $this->hasOne('App\User');
     }
-=======
-    //
->>>>>>> master
 }

@@ -34,4 +34,7 @@ Route::group(['prefix' => 'admin'], function () {
 });
 Auth::routes();
 
+Route::get('cadastro', 'CadastroController@index')->name('cadastro');
+Route::post('cadastro/{id}', 'CadastroController@create');
+
 Route::get('/home', 'HomeController@index')->name('home');

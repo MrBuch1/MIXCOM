@@ -76,27 +76,21 @@ Route::get('test', function()
 
 Route::get('/produtoTeste/{id}', 'ProdutoController@index');
 
-<<<<<<< HEAD
 Route::get('mercadopago', function(){
     return view('mercadopago');
 });
 
 /*
-=======
 
->>>>>>> master
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
 
-<<<<<<< HEAD
 Route::get('/editarPerfilFisica', function(){
     return view('editarPerfilPFisica');
 });
-=======
 Route::get('editarPerfilJur/{id}', 'RegisterJurController@edit');
 Route::post('editarPerfilJur/{id}', 'RegisterJurController@update');
->>>>>>> master
 
 //Auth::routes();
 

@@ -24,7 +24,7 @@
                     <li><a href="{{ route('carrinho.index') }}">Carrinho</a></li>
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Entrar</a></li>
-                        <li><a href="{{ url('/register') }}">Cadastre-se</a></li>
+                        <li><a href="{{ url('cadastro') }}">Cadastre-se</a></li>
                     @else
                         <li>
                             <a class="dropdown-button" href="#!" data-activates="dropdown-user">

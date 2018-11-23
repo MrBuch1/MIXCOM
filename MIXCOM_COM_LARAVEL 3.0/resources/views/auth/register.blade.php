@@ -7,8 +7,9 @@
     <div class="row">
         <div class="col l10 offset-l1 s12 m12">
             <h4>Cadastro de usuário</h4>
-            <form method="POST" action="{{ url('/register') }}">
+            <form method="POST" action="{{ route('cadastro') }}">
                 {{ csrf_field() }}
+                @csrf
 
                 <div class="row">
                     <div class="input-field">

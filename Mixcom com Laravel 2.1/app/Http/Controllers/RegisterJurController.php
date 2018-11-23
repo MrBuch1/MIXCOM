@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Userjur;
 use App\User;
+use App\Endereco;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -16,10 +17,6 @@ class RegisterJurController extends Controller
         $userjur = Userjur::all();
         return view('auth\telaCadastroJur');
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     /**
      * Create a new user instance after a valid registration.
      *
@@ -28,48 +25,35 @@ class RegisterJurController extends Controller
      */
     protected function store(Request $request)
     {
+
+        $validatedData = $request->validate([
+            'password' => 'required|min:8|confirmed',
+            'password_confirmation' => 'required|min:8',
+        ]);
+
         $user    = new User();
         $userjur = new Userjur();
-<<<<<<< HEAD
         $user->nome       = $request->input('name');
-        $user->telefone   = $request->input('teleone');
+        $user->telefone   = $request->input('telefone');
         $user->email      = $request->input('email');
         $user->password   = $request->input('password');
         $userjur->rsocial = $request->input('rsocial');
         $userjur->cnpj    = $request->input('cnpj');
+        
         $user->save();
-        $user->Userjur()->save($userjur);
-
-        return redirect('/Inicio');
-=======
-        $userjur->nome     = $request->input('nome');
-        $userjur->rsocial  = $request->input('rsocial');
-        $userjur->cnpj     = $request->input('cnpj');
-        $userjur->telefone = $request->input('telefone');
-        $userjur->email    = $request->input('email');
-        $userjur->password = $request->input('password');
+        $userjur->user_id = $user->id;
         $userjur->save();
 
+       /* $endereco = new Endereco();
+        $endereco->rua    = $request->input('rua');
+        $endereco->numero = $request->input('num');
+        $endereco->cep    = $request->input('cep');
+        $endereco->bairro = $request->input('bairro');
+        $endereco->cidade = $request->input('cidade');
+        $endereco->estado = $request->input('estado');
+        $endereco->save(); */
+
         return redirect('/Inicio');
-    }
-
-    public function edit($id)
-    {
-        $userjur = Userjur::find($id);
-        return view("editarPerfilJur", compact('userjur'));
-    }
-
-    public function update($id)
-    {
-        $userjur = Userjur::find($id);
-        $userjur->nome     = $request->get('nome');
-        $userjur->rsocial  = $request->get('rsocial');
-        $userjur->cnpj     = $request->get('cnpj');
-        $userjur->telefone = $request->get('telefone');
-        $userjur->email    = $request->get('email');
-        $userjur->password = $request->get('password');
-        $userjur->save();
->>>>>>> master
     }
 
 }

@@ -3,7 +3,6 @@
 
 <!--Inicio Form-->
 <div class="container">
-<<<<<<< HEAD
     <div class="row">
         <div class="col-12 text-center my-4">
             <h1 class="display-4 my-5"> {{ __('Cadastre-se')}}</h1>
@@ -35,75 +34,6 @@
                         @endif
                     </div>
                 </div>
-=======
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Cadastre-se') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('cadastrojur') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="rsocial" class="col-md-4 col-form-label text-md-right">{{ __('Razão Social') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="rsocial" type="text" class="form-control{{ $errors->has('rsocial') ? ' is-invalid' : '' }}" name="rsocial" value="{{ old('rsocial') }}" required autofocus>
-
-                                @if ($errors->has('rsocial'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('rsocial') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="cnpj" class="col-md-4 col-form-label text-md-right">{{ __('CNPJ') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="cnpj" type="text" class="form-control{{ $errors->has('cnpj') ? ' is-invalid' : '' }}" name="cnpj" value="{{ old('cnpj') }}" required autofocus>
-
-                                @if ($errors->has('cnpj'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('cnpj') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
->>>>>>> master
 
                 <div class="form-row">
                     <div class="form-group col-sm-7">

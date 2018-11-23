@@ -26,4 +26,8 @@ class User extends Authenticatable
     public function Userjur(){
         return $this->hasOne('App\User');
     }
+
+    public function setPasswordAttribute($password){
+        $this->attributes['password'] = bcrypt($password);
+    }
 }
