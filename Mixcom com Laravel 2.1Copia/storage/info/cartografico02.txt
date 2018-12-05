@@ -1,0 +1,9 @@
+°Alimentação: 13 Vdc - No-break interno
+°Dimensões (A x L x P): (210 x 190 x 125) mm
+°Display: LCD com backlight azul • Data, Hora, Cor da impressão
+
+DIFERENCIAIS:
+
+°Configuração de horário de verão
+°Acionamento de sirene interna e externa
+°Detecção de frente e verso do cartão 

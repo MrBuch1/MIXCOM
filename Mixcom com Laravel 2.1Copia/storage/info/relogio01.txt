@@ -1,0 +1,18 @@
+QUAIS SÃO AS NOVIDADES?
+
+
+- Assinatura digital em todos os documentos fiscais emitidos pelo equipamento. Tecnologia que impede a falsificação de um documento emitido pelo MD REP.
+
+- Criptografia e senha na comunicação com o equipamento. Um software não autorizado não consegue se comunicar com o equipamento, mesmo conhecendo o protocolo.
+
+- Download de firmware protegido. Só aceita arquivos assinados e devidamente homologados pelo INMETRO.
+
+ 
+QUAIS SÃO AS VANTAGENS DO MD REP EVO?
+
+
+- O MD REP EVO da MADIS funciona com duas bobinas, sendo uma principal de 500 metros, que permite a impressão de até 9.090 tickets e uma secundaria, acionada automaticamente, sem interrupção da operação, com 30 metros, que permite a impressão de até 580 tickets.
+
+- Registro do ponto através de cartões, leitor biométrico, digitação do PIS do funcionário ou matrícula;
+
+- Tratamento do ponto através do software MD COMUNE da MADIS, software 100% via web que armazena os dados nas nuvens. O software MD COMUNE oferece todas as rotinas e funcionalidades para o controle do ponto dos funcionários com a vantagem de poder ser totalmente adequado à realidade de cada empresa, pois possui pacotes flexíveis que atendem empresas de pequeno, médio e grande porte.
