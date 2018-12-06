@@ -74,7 +74,7 @@
                         <h3 class="display-6 text-center">Como deseja se cadastrar?</h3>
                         <div class="row ml-2 my-4">
                             <div class="ml-5">
-                                <a href="CadastroFisico" class="btn btn-outline-primary">Pessoa Fisica</a>
+                                <a href="/CadastroFisico" class="btn btn-outline-primary">Pessoa Fisica</a>
                             </div>
                         </div>
 
@@ -86,7 +86,7 @@
 
                         <div class="row ml-1 my-4">
                             <div class="ml-5">
-                                <a href="CadastroJuridico" class="btn btn-outline-primary">Pessoa Juridica</a>
+                                <a href="/CadastroJuridico" class="btn btn-outline-primary">Pessoa Juridica</a>
                             </div>
                         </div>
                     </div>
