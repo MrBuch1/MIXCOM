@@ -1,0 +1,44 @@
+CONTROLE DE PONTO:
+
+°Certificado pelo Inmetro - Produto certificado pelo Innnetro — Certificado NCC 15.03813)
+°Homologado Portaria 1.510/2009 - Produto homologado pelo Ministério do Trabalho e Emprego;
+°Quantidade de Funcionários - Capacidade para 15.000 usuários cadastrados;
+°Quantidade de Digitais - Capacidade para 15.000 digitais.
+
+FORMAS DE IDENTIFICAÇÃO:
+
+°Leitor Biométrico - Leitor de impressão digital óptico de 500 DPI;
+°Cartões de Proximidade - Compatível com tecnologias Mifare ou 125kHz ASK;
+°Cartões de Código de Barras - Leitura de cartões de barras (Código 39, 2 de 5 e 2 de 5 entrelaçado);
+°Senha - Identificação de usuários através de senha numérica.
+
+IMPRESSORA E BOBINA:
+
+°Compartimento de Bobina - Capacidade para bobinas de até 400m (10.000+ tickets por bobina);
+°Mecanismo Impressor - Mecanismo impressor de alta qualidade Seiko (Japão);
+°Corte Automático do Ticket - Impressora com guilhotina de alta velocidade;
+°Velocidade de Impressão - Velocidade de impressão de 100 mm/s;
+°Detecção de Quantidade de Papel Restante - Permite o monitoramento do nível de papel remotamente.
+
+COMUNICAÇÃO:
+
+°Ethernet - 1 porta Ethernet 10/100Mbps nativa;
+°USB - 1 porta USB 2.0 Host (Porta Fiscal) para fiscalização de Arquivos Fonte de Dados (AFD);
+°USB - 1 porta USB 2.0 Host para importação e exportação de usuários e recebimentos de AFD;
+°GPRS - Módulo de conexão via GPRS opcional;
+°Wi-Fi - Módulo de conexão via Wi-Fi opcional.
+
+INTERFACE DE USUÁRIO:
+
+°Tela LCD Touchscreen - Display LCD TFT colorido de 2.4" 320x240 com tela resistiva sensível ao toque.
+
+CARACTERÍSTICAS GERAIS:
+
+°Dimensões gerais (L x A x P) - 246 x 246 x 104 mm (incluindo suporte inferior) 246 x 230 x 104 mm (sem suporte);
+°Peso do equipamento - 750g (sem bobina);
+°Peso embalado - 1Kg;
+°Cor do equipamento - Preto texturizado;
+°Alimentação - 110-220V (Bi-Volt) / 60Hz;
+°No-Break (opcional) - No-break interno de até 4h;
+ 
+ 
