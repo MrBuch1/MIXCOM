@@ -1,0 +1,4 @@
+°Impressora com mecanismo SEIKO ®, que aceita bobinas de até 360m e permite trocas em menos de 5 segundos (processo easy-load);
+°Comunicação via TCP/IP com WebServer incorporado para acesso as funções de configuração gerenciamento;
+°4 tipos de leitores de última geração: Biométrico, smartcard, proximidade e teclado;
+°Disponível nas cores preta, branca e transparente. Com todos estes benefícios, o produto garante que seu investimento será sustentado por um longo período e trará eficiência e tecnologia para seu ambiente.

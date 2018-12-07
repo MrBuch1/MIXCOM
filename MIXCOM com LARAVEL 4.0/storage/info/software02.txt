@@ -1,0 +1,19 @@
+°Adequado à portaria 1.510 do Ministério do Trabalho e Emprego;
+
+°Todas as funcionalidades já presentes na versão anterior(*);
+
+°Controle de dias de folga com cálculo especial de percentual de extra;
+
+°Opção para cálculo diferenciado de extra para um dia e funcionário específico;
+
+°Restrições por usuários para determinadas empresas, departamentos e abonos;
+
+°Gravação do registro de ponto original e equipamento que originou o registro;
+
+°Opção para conexão com banco de dados MS SQL Server, Oracle, entre outros. Otimizado para conexões remotas;
+
+°Criação e impressão de etiquetas para crachás de identificação com layout personalizável;
+
+°Integração automática com sistema Secullum Acesso.Net;
+
+°Importação de dados da versão anterior para fácil migração.

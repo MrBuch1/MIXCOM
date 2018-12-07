@@ -11,11 +11,14 @@ class ProdutoController extends Controller {
 
   	$p = Produto::find($id);
   	$array = explode('</br>',$p->caracteristica);
-  	return view('produtoTeste', compact('p', 'array'));
+  	return view('produto', compact('p', 'array'));
 
   }
 
-
-
+  public function productList($codtipo){
+  	$produtos = Produto::where('codtipo', $codtipo)->get();
+  	return view('produtoinfo', compact('produtos'));
+  }
 }
+
 ?>

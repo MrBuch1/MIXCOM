@@ -1,0 +1,36 @@
+
+° Captura imagem em tempo real;
+° Sistema integra catracas, fechaduras e torniquetes;
+° Seu rosto é sua senha;
+° Não aceita autenticação por fotografias, apenas rostos ao vivo;
+° Restringe pessoas não autorizadas, melhorando a área de segurança;
+° Possibilidade de trabalhar como autônomo, bem como dispositivo de rede, em comunicação com o software RB Acesso;
+° Forma altamente segura de controlar portas.
+
+Hardware:
+
+° Maior segurança que sistemas convencionais;
+° Autenticação 1:1¹ ou 1:N² no banco de dados, ou seja, as liberações dos controles de acesso não dependerão
+exclusivamente de contato do usuário com o equipamento e a captura das imagens se fará em tempo real;
+° Nenhum contato humano com o hardware;
+° Câmera: Câmera IR;
+° Nível de privilégio: Normal e mestre;
+° Display de 03 polegadas touch screen;
+° Capacidade Face: 600 (1:N), 2000 (1:1);
+° Capacidade de cartões: 10.000;
+° Capacidade PIN (senha): 10.000;
+° Comunicação: Wi-Fi ou por Cabo CAT 5E;
+° Tipo de Verificação: Face, Cartão, PIN, Face+PIN, Face+Card, Cartão+PIN, Face+Card+PIN;
+° Velocidade de verificação: 02 segundos;
+° Temperatura de Operação: 0º a 45º C;
+° Capacidade para até 100.000 registros;
+° Gerenciamento de energia com desligamento automático;
+° Possibilidade de programação de alarme;
+° Sensor de porta aberta.
+
+1:1¹ – Quando antes da verificação biométrica é necessário utilizar o cartão ou teclado
+1:N² – Quando a verificação é feita apenas pela biometria.
+
+
+Alimentação:
+° Alimentação elétrica do equipamento através de fonte 12VDC.

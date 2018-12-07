@@ -82,7 +82,8 @@ Route::get('test', function()
 });
 
 
-Route::get('/produtoTeste/{id}', 'ProdutoController@index');
+Route::get('/produto/{id}', 'ProdutoController@index');
+Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
 
 
 

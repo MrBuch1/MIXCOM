@@ -1,0 +1,52 @@
+°Display touchscreen
+°Regras de acesso personalizadas por grupos e horários
+°Identificação biométrica, cartão de proximidade e senha
+°Software de acesso web embarcado dispensando processos de instalação
+°Central de alarme integrada
+ 
+CONTROLE DE ACESSO:
+
+°Controle de Portas: 2 portas de entrada individuais para botoeira e sensor de porta
+°Quantidade de Usuários: Capacidade para mais de 1.000.000 usuários
+°Quantidade de Digitais: Capacidade para mais de 2.000 digitais em modo stand alone e mais de 100.000 para modo on-line
+°Regras de Acesso: Regras de liberação conforme horários e departamentos
+°Registros de Acesso: Capacidade para mais de 1.000.000 de registros
+°IDCloud: Serviço de monitoramento, sincronização e backup na nuvem (opcional)
+°Entradas Wiegand: 1 porta Wiegand nativa (expansível até 4); configurável como ABATRACK II
+°Saídas Wiegand: 1 porta Wiegand nativa (expansível até 4); configurável como ABATRACK II
+°Relés de saída: 2 relés independentes de até 200VAC/5A
+
+CENTRAL DE ALARME:
+
+°Entradas de Alarme: 5 zonas de alarme independentes, com tempos de disparo e polaridade configuráveis
+°Saída de Alarme: Saída transistorizada de capacidade máxima de 12VDC@10mA
+°Detecção de Vandalismo: Alarme configurável de remoção do equipamento do suporte
+°Detecção de Arrombamento: Alarme configurável de abertura de porta sem acionamento do rele
+°Detecção de Coação: Possibilidade de cadastramento de dedo de pânico por usuário
+
+COMUNICAÇÃO:
+
+°Ethernet: 1 porta Ethernet 10/100Mbps nativa
+°USB: 1 porta USB Host 2.0
+°RS-485: 1 porta RS-485 nativa com terminação de 120?
+°GPRS: Módulo de conexão via GPS (opcional)
+°Wi-Fi: Módulo de conexão via Wi-Fi (opcional)
+
+FORMA DE IDENTIFICAÇÃO:
+
+°Leitor BiométricoLeitor de impressão digital óptico de 500 DPI
+°Cartões de ProximidadeTecnologias MIFARE™ ou 125kHz (incluindo SK, FSK e PSK)
+°SenhaIdentificação de usuário através de senha numérica
+
+INTERFACE DE USUÁRIO:
+
+°Tela LCD TouchscreenDisplay LCD TFT colorido de 2.6" (320x240) com tela resistiva sensível ao toque
+°Software Web IntegradoSoftware completo de gerenciamento de controle de acesso via browserSoftware de Gestão de Acesso Embarcado
+
+CARACTERÍSTICAS GERAIS:
+
+°Dimensões: 55mm x 170mm x 70mm (P x A x L)
+°Peso do equipamento: 250g
+°Peso embalado: 400g
+°Alimentação: Fonte externa de 12V (não inclusa)
+°Consumo: 2,4W (200mA) nominal

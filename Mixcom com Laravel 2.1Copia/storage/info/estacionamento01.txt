@@ -1,0 +1,80 @@
+Características Técnicas do Sistema:
+
+° Identificação automática entre veículos e motos, e tratamento de acesso diferenciado no sistema;
+
+° Sistema LPR que permite a leitura de placas dos veículos que acessarem o estacionamento – item opcional
+
+° Integração com sistemas de cobrança automáticos: SEM PARAR, AUTOEXPRESSO e CONECTCAR;
+
+° Sinalização visual (supervisão no sistema) quando da abertura das portas;
+
+° Sinalização de parada ou defeitos por pictograma na lateral;
+
+° Intercomunicador incorporado ao Totem;
+
+° Totens com compartimento interno reservado para intercomunicação VoIP, switch, conversor para fibra óptica e outros acessórios;
+
+° Comunicação TCP/IP preparados para dados, vídeo e voz; Item opcional
+
+° Acionamento de múltiplas cancelas permitindo, em situações de problemas com o ticket, o escape por cruzamento de pistas com segurança e sinalização de bloqueio de vias;
+
+ 
+
+Características do Totem de Entrada:
+
+
+° Display de cristal líquido com back-light, contendo 2 linhas de 20 caracteres cada;
+
+° Impressora Térmica com sensor de papel – Dispensadora de Tickets maior gramatura;
+
+° Sistema de ventilação e Sistema Desumidificador que proporciona uma temperatura ideal e estável internamente;
+
+° Detector Veicular Magnético - 1 Canal – detecção somente de carros, ou
+
+° Detector Veicular Magnético - 2 Canais – detecção de carros e motos;
+
+° Pictograma Direcional, Pictograma de Status;
+
+° Comunicação através da rede Ethernet 10/100 Mbps, utilizando protocolo de comunicação TCP-IP;
+
+° A Memória não volátil possui bateria de lítio, com autonomia de preservação dos dados por até dois anos;
+
+° Circuito interno de monitoração de funcionamento (watchdog) que executa a correção automática de problemas de processamento.
+ 
+
+*Opcionais:
+
+° Leitor Scanner Metrologic para leitura de código de barras ou proximidade Acura ou Mifare sem contato para controle de mensalista e/ou credenciados;
+
+° Sistema de Comunicação por voz através do intercomunicador e botão com retro iluminação.
+
+
+
+Características do Totem de Saída
+
+° Display de cristal líquido com back-light, contendo 2 linhas de 20 caracteres cada;
+
+° Detector Veicular magnético - 1 Canal – detecção somente de carros, ou Detector Veicular magnético - 2 Canais – detecção de carros e motos;
+
+° Pictograma Direcional, Pictograma de Status;
+
+° Sistema de Intertravamento para rotas alternativas no acesso a saída do estacionamento;
+
+° Comunicação através da rede Ethernet 10/100 Mbps, utilizando protocolo de comunicação TCP-IP.
+
+° Memória RAM não volátil de 256 kb, sendo utilizada para armazenamento de listas de serviços e para armazenamento de registros de marcação;
+
+° A Memória não volátil possui bateria de lítio, com autonomia de preservação dos dados para até dois anos;
+
+° Circuito interno de monitoração de funcionamento (watchdog) que executa a correção automática de problemas de processamento.
+
+
+
+*Opcionais 
+
+° Leitor de proximidade Acura ou Mifare sem contato;
+
+° Sistema de Comunicação por voz através do intercomunicador e botão com retro iluminação.
+
+ 
+ 

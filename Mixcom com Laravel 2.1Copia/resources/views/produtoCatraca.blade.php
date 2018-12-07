@@ -66,7 +66,7 @@
                     <div class="card-body">
 
                         <a href="{{route('catraca')}}">
-                            <h5 class="card-title text-dark my-3 ">Catraca de Inox RBC 5905</h5>
+                            <h5 class="card-title text-dark my-3 ">{{ $p->nome }}</h5>
                         </a>
                         <p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
                         <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>

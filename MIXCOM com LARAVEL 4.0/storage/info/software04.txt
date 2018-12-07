@@ -1,0 +1,23 @@
+Controle de Acesso:
+
+°Digitação de senha, Código de Barras, Proximidade, MiFare e Biometria;
+
+°Captura de Imagens: WebCam, sistemas de Câmeras analógicas ou Ip (revisar compatibilidade com fabricante);
+
+°Acionadores e sensores: Catracas, Cancelas, Detectores de Metais, Botoeiras, Portas, etc. 
+
+°Integra com a maioria dos bancos de dados; 
+
+°Exportação de relatórios para os formatos: PDF, Microsoft XPS, Html, MHT Web, Text File, Rich Text File, Word, Excel, CSV, DBF, XML, BMP, GIF, JPEG, PNG, TIF, Windows Metafile;
+
+°Disponível nas versões Windows e WEB; 
+
+°Projetado para aplicações críticas; 
+
+°Módulo de Refeitório integrado ao sistema; 
+
+°Registro de Ocorrências; Relatório de Linha do Tempo;
+
+°Controle de eventos, executa ações de acordo com acontecimentos (Ex: Envia e-mail caso um equipamento deixe de funcionar, ou envia um SMS caso uma porta for arrombada);
+
+°Monitoramento em tempo real utilizando plantas baixas.
