@@ -4,11 +4,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/cadastroEndereco', function () {
-    return view('cadastrarEndereco');
-});
-Route::get('/testeCarrinho', 'CarrinhoController@index');
-Route::get('testeCarrinho', 'CarrinhoController@adicionar');
+Route::get('testeCarrinho', 'CarrinhoController@index')->name('Carrinho');
+Route::post('testeCarrinho', 'CarrinhoController@adicionar');
 
 Route::get('/testeMeusDados', function () {
     return view('meusDados');
@@ -40,9 +37,7 @@ Route::get('cadastroJuridico', function () {
 })->name('cadastrojur');
 Route::post('cadastroJuridico', 'RegisterJurController@store');
 
-Route::get('CadastroEndereco', function(){
-    return view('cadastrarEndereco');
-})->name('end');
+Route::get('CadastroEndereco', 'RegisterEndController@index')->name('end');
 Route::post('CadastroEndereco', 'RegisterEndController@store');
 
 Route::get('/Cadastrar', function(){
@@ -76,9 +71,7 @@ Route::get('test', function()
 
 Route::get('/produto/{id}', 'ProdutoController@index');
 
-Route::get('mercadopago', function(){
-    return view('mercadopago');
-});
+Route::get('mercadopago', 'MercPagoController@index')->name('mercpago');
 
 /*
 

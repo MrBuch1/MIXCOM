@@ -27,7 +27,7 @@
                             <div class="caixa col-md-4 col-sm-4 col-xs-4">
                                 <a href="Catraca5905.html"><h5 class="card-title text-muted my-3">Catraca de Inox RBC 5905</h5></a>
                                 <p class="distancia card-subtitle mb-2 text-muted my-3">Vendido e entre por MixCom.com</p>
-                              
+                            
                             </div>
                             <div class="caixa col-md-2 col-sm-2 col-xs-2">
                                 <table>
@@ -76,10 +76,10 @@
                         </div>                        
                     </div>    
                 </div>  
-             </div>
+            </div>
 
-         </div>
-         <br>
+        </div>
+        <br>
         <table>
                                     <tr>
                                     <td>
@@ -113,7 +113,7 @@
         <br>
         
         
-       <div class="card-deck distancia5">
+    <div class="card-deck distancia5">
             <div class="card">
                 <br>
                 <h5 class="distancia4 ">Resumo da Compra</h5>
@@ -131,10 +131,10 @@
                 <div class="card-body">
                     <h5 class=" text-dark">Total</h5>
                     <h5 class=" distancia card-title mb-2 text-muted my-3">R$999,00</h5>
-                     <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
+                    <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
                 </div>
                 <div class="card-footer btn">
-                      <center><table>
+                    <center><table>
                         <tr>
                             <td>
                             <a href="finalizarCompra.html"> <input type="button" class="btn btn-outline-info botao2" value="Continuar">
@@ -151,13 +151,13 @@
 </div>    
 
 <div class="container">
-        <div class="row">
-          <div class="caixa col-md-12 col-sm-12 col-xs-12">
+    <div class="row">
+        <div class="caixa col-md-12 col-sm-12 col-xs-12">
             <div class="col-12 mb-3">
             <hr>
         </div>
-             <h4 class="text-muted">Aproveite e veja Também</h4>
-             <br>
+            <h4 class="text-muted">Aproveite e veja Também</h4>
+            <br>
             <div class="container">
             <div class="row blog">
                 <div class="col-md-12">

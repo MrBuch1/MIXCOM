@@ -41,11 +41,7 @@
             <hr>
             </div>
             <br>
-<<<<<<< HEAD
             <p class="distancia2">Numero do cartão (**** **** **** 1234) <a href="#" class="distancia2">Excluir</a></p>
-=======
-            <p class="distancia2">Numero do cartão (3 ultimos números do cartão) </p>
->>>>>>> master
             <p class="distancia2">Bandeira (bandeira do cartão) </p>
             <p class="distancia2">Telefone (telefone do usuário) </p></p>
 
@@ -67,17 +63,17 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+    <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Novo Endereço</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-             <!-- Inicio do formulario -->
-      <form method="get" action=".">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Novo Endereço</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <!-- Inicio do formulario -->
+        <form method="get" action=".">
 
         <div class="form-group row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Cep:</label>
@@ -89,7 +85,7 @@
                             onblur="pesquisacep(this.value);"/>
                         </td>
                         <td>
-                           <input type="button" class=" btn btn-outline-primary  " onclick="meu_callback()"
+                            <input type="button" class=" btn btn-outline-primary  " onclick="meu_callback()"
                         value="Pesquisar"></label><br />
                         </td>
                     </tr>
@@ -114,7 +110,7 @@
             <input class="form-control"  name="bairro" type="text" id="bairro" size="40" />
             </div>
         </div>
-         <div class="form-group row">
+        <div class="form-group row">
             <label for="inputPassword" class="col-sm-2 col-form-label">Cidade:</label>
             <div class="col-sm-10">
             <input class="form-control"  name="cidade" type="text" id="cidade" size="40" />

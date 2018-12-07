@@ -12,6 +12,9 @@ class Userjur extends Model
      *
      * @var array
      */
+
+   
+
     protected $fillable = [
         'rsocial', 'cnpj',
     ];

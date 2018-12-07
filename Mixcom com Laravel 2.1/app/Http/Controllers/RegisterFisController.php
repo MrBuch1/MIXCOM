@@ -39,7 +39,7 @@ class RegisterFisController extends Controller
         $user = new User();
         $userfis = new Userfis();
         $user->nome     = $request->input('name');
-        $user->telefone   = $request->input('telefone');
+        $user->telefone = $request->input('telefone');
         $user->email    = $request->input('email');
         $hashedPassword = bcrypt('password');
         $user->password = $hashedPassword;

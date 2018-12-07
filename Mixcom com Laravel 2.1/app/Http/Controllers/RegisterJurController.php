@@ -44,16 +44,7 @@ class RegisterJurController extends Controller
         $userjur->user_id = $user->id;
         $userjur->save();
 
-       /* $endereco = new Endereco();
-        $endereco->rua    = $request->input('rua');
-        $endereco->numero = $request->input('num');
-        $endereco->cep    = $request->input('cep');
-        $endereco->bairro = $request->input('bairro');
-        $endereco->cidade = $request->input('cidade');
-        $endereco->estado = $request->input('estado');
-        $endereco->save(); */
-
-        return redirect('/Inicio');
+        return redirect()->route('end');
     }
 
 }

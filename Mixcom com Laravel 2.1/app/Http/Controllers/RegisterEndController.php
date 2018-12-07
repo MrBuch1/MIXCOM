@@ -3,24 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Endereco;
+use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class RegisterEndController extends Controller
 {
 
-    //protected $redirectTo = '/index';
-    
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
+    public function index(){
+        $endereco = Endereco::all();
+        return view('cadastrarEndereco');
+    }
 
     /**
      * Get a validator for an incoming registration request.
@@ -49,12 +42,14 @@ class RegisterEndController extends Controller
     protected function store(Request $request)
     {
         $endereco = new Endereco();
-        $endereco->rua    = $request->get('rua');
-        $endereco->numero = $request->get('num');
-        $endereco->cep    = $request->get('cep');
-        $endereco->bairro = $request->get('bairro');
-        $endereco->cidade = $request->get('cidade');
-        $endereco->estado = $request->get('estado');
+        $endereco->rua    = $request->input('rua');
+        $endereco->numero = $request->input('num');
+        $endereco->cep    = $request->input('cep');
+        $endereco->bairro = $request->input('bairro');
+        $endereco->cidade = $request->input('cidade');
+        $endereco->estado = $request->input('estado');
+
+        $endereco->user_id = $user->id;
         $endereco->save();
 
         return redirect('/Inicio');
