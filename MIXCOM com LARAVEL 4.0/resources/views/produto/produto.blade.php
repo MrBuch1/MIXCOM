@@ -33,22 +33,18 @@
                                         <center>
                                             <h3 class=" distancia card-title mb-2 my-3">R$ {{$registro->valor}}</h3>
                                             <p class=" distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
-                                            <input type="button" class=" btn btn-outline-success botao2 " onclick="funcaoComprar()"
-                                                value="Comprar">
+                                            <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                                                {{ csrf_field() }}
+                                                <input type="hidden" name="id" value="{{ $registro->id }}">
+                                                <button  class="btn btn-outline-success">Comprar</button>
+                                            </form>
                                         </center>
                                         <br>
-                                        <a href="#">Formas de Pagamento</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Calcule frete e prazo </p>
-                                        <form class="form-inline my-5 my-lg-0">
-
-                                            <input class="form-control mr-sm-2" type="search" placeholder="_______-___"
-                                                aria-label="Pesquisar">
-                                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">OK</button>
-                                        </form>
+                                        <p>Entrega a combinar com o Vendedor</p>
                                     </td>
                                 </tr>
 
@@ -86,81 +82,7 @@
             </div>
             <h4 class="text-muted">Aproveite e veja Também</h4>
             <br>
-            <div class="container">
-                <div class="row blog">
-                    <div class="col-md-12">
-                        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
-                            <ol class="carousel-indicators">
-                                <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#blogCarousel" data-slide-to="1"></li>
-                            </ol>
-
-                            <!-- Carousel items -->
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--.row-->
-                                </div>
-                                <!--.item-->
-
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--.row-->
-                                </div>
-                                <!--.item-->
-
-                            </div>
-                            <!--.carousel-inner-->
-                        </div>
-                        <!--.Carousel-->
-
-
-                    </div>
-                </div>
+            @component('components.carousel_prod')@endcomponent
                 <br><br><br>
                 <div class="container">
                     <div class="row">

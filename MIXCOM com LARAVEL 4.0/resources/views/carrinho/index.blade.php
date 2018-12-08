@@ -7,7 +7,6 @@
 <div class="container">
     <div class="row">
     <div class="caixa col-md-9 col-sm-9 col-xs-9">
-
             <br><br>
             <h2>Carrinho</h2>
             @forelse ($pedidos as $pedido)
@@ -16,9 +15,9 @@
             @php
             $total_pedido = 0;
             @endphp
-            @foreach ($pedido->pedido_produtos as $pedido_produto)
         <div class="card-deck ">
             <br><br><br><br>
+            @foreach ($pedido->pedido_produtos as $pedido_produto)
             <div class="card">
                 <div class="card-body">
                     <div class="container">
@@ -28,7 +27,7 @@
                                 <br>
                                 <br>
 
-                                <a href="#" onclick="carrinhoRemoverProduto({{ $pedido->id }}, {{ $pedido_produto->produto_id }}, 0" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Retirar produto do carrinho?">Excluir</a>
+                                <a href="#" onclick="carrinhoRemoverProduto({{ $pedido->id }}, {{ $pedido_produto->produto_id }}, 1 )">Excluir</a>
                             </div>
                             <div class="caixa col-md-4 col-sm-4 col-xs-4">
                                 <a href="Catraca5905.html"><h5 class="card-title text-muted my-3">{{ $pedido_produto->produto->nome }}</h5></a>
@@ -51,6 +50,7 @@
                                             <a href="#" onclick="carrinhoAdicionarProduto({{ $pedido_produto->produto_id }})">
                                                 <i class="material-icons small">add_circle_outline</i>
                                             </a>
+
                                         </td>
                                     </tr>
                                 </table>
@@ -59,7 +59,7 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <h5 class="text-muted ">Preço</h5>
+                                            <h5 class="text-muted ">Preço Unit.</h5>
                                         </td>
                                     </tr>
                                     <tr>
@@ -108,7 +108,10 @@
     <div class="caixa col-md-3 col-sm-3 col-xs-3">
         <br>
         <br>
-
+        @php
+        $total_produto = $pedido_produto->valores - $pedido_produto->descontos;
+        $total_pedido += $total_produto;
+    @endphp
 
        <div class="card-deck distancia5">
             <div class="card">
@@ -117,7 +120,7 @@
                 <br>
                 <h3 class="distancia4 card-subtitle mb-2 text-muted my-3">Subtotal </h3>
                 <p class="distancia4 card-subtitle mb-2 text-muted my-3">Quantidade de produtos: {{ $pedido_produto->qtd }}</p>
-                <p class="distancia4 card-subtitle mb-2 text-muted my-3">{{ number_format($pedido_produto->produto->valor, 2, ',', '.') }}</p>
+                <p class="distancia4 card-subtitle mb-2 text-muted my-3">{{ number_format($total_produto, 2, ',', '.') }}</p>
                 <p class="distancia4 card-subtitle mb-2 text-muted my-3">Frete</p>
                 <p class="distancia4 card-subtitle mb-2 text-muted my-3">R$0,00</p>
 
@@ -128,10 +131,6 @@
         </div>
                 <div class="card-body">
                     <h5 class=" text-dark">Total</h5>
-                    @php
-                    $total_produto = $pedido_produto->valores - $pedido_produto->descontos;
-                    $total_pedido += $total_produto;
-                @endphp
                     <h5 class=" distancia card-title mb-2 text-muted my-3">{{ number_format($total_produto, 2, ',', '.') }}</h5>
                      <p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
                 </div>
@@ -173,79 +172,30 @@
                             <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#blogCarousel" data-slide-to="1"></li>
                         </ol>
-
-                        <!-- Carousel items -->
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <a href="#">
-                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-                                        </a>
-                                    </div>
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-
-                        </div>
-                        <!--.carousel-inner-->
-                    </div>
-                    <!--.Carousel-->
-
-
 </div>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<form id="form-remover-produto" method="POST" action="{{ route('carrinho.remover') }}">
+        {{ csrf_field() }}
+        {{ method_field('DELETE') }}
+        <input type="hidden" name="pedido_id">
+        <input type="hidden" name="produto_id">
+        <input type="hidden" name="item">
+    </form>
+    <form id="form-adicionar-produto" method="POST" action="{{ route('carrinho.adicionar') }}">
+        {{ csrf_field() }}
+        <input type="hidden" name="id">
+    </form>
+
+    @push('scripts')
+        <script type="text/javascript" src="/js/carrinho.js"></script>
+    @endpush
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     @stack('scripts')
-<script type="text/javascript">
-    $( document ).ready(function(){
-        $(".button-collapse").sideNav();
-        $('select').material_select();
-    });
-</script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+            $(".button-collapse").sideNav();
+            $('select').material_select();
+        });
+    </script>
 @endsection

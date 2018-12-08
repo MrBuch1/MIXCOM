@@ -18,7 +18,7 @@
                     <a class="nav-link" href="#Produtos">A Empresa</a>
                 </li>
                 <li class="nav-item">
-                    <a href="produtos" id="produtos" class="nav-link">Produtos</a>
+                    <a href="/produtos" id="produtos" class="nav-link">Produtos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Sobre-nos">Nossos Serviços</a>

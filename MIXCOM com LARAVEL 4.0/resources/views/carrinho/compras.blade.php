@@ -1,136 +1,146 @@
 @extends('layouts.app')
-@section('pagina_conteudo')
 
-<br><br><br>
-<br><br>
+@section('pagina_conteudo')
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="container">
     <div class="row">
-        <div class="caixa col-md-4 col-sm-4 col-xs-4">
-            <br>
-            <p class="distancia7">(quantidade de produto) <a href="#">vizualizar produto</a></p>
-            <p class="distancia7">frete para (lugar destino)</p>
-            <div class="col-12 mb-3">
-                <hr>
-            </div>
-            <b><p class="distancia7">Total a pagar</p></b>
-            <p class="distancia7">cartão</p>
-            <p class="distancia7">boleto</p>
+        <h3>Minhas compras</h3>
+        @if (Session::has('mensagem-sucesso'))
+            <div class="card-panel green">{{ Session::get('mensagem-sucesso') }}</div>
+        @endif
+        @if (Session::has('mensagem-falha'))
+            <div class="card-panel red">{{ Session::get('mensagem-falha') }}</div>
+        @endif
+        <div class="divider"></div>
+        <div class="row l2 s12 m2">
+            <h4>Compras concluídas</h4>
+            @forelse ($compras as $pedido)
+                <h5 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Pedido: {{ $pedido->id }} </h5>
+                <h5 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
+                <form method="POST" action="{{ route('carrinho.cancelar') }}">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2"></th>
+                                <th>Produto</th>
+                                <th>Valor</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @php
+                            $total_pedido = 0;
+                        @endphp
+                        @foreach ($pedido->pedido_produtos_itens as $pedido_produto)
+                            @php
+                                $total_produto = $pedido_produto->valor - $pedido_produto->desconto;
+                                $total_pedido += $total_produto;
+                            @endphp
+                            <tr>
+                                <td class="center">
+                                    @if($pedido_produto->status == 'PA')
+                                        <p class="center">
+                                            <input type="checkbox" id="item-{{ $pedido_produto->id }}" name="id[]" value="{{ $pedido_produto->id }}" />
+                                            <label for="item-{{ $pedido_produto->id }}"></label>
+                                        </p>
+                                    @else
+                                        <strong class="red-text">CANCELADO</strong>
+                                    @endif
+                                </td>
+                                <td>
+                                    <img width="100" height="100" src="{{ $pedido_produto->produto->imagem }}">
+                                </td>
+                                <td>{{ $pedido_produto->produto->nome }}</td>
+                                <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
+                                <td>R$ {{ number_format($total_produto, 2, ',', '.') }}</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td class="flow-text">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn-large red col l12 s12 m12 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Cancelar itens selecionados">
+                                        Cancelar
+                                    </button>   
+                                </td>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+            @empty
+                <h5 class="center">
+                    @if ($cancelados->count() > 0)
+                        Neste momento não há nenhuma compra valida.
+                    @else
+                        Você ainda não fez nenhuma compra.
+                    @endif
+                </h5>
+            @endforelse
         </div>
-
-        <div class="caixa col-md-2 col-sm-2 col-xs-2">
-            <br>
-            <p class="distancia7">R$ 999,00</p>
-            <p class="distancia7">R$ 12,00</p>
-            <div class="col-12 mb-3">
-                <hr>
-            </div>
-            <b><p class="distancia7">R$ 1.011,00</p></b>
-            <p class="distancia7">R$ 1.011,00</p>
-            <p class="distancia7">R$ 1.011,00</p>
-        </div>
-
-        <div class="caixa col-md-6 col-sm-3 col-xs-3">
-            <h5>endereço de entrega</h5>
-            <p class="distancia">Nome do Usuário</p>
-            <p class="distancia">endereço, número</p>
-            <p class="distancia">bairro</p>
-            <p class="distancia">cidade, estado</p>
-            <p class="distancia">cep</p>
-            <a href="#" class="distancia">alterar endereço de entrega</a>
-        </div>
-        <div class="col-12 mb-3">
-            <hr>
+        <div class="row">
+            <div class="divider"></div>
+            <h4>Compras canceladas</h4>
+            @forelse ($cancelados as $pedido)
+                <h5 class="center-align container" style="margin-top: 15px"> Pedido: {{ $pedido->id }} </h5>
+                <h5 class="center-align container" style="margin-top: 15px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
+                <h5 class="center-align container" style="margin-top: 15px"> Cancelado em: {{ $pedido->updated_at->format('d/m/Y H:i') }} </h5>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Produto</th>
+                            <th>Valor</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @php
+                            $total_pedido = 0;
+                        @endphp
+                        @foreach ($pedido->pedido_produtos_itens as $pedido_produto)
+                            @php
+                                $total_produto = $pedido_produto->valor - $pedido_produto->desconto;
+                                $total_pedido += $total_produto;
+                            @endphp
+                        <tr>
+                            <td>
+                                <img width="100" height="100" src="{{ $pedido_produto->produto->imagem }}">
+                            </td>
+                            <td>{{ $pedido_produto->produto->nome }}</td>
+                            <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>                            
+                            <td>R$ {{ number_format($total_produto, 2, ',', '.') }}</td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="flow-text">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            @empty
+                <h5 class="center">Nenhuma compra ainda foi cancelada.</h5>
+            @endforelse
         </div>
     </div>
-    <br>
-    <h5 class="distancia7">Opções de entrega</h5>
-    <table class="distancia7">
-        <br>
-        <tr>
-            <td>
-                <div class="card" style="width: 18rem; height: 120px">
-                    <div class="card-body">
-                        <input type="radio" name="idade" id="idade5" value="5">
-                        <label for="idade5"><h5 class="card-title">rápido</h5></label>
-                        <h6 class="card-subtitle mb-2 text-muted">de 7 a 9 dias úteis</h6>
-                        <p class="card-subtitle mb-2 text-muted">R$19,00</p>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card" style="width: 18rem; height: 120px">
-                    <div class="card-body">
-                        <input type="radio" name="idade" id="idade5" value="5">
-                        <label for="idade5"><h5 class="card-title">econômica</h5></label>
-                        <h6 class="card-subtitle mb-2 text-muted">de 10 a 13 dias úteis</h6>
-                        <p class="card-subtitle mb-2 text-muted">R$12,00</p>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card" style="width: 18rem; height: 120px">
-                    <div class="card-body">
-                        <input type="radio" class="corradio" name="idade" id="idade5" value="5">
-                        <label for="idade5"><h5 class="card-title">pegue na loja</h5></label>
 
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </table>
-    <div class="col-12 mb-3">
-        <hr>
-    </div>
-    <br>
-    <svg-icon>
-        <src href="sprite.svg#si-glyph-trolley-plus" />
-    </svg-icon>
-    <center><h5>Formas de pagamento</h5></center>
-
-    <br>
-
-    <center><table>
-        <tr>
-            <td>
-                <div class="card" style="width: 12rem; height: 100px">
-                    <div class="card-body">
-                        <center><h6 class="card-title">cartão de crédito</h6>
-                            <input type="button" class=" btn btn-outline-info " onclick="funcaoPagamento()" value="selecionar">
-                        </center>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card" style="width: 12rem; height: 100px">
-                    <div class="card-body">
-                        <center>
-                            <h6 class="card-title">cartão de débito</h6>
-                            <input type="button" class=" btn btn-outline-info " onclick="funcaoPagamento()" value="selecionar">
-                        </center>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card" style="width: 12rem; height: 100px">
-                    <div class="card-body">
-                        <center><h6 class="card-title">boleto</h6>
-                            <input type="button" class=" btn btn-outline-info" onclick="funcaoPagamento()" value="selecionar">
-                        </center>
-                    </div>
-                </div>
-            </td>
-            <td>
-                <div class="card" style="width: 12rem; height: 100px">
-                    <div class="card-body">
-                        <center>
-                            <h6 class="card-title">pegue na loja</h6>
-                            <input type="button" class=" btn btn-outline-info " onclick="funcaoPagamento()" value="selecionar">
-                        </center>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </table></center>
 </div>
-
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+@stack('scripts')
+<script type="text/javascript">
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        $('select').material_select();
+    });
+</script>
 @endsection
