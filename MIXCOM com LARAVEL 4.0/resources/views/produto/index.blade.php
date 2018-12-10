@@ -19,12 +19,12 @@
 
 					<div class = "row" >
 							@foreach($registros as $registro)
-					<div class="card" style="width: 15em; word-wrap: break-word; margin: 5px">
+					<div class="card table-responsive" style="width: 15em; word-wrap: break-word; margin: 5px">
 						<br>
-						<img src="{{ asset($registro->imagem) }}" class="img-responsive card-img-top" style="width: 55%;">
+						<img src="{{ asset($registro->imagem) }}" class="img-responsive card-img-top" style= "width: 55%;" >
 						<div class="card-body">
 
-							<a href="">
+							<a href="{{ route('produto', $registro->id) }}">
 								<h6 class="card-title text-dark my-3 ">{{$registro->nome}}</h6>
 							</a>
 							<p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
@@ -34,14 +34,14 @@
 
 						<div class="card-footer cor1">
 							<small class="text-muted">
-								<center><a class="text-light" href="{{ route('produto', $registro->id) }}">ADICIONAR AO CARRINHO</a>
+								<center><a class="text-light" href="{{ route('produto', $registro->id) }}">Ver mais sobre o Produto</a>
 
 							</small>
-						</div>
-					</div>
-					@endforeach
-					</div>
-				</div>
+                        </div>
+                    </div>
+                    @endforeach
+                    </div>
+                </div>
 			</div>
 		</div>
 </div>
@@ -55,81 +55,7 @@
 				</div>
 					<h5>Produtos Relacionados</h5>
 					<br>
-					<div class="container">
-						<div class="row blog">
-							<div class="col-md-12">
-								<div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
-									<ol class="carousel-indicators">
-										<li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-										<li data-target="#blogCarousel" data-slide-to="1"></li>
-									</ol>
-
-									<!-- Carousel items -->
-									<div class="carousel-inner">
-
-										<div class="carousel-item active">
-											<div class="row">
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-											</div>
-											<!--.row-->
-										</div>
-										<!--.item-->
-
-										<div class="carousel-item">
-											<div class="row">
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-												<div class="col-md-3">
-													<a href="#">
-														<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
-													</a>
-												</div>
-											</div>
-											<!--.row-->
-										</div>
-										<!--.item-->
-
-									</div>
-									<!--.carousel-inner-->
-								</div>
-							<!--.Carousel-->
-							<br><br><br><br>
-						</div>
-					</div>
-				</div>
+@component('components.carousel_prod')@endcomponent
 			</div>
 		</div>
 	</div>

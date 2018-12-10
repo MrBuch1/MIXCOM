@@ -12,6 +12,7 @@ class ProdutoController extends Controller {
         $registros = Produto::where([
             'ativo' => 'S'
             ])->get();
+            $registros = Produto::paginate(9);
             return view('produto.index', compact('registros'));
         }
 
