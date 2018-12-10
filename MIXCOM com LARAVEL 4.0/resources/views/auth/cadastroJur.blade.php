@@ -14,7 +14,7 @@
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input id="name" type="text" placeholder="Nome completo" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                        <input id="name" type="text" placeholder="Nome fantasia" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
                         name="name" value="{{ old('name') }}" required autofocus>
 
                         @if ($errors->has('name'))
