@@ -13,6 +13,7 @@ use App\Produto;
 use App\PedidoProduto;
 use App\Http\Controllers\CarrinhoController;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 
 class MercadoPagoController extends Controller
@@ -29,7 +30,11 @@ class MercadoPagoController extends Controller
             'valor'    => $produto->valor
         ])->get();*/
 
-        $pedido = DB::table('pedido_produtos')->select('valor');
+
+        $idpedido = DB::table('pedido_produtos')->max('pedido_id');
+        $somapedido = DB::table('pedido_produtos')->where('pedido_id', $idpedido)->sum('valor');
+        $pedido = (float)$somapedido;
+
         
         $preference_data = array (
             "items" => array (
