@@ -42,4 +42,26 @@ Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
 
 /*---------------------------------------Rotas testes--------------------------------------*/
 Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
+
+use App\User;
+use App\Endereco;
+use App\Userfis;
+
+Route::get('/teste', function(){
+    $user = user::all();
+    foreach($user as $u){
+        echo "<br>";
+        echo "<p>id: " . $u->id . "</p>";
+        echo "<p>Nome: " . $u->name . "</p>";
+        echo "<p>Telefone: " . $u->telefone . "</p>";
+        echo "<p>Email: " . $u->email . "</p>";
+        echo "<p>Enderço: " . $u->endereco->rua . "</p>";
+        echo "<p>Cidade: " . $u->endereco->cidade . "</p>";
+        echo "<p>Bairro: " . $u->endereco->bairro . "</p>";
+        echo "<p>Complemento: " . $u->endereco->complemento . "</p>";
+        echo "<p>Complemento: " . $u->endereco->complemento . "</p>";
+        echo "<p>CEP: " . $u->endereco->cep . "</p>";
+        echo "<p>UF: " . $u->endereco->uf . "</p>";
+    }
+});
 /*------------------------------------------------------------------------------------*/

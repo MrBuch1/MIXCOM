@@ -13,6 +13,12 @@ class User extends Authenticatable
     public function endereco(){
         return $this->hasOne('App\Endereco');
     }
+    public function userfis(){
+        return $this->hasOne('App\Userfis');
+    }
+    public function userjurs(){
+        return $this->hasOne('App\Userjur');
+    }
 
     protected $fillable = [
         'name', 'telefone', 'email', 'password',
