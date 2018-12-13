@@ -30,9 +30,9 @@
                         <input id="cpf" type="text" placeholder="CPF" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}"
                         name="cpf" value="{{ old('cpf') }}" required autofocus>
 
-                        @if ($errors->has('cnpj'))
+                        @if ($errors->has('cpf'))
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('cnpj') }}</strong>
+                            <strong>{{ $errors->first('cpf') }}</strong>
                         </span>
                         @endif
                     </div>
@@ -47,7 +47,80 @@
                         @endif
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-3">
+                        <input id="cep" type="text" placeholder="CEP" class="form-control{{ $errors->has('cep') ? ' is-invalid' : '' }}"
+                        name="cep" value="{{ old('cep') }}" required autofocus>
 
+                        @if ($errors->has('cep'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('cep') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <input id="cidade" type="text" placeholder="Cidade" class="form-control{{ $errors->has('cidade') ? ' is-invalid' : '' }}"
+                        name="cidade" value="{{ old('cidade') }}" required autofocus>
+
+                        @if ($errors->has('cidade'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('cidade') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <input id="rua" type="text" placeholder="Rua" class="form-control{{ $errors->has('rua') ? ' is-invalid' : '' }}"
+                        name="rua" value="{{ old('rua') }}" required autofocus>
+
+                        @if ($errors->has('rua'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('rua') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-1">
+                        <input id="numero" type="text" placeholder="Nº" class="form-control{{ $errors->has('numero') ? ' is-invalid' : '' }}"
+                        name="numero" value="{{ old('numero') }}" required autofocus>
+
+                        @if ($errors->has('numero'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('numero') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <input id="complemento" type="text" placeholder="Complemento" class="form-control{{ $errors->has('complemento') ? ' is-invalid' : '' }}"
+                        name="complemento" value="{{ old('complemento') }}" required autofocus>
+
+                        @if ($errors->has('complemento'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('complemento') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <input id="bairro" type="text" placeholder="Bairro" class="form-control{{ $errors->has('bairro') ? ' is-invalid' : '' }}"
+                        name="bairro" value="{{ old('bairro') }}" required autofocus>
+
+                        @if ($errors->has('bairro'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('bairro') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <input id="uf" type="text" placeholder="Estado" class="form-control{{ $errors->has('uf') ? ' is-invalid' : '' }}"
+                        name="uf" value="{{ old('uf') }}" required autofocus>
+
+                        @if ($errors->has('uf'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('uf') }}</strong>
+                        </span>
+                        @endif
+                    </div>
+                </div>
                 <div class="form-row">
                     <div class="form-group col-sm-6">
                         <input id="email" type="email" placeholder="Email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
