@@ -36,6 +36,7 @@ Route::get('/produto/{id}', 'ProdutoController@index');
 Route::get('/produtos', 'ProdutoController@index')->name('index');
 Route::get('/produto/{id}', 'ProdutoController@produto')->name('produto');
 Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
+Route::get('/produto/{id}', 'ProdutoController@index');
 
 /*------------------------------------------------------------------------------------*/
 
@@ -64,4 +65,13 @@ Route::get('/teste', function(){
         echo "<p>UF: " . $u->endereco->uf . "</p>";
     }
 });
+
+Route::get('/desenvolvedores', function () {  return view('desenvolvedores'); });
 /*------------------------------------------------------------------------------------*/
+
+/*---------------------------------------Admin--------------------------------------*/
+
+Route::get('admin/cadastrar-produto', 'ProdutoController@create');
+Route::post('/produtos', 'ProdutoController@store');
+Route::get('/produtos', 'ProdutoController@store');
+Route::post('/admin/editar-produto/{id}', 'ProdutoController@update');
