@@ -64,4 +64,6 @@ Route::get('/teste', function(){
         echo "<p>UF: " . $u->endereco->uf . "</p>";
     }
 });
+
+Route::get('/desenvolvedores', function () {  return view('desenvolvedores'); });
 /*------------------------------------------------------------------------------------*/
