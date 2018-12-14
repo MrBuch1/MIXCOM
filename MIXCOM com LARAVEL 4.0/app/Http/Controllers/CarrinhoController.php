@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\MercadoPagoController;
 use App\Pedido;
 use App\Produto;
 use App\PedidoProduto;
@@ -164,8 +165,8 @@ class CarrinhoController extends Controller
             ]);
 
         $req->session()->flash('mensagem-sucesso', 'Compra concluída com sucesso!');
-
-        return redirect()->route('carrinho.compras');
+        return (new MercadoPagoController)->index($idpedido);
+        //return redirect()->route('carrinho.compras');
     }
 
     public function compras()

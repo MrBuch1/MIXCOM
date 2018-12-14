@@ -19,9 +19,9 @@
             </div>
         @endif
         @forelse ($pedidos as $pedido)
-            <h5 class="col l6 s12 m6" style="margin-left: 50px; margin-top: 35px"> Pedido: {{ $pedido->id }} </h5>
-            <h5 class="col l6 s12 m6"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
-            <table>
+            <h4 class="col l6 s12 m6" style="align-self: center; margin-left: 500px"> Pedido: {{ $pedido->id }} </h4>
+            <h5 class="col l6 s12 m6" style="align-self: center; margin-left: 420px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
+            <table class="col l6 s12 m6" style="margin-top: 50px">
                 <thead>
                     <tr>
                         <th></th>
@@ -43,7 +43,7 @@
                         </td>
 
                         <td class="center-align">
-                            <div class="center-align" style="margin-left: -120px">
+                            <div class="center-align" style="margin-left: -27px">
                                 <a class="col l4 m4 s4" href="#" onclick="carrinhoRemoverProduto({{ $pedido->id }}, {{ $pedido_produto->produto_id }}, 1 )">
                                     <i class="material-icons small">remove_circle_outline</i>
                                 </a>
@@ -67,16 +67,16 @@
                 </tbody>
             </table>
             <div class="ml-2 my-3 row">
-                <strong class="flow-text offset-l6 offset-m6 offset-s6 right-align">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</strong>
+                <strong class="flow-text offset-8 offset-m6 offset-s6 right-align">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</strong>
                 
             </div>
             <div class="ml-auto mr-4">
                 <div class="ml-5 row">
-                    <a class="btn btn-outline blue btn-large tooltipped offset-l2 offset-s2 offset-m2" data-position="top" data-delay="50" data-tooltip="Voltar a página inicial para continuar comprando?" href="{{ route('index') }}">Compre Mais!</a>
+                    <a class="btn btn-outline-success mr-3 offset-8" href="{{ route('index') }}">Compre Mais!</a>
                     <form method="POST" action="{{ route('carrinho.concluir') }}">
                         {{ csrf_field() }}
                         <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">
-                    <button type="submit" class="btn-large green accent-4 col offset-l1 offset-s1 offset-m1 tooltipped" data-position="top" data-delay="50" data-tooltip="Adquirir os produtos concluindo a compra?">
+                    <button type="submit" class="btn btn-outline-primary">
                             Concluir compra
                         </button>   
                     </form>
@@ -84,7 +84,7 @@
             </div>
             
         @empty
-            <h5>Não há nenhum pedido no carrinho</h5>
+            <h5 style="margin-left: 425px">Não há nenhum pedido no carrinho</h5>
         @endforelse
     </div>
 </div>

@@ -36,7 +36,7 @@
                                             <form method="POST" action="{{ route('carrinho.adicionar') }}">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="id" value="{{ $registro->id }}">
-                                                <button  class="btn btn-outline-success">Comprar</button>
+                                                <button  class="btn btn-primary">Comprar</button>
                                             </form>
                                         </center>
                                         <br>

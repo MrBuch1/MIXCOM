@@ -14,9 +14,9 @@
         @endif
         <div class="divider"></div>
         <div class="row l2 s12 m2">
-            <h4>Compras concluídas</h4>
+            <h1 style="margin-top: 20px">Compras concluídas</h1>
             @forelse ($compras as $pedido)
-                <h5 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Pedido: {{ $pedido->id }} </h5>
+                <h2 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Pedido: {{ $pedido->id }} </h2>
                 <h5 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
                 <form method="POST" action="{{ route('carrinho.cancelar') }}">
                     {{ csrf_field() }}
@@ -51,7 +51,7 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <img width="100" height="100" src="{{ $pedido_produto->produto->imagem }}">
+                                    <img width="100" height="100" src="{{ asset($pedido_produto->produto->imagem) }}">
                                 </td>
                                 <td>{{ $pedido_produto->produto->nome }}</td>
                                 <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
@@ -61,13 +61,13 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="3"></td>
+                                <td colspan="2"></td>
                                 <td class="flow-text">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <button type="submit" class="btn-large red col l12 s12 m12 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Cancelar itens selecionados">
-                                        Cancelar
+                                    <button type="submit" class="btn btn-outline-danger col l12 s12 m12 my-4" style="margin-bottom: 50px">
+                                        Cancelar Compra
                                     </button>   
                                 </td>
                                 <td colspan="3"></td>
@@ -87,9 +87,9 @@
         </div>
         <div class="row">
             <div class="divider"></div>
-            <h4>Compras canceladas</h4>
+            <h1 style="margin-top: 50px">Compras canceladas</h1>
             @forelse ($cancelados as $pedido)
-                <h5 class="center-align container" style="margin-top: 15px"> Pedido: {{ $pedido->id }} </h5>
+                <h2 class="center-align container" style="margin-top: 15px"> Pedido: {{ $pedido->id }} </h2>
                 <h5 class="center-align container" style="margin-top: 15px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
                 <h5 class="center-align container" style="margin-top: 15px"> Cancelado em: {{ $pedido->updated_at->format('d/m/Y H:i') }} </h5>
                 <table>
@@ -112,7 +112,7 @@
                             @endphp
                         <tr>
                             <td>
-                                <img width="100" height="100" src="{{ $pedido_produto->produto->imagem }}">
+                                <img width="100" height="100" src="{{ asset($pedido_produto->produto->imagem) }}">
                             </td>
                             <td>{{ $pedido_produto->produto->nome }}</td>
                             <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>                            
