@@ -40,7 +40,7 @@ class ProdutoController extends Controller {
         }
         
 
-    public function create()
+    /*public function create()
     {
         
     }
@@ -82,10 +82,10 @@ class ProdutoController extends Controller {
             $path = $request->file('imagemProduto')->store('images', 'public');
             $produto->imagem = $path; 
             Storage::disk('public')->delete($img_antiga);
-           
+        
         }
         $produto->save();
         return redirect('/produtos');
 
-    }
+    }*/
 }

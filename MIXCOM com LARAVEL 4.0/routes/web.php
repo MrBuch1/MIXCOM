@@ -71,7 +71,7 @@ Route::get('/desenvolvedores', function () {  return view('desenvolvedores'); })
 
 /*---------------------------------------Admin--------------------------------------*/
 
-Route::get('admin/cadastrar-produto', 'ProdutoController@create');
-Route::post('/produtos', 'ProdutoController@store');
-Route::get('/produtos', 'ProdutoController@store');
-Route::post('/admin/editar-produto/{id}', 'ProdutoController@update');
+//Route::get('admin/cadastrar-produto', 'ProdutoController@create');
+//Route::post('/produtos', 'ProdutoController@store');
+//Route::get('/produtos', 'ProdutoController@store');
+//Route::post('/admin/editar-produto/{id}', 'ProdutoController@update');
