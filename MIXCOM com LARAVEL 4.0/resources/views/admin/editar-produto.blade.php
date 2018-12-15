@@ -4,10 +4,10 @@
     <h1>Editar Produto</h1>
     <form action = "/admin/editar-produto/{{$registro->id}}" method="POST" enctype="multipart/form-data">
         @csrf
-        <div class = "form-group">        
+        <div class = "form-group">
             <label for="nome">Nome do Produto</label>
             <input type = "text" class = "form-control" name="nome" id = "nome" placeholder = "{{$registro->nome}}">
-            
+
             <label for="tipo">Tipo</label>
             <select id="tipo" name = "tipo" class="form-control" placeholder = "{{$registro->tipo}}">
               <option value="catraca">Catraca</option>
@@ -53,9 +53,9 @@
 
             <img class="img-responsive" style="width: 300px;" src="{{ asset($registro->imagem) }}">
             <label for="img">Imagem do Produto</label>
-            <input type="file" class="form-control-file" name="imagem" id="imagem">  
-        
-        
+            <input type="file" class="form-control-file" name="imagem" id="imagem">
+
+
         </div>
         <button type="submit" class = "btn btn-success btn-sm">Salvar</button>
         <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
