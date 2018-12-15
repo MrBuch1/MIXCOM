@@ -38,11 +38,11 @@ class ProdutoController extends Controller {
             $registros = Produto::where('codtipo', $codtipo)->get();
             return view('produto.index', compact('registros'));
         }
-        
 
-    public function create()
+
+  /*  public function create()
     {
-        
+
     }
 
     public function store(Request $request)
@@ -67,7 +67,7 @@ class ProdutoController extends Controller {
 
         $registros = Produto::find($id);
         return view("editar-produto", compact('registros'));
-        
+
     }
 
     public function update(Request $request, $id){
@@ -80,12 +80,12 @@ class ProdutoController extends Controller {
         $produto->preco = $request->input('pcProduto');
         if($request->file('imagemProduto') != null){
             $path = $request->file('imagemProduto')->store('images', 'public');
-            $produto->imagem = $path; 
+            $produto->imagem = $path;
             Storage::disk('public')->delete($img_antiga);
-           
+
         }
         $produto->save();
         return redirect('/produtos');
 
-    }
+    }*/
 }

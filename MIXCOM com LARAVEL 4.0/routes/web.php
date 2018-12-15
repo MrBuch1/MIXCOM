@@ -48,7 +48,6 @@ Route::get('/produto/{id}', 'ProdutoController@index');
 Route::get('/produtos', 'ProdutoController@index')->name('index');
 Route::get('/produto/{id}', 'ProdutoController@produto')->name('produto');
 Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
-Route::get('/produto/{id}', 'ProdutoController@index');
 
 /*------------------------------------------------------------------------------------*/
 
