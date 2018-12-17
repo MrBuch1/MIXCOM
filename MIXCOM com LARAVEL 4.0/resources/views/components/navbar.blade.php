@@ -30,6 +30,9 @@
             @guest
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
+                    <a class="nav-link" href="/admin"><i class="fas fa-lock"></i> Acesso Restrito</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
                 <li class="nav-item">
@@ -47,6 +50,12 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         {{ __('Sair') }}
+                    </a>
+                    <a class="dropdown-item" href="{{ route('carrinho.index') }}">
+                        {{ __('Carrinho') }}
+                    </a>
+                    <a class="dropdown-item" href="{{ route('carrinho.compras') }}">
+                        {{ __('Minhas Compras') }}
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

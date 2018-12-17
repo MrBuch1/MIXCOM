@@ -73,7 +73,7 @@ class RegisterController extends Controller
         return $user;
     }
 
-    public function store(Request_array $request, $data)
+    public function store(Request $request)
     {
         $user = new User();
         $user->nome = $request->input('nome');

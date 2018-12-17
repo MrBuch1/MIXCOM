@@ -16,9 +16,8 @@
 				<div class="col-12 md-3">
 					<hr>
 				</div>
-
-					<div class = "row" >
-							@foreach($registros as $registro)
+                <div class = "row" >
+                    @foreach($registros as $registro)
 					<div class="card table-responsive" style="width: 15em; word-wrap: break-word; margin: 5px">
 						<br>
 						<img src="{{ asset($registro->imagem) }}" class="img-responsive card-img-top" style= "width: 55%;" >
@@ -35,27 +34,26 @@
 						<div class="card-footer cor1">
 							<small class="text-muted">
 								<center><a class="text-light" href="{{ route('produto', $registro->id) }}">Ver mais sobre o Produto</a>
-
-							</small>
+                                </small>
+                            </div>
                         </div>
-                    </div>
-                    @endforeach
+                        @endforeach
                     </div>
                 </div>
 			</div>
 		</div>
-</div>
+    </div>
 	<br>
 	<br>
-<div class="container">
+    <div class="container">
 		<div class="row">
 			<div class="caixa col-md-12 col-sm-12 col-xs-12">
 				<div class="col-12 mb-3">
 					<hr>
 				</div>
-					<h5>Produtos Relacionados</h5>
-					<br>
-@component('components.carousel_prod')@endcomponent
+                <h5>Produtos Relacionados</h5>
+                <br>
+                @component('components.carousel_prod')@endcomponent
 			</div>
 		</div>
 	</div>
