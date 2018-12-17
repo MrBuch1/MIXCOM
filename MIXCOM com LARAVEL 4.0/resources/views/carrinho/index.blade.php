@@ -5,7 +5,7 @@
 <div class="container">
     <br><br>
     <div class="row" style="margin-top: 70px; margin-left: 400px">
-        <h1>Produtos no carrinho</h1>
+        <h1>Produtos no Carrinho</h1>
         <hr/>
     </div>
         @if (Session::has('mensagem-sucesso'))
@@ -19,11 +19,11 @@
             </div>
         @endif
         @forelse ($pedidos as $pedido)
-            <h4 class="col l6 s12 m6" style="align-self: center; margin-left: 500px"> Pedido: {{ $pedido->id }} </h4>
-            <h5 class="col l6 s12 m6" style="align-self: center; margin-left: 420px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
-            <table class="col l6 s12 m6" style="margin-top: 50px">
+            <h4 class="col l6 s12 m6" style="align-self: center; margin-left: 450px"> Número Pedido: 00{{ $pedido->id }} </h4>
+            <h5 class="col l6 s12 m6" style="align-self: center; margin-left: 435px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
+            <table class="table table-hover col l6 s12 m6" style="margin-top: 50px">
                 <thead>
-                    <tr>
+                    <tr class="table-info">
                         <th></th>
                         <th>Quantidade</th>
                         <th>Produto</th>

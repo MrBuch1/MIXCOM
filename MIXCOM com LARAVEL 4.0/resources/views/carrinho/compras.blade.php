@@ -13,17 +13,17 @@
             <div class="card-panel red">{{ Session::get('mensagem-falha') }}</div>
         @endif
         <div class="divider"></div>
-        <div class="row l2 s12 m2">
-            <h1 style="margin-top: 20px">Compras concluídas</h1>
+        <div class="row l2 s12 m2 table-responsive">
+            <h1 style="margin-top: 50px">Compras concluídas</h1>
             @forelse ($compras as $pedido)
                 <h2 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Pedido: {{ $pedido->id }} </h2>
                 <h5 class="center-align container" style="margin-top: 20px; margin-bottom: 10px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
                 <form method="POST" action="{{ route('carrinho.cancelar') }}">
                     {{ csrf_field() }}
                     <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">
-                    <table>
+                    <table class="table table-hover">
                         <thead>
-                            <tr>
+                            <tr class="table-primary">
                                 <th colspan="2"></th>
                                 <th>Produto</th>
                                 <th>Valor</th>
@@ -61,12 +61,12 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="2"></td>
+                                <td></td>
                                 <td class="flow-text">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</td>
                             </tr>
                             <tr>
                                 <td colspan="2">
-                                    <button type="submit" class="btn btn-outline-danger col l12 s12 m12 my-4" style="margin-bottom: 50px">
+                                    <button type="submit" class="btn btn-outline-danger col l12 s12 m12 my-4" style="margin-bottom: 50px" data-toggle="tooltip" data-placement="top" title="Deseja cancelar a compra?">
                                         Cancelar Compra
                                     </button>   
                                 </td>
@@ -78,7 +78,7 @@
             @empty
                 <h5 class="center">
                     @if ($cancelados->count() > 0)
-                        Neste momento não há nenhuma compra valida.
+                        Neste momento não há nenhuma compra válida.
                     @else
                         Você ainda não fez nenhuma compra.
                     @endif
@@ -86,15 +86,15 @@
             @endforelse
         </div>
         <div class="row">
-            <div class="divider"></div>
+            <div class="divider table-responsive"></div>
             <h1 style="margin-top: 50px">Compras canceladas</h1>
             @forelse ($cancelados as $pedido)
                 <h2 class="center-align container" style="margin-top: 15px"> Pedido: {{ $pedido->id }} </h2>
                 <h5 class="center-align container" style="margin-top: 15px"> Criado em: {{ $pedido->created_at->format('d/m/Y H:i') }} </h5>
                 <h5 class="center-align container" style="margin-top: 15px"> Cancelado em: {{ $pedido->updated_at->format('d/m/Y H:i') }} </h5>
-                <table>
+                <table class="table table-hover" style="margin-bottom: 100px">
                     <thead>
-                        <tr>
+                        <tr class="table-danger">
                             <th></th>
                             <th>Produto</th>
                             <th>Valor</th>
