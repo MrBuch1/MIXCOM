@@ -40,28 +40,20 @@ class ProdutoController extends Controller {
         }
 
 
-  /*  public function create()
-    {
-
-    }
 
     public function store(Request $request)
     {
-        $registros = new Produto();
-        $registros->nome = $request->input('nomeP');
-        $registros->descricao = $request->input('descricao');
-        $registros->tipo = $request->input('tipo');
-        $registros->codtipo = $request->input('codtipo');
-        $registros->marca = $request->input('marca');
-        $registros->valor = $request->input('valor');
-        $registros->categoria = $request->input('categoria');
-        $registros->descricao = $request->input('descricao');
-        $registros->caracteristica = $request->input('caracteristica');
-        $path = $request->file('imagem')->store('images', 'public');
-        $registros->imagem = $path;
-        $registros->save();
-        return redirect('/produtos');
+        $registros = Produto::where([
+            'ativo' => 'S'
+        ])->get();
+        $registros = Produto::paginate(9);
+        return view('admin.produtos.index', compact('registros'));
     }
+
+/*  public function create()
+{
+
+}
 
     public function edit($id){
 

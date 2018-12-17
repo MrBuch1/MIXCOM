@@ -2,16 +2,22 @@
 
 
 
-/*---------------------------------------Inicio------------------use Symfony\Component\Routing\Route;--------------------*/
+/*---------------------------------------Inicio--------------------------------------*/
 
 Route::get('/', function () {  return view('index'); });
 
 /*------------------------------------------------------------------------------------*/
 
 /*---------------------------------------Admin--------------------------------------*/
+Route::prefix('/admin')->group(function () {
+    Route::get('/login', 'Auth\AdminLoginController@index')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/Lista de Produtos', 'ProdutoController@store')->name('produtos.listar');
+    
+});
 
-Route::get('admin/login', 'Auth\AdminLoginController@index')->name('admin.login');
-Route::post('admin/login', 'Auth\AdminLoginController@login')->name('admin.login');
+
 /*Route::get('admin/cadastrar-produto', 'ProdutoController@create');
 Route::post('/produtos', 'ProdutoController@store');
 Route::get('/produtos', 'ProdutoController@store');
