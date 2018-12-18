@@ -18,4 +18,8 @@ class Produto extends Model
         'caracteristica',
         'ativo'
     ];
+
+    public function categoria(){
+        return $this->belongsTo('App\Categoria');
+    }
 }

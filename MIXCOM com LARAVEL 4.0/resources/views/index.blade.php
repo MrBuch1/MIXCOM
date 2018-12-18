@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('pagina_conteudo') 
+@section('pagina_conteudo')
 
 @component('components.carousel') @endcomponent
 
@@ -24,7 +24,7 @@
             <img class="img-responsive card-img-top my-3" style="width:300px" src="{{ asset('imagens\Produtos/inner.png')}}" alt="">
             <div class="card-body">
                 <h5 class="card-title">Inner Rep Plus</h5>
-                <p class="card-subtitle mb-2 text-muted my-3">Uma das melhores marcas no mercado, a TopData lançou 
+                <p class="card-subtitle mb-2 text-muted my-3">Uma das melhores marcas no mercado, a TopData lançou
                     seu mais novo equipamento: Inner Rep Plus, com módulo biomérico com agilidade de gravação e registro de ponto.
                 </output></p>
                 <a href="#" class="btn btn-outline-primary">Comprar R$ 2.000,00</a>
@@ -66,7 +66,7 @@
         dos produtos e serviços oferecidos, nele, você também poderá solicitar orçamentos on-line. Sem dúvida é
         um
         canal que nos aproxima dos nossos atuais e futuros clientes. Aproveite. </p>
-        
+
     </p>
 </div>
 <div class="container">
