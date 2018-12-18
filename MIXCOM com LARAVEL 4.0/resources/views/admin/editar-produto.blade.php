@@ -1,7 +1,8 @@
 @extends('layouts.appAdmin', ['current'=>'admin.produtos.produtoNovo'])
 
+@section('body')
     <h1>Editar Produto</h1>
-    <form action = "/admin/editar-produto/{{$registro->id}}" method="POST" enctype="multipart/form-data">
+    <form action = "/produtos" method="POST" enctype="multipart/form-data">
         @csrf
         <div class = "form-group">
             <label for="nome">Nome do Produto</label>
@@ -35,7 +36,7 @@
             <input class = "form-control" name="marca" id = "marca" placeholder = "{{$registro->marca}}"></input>
 
             <label for="valor">Valor</label>
-            <input class = "form-control" name="valor" id = "valor" placeholder = "{{$registro->valor}}"></input>
+            <input type="number" class = "form-control" name="valor" id = "valor" placeholder = "{{$registro->valor}}"></input>
 
             <label for="categoria">Categoria</label>
             <select id="categoira" name = "categoria" class="form-control" placeholder = "{{$registro->categoria}}">
@@ -48,15 +49,15 @@
             <textarea class = "form-control" name="descricao" id = "descricao" placeholder = "{{$registro->descricao}}"></textarea>
 
             <label for="caracteristica">Características do Produto</label>
-            <textarea clas = "form-control" name="caracteristica" id = "caracteristica" placeholder = "{{$registro->caracteristica}}"></textarea>
+            <textarea class = "form-control" name="caracteristica" id = "caracteristica" placeholder = "{{$registro->caracteristica}}"></textarea>
 
-            <img class="img-responsive" style="width: 300px;" src="{{ asset($registro->imagem) }}">
+            <img class="img-responsive my-5" style="width: 300px;" src="{{ asset($registro->imagem) }}">
             <label for="img">Imagem do Produto</label>
             <input type="file" class="form-control-file" name="imagem" id="imagem">
 
 
         </div>
-        <button type="submit" class = "btn btn-success btn-sm">Salvar</button>
-        <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
+        <button type="submit" class = "btn btn-success mr-2">Alterar</button>
+        <a href="{{route('inicio')}}" class="btn btn-danger mr-2">{{ __('Cancelar')}}</a>
     </form>
 @endsection

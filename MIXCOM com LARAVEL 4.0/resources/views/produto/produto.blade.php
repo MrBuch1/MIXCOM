@@ -32,7 +32,7 @@
                                     <td>
                                         <center>
                                             <h3 class=" distancia card-title mb-2 my-3">R$ {{$registro->valor}}</h3>
-                                            <p class=" distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
+                                            <p class="distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
                                             <form method="POST" action="{{ route('carrinho.adicionar') }}">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="id" value="{{ $registro->id }}">

@@ -36,10 +36,12 @@ class MercadoPagoController extends Controller
         $somapedido = DB::table('pedido_produtos')->where('pedido_id', $idpedido)->sum('valor');
         $pedido = (float)$somapedido;
 
+        $compra = DB::table('pedido_produtos')->where('pedido_id', $idpedido)->value('pedido_id');
+
         $preference_data = array (
             "items" => array (
                 array (
-                    "title" => "Pagamento MIXCOM",
+                    "title" => "Número do pedido: 00$compra",
                     "quantity" => 1,
                     "currency_id" => "BRL",
                     "unit_price" => $pedido

@@ -64,11 +64,12 @@ Route::get('/produtos', 'ProdutoController@index')->name('index');
 Route::get('/produto/{id}', 'ProdutoController@produto')->name('produto');
 Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
 Route::get('/produtos', 'ProdutoController@index');
-Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
-Route::post('/produtos', 'ProdutoController@store');
+
 Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
+Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
 Route::get('/produtos/editar/{id}', 'ProdutoController@edit')->name('produtos.editar');
-Route::post('/produtos', 'ProdutoController@update');
+Route::post('/produtos', 'ProdutoController@store');
+Route::post('/produtos/editar/{id}', 'ProdutoController@update');
 
 
 /*------------------------------------------------------------------------------------*/
