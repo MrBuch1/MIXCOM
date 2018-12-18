@@ -68,7 +68,7 @@ class ProdutoController extends Controller
         $produto->nome = $request->input('nomeProduto');
         $produto->descricao = $request->input('descProduto');
         $produto->tipo = $request->input('tipoProduto');
-        $produto->id_categoria = $request->input('catProduto');
+        $produto->categoria_id = $request->input('catProduto');
         $produto->valor = $request->input('pcProduto');
         $path = $request->file('imagemProduto')->store('images', 'public');
         $produto->imagem = $path;
@@ -102,7 +102,7 @@ class ProdutoController extends Controller
             return redirect('/produtos');
 
         }
-            
+
 
     }
 }

@@ -13,12 +13,6 @@ Route::prefix('/admin')->group(function () {
     Route::get('/login', 'Auth\AdminLoginController@index')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('/', 'AdminController@index')->name('admin.index');
-    Route::get('/produtos', 'ProdutoController@index');
-    Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
-    Route::post('/produtos', 'ProdutoController@store');
-    Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
-    
-
 
 
 });
@@ -67,7 +61,10 @@ Route::get('/produto/{id}', 'ProdutoController@index');
 Route::get('/produtos', 'ProdutoController@index')->name('index');
 Route::get('/produto/{id}', 'ProdutoController@produto')->name('produto');
 Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
-
+Route::get('/produtos', 'ProdutoController@index');
+Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
+Route::post('/produtos', 'ProdutoController@store');
+Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
 /*------------------------------------------------------------------------------------*/
 
 
