@@ -40,6 +40,7 @@
                 <p class="text-left">Telefone:(75) 3626-8508</p>
                 <p class="text-left">Alex Lira - alexlira.rh@gmail.com</p>
                 <p class="text-left">Lívia Andrade - liviaadm2013@gmail.com</p>
+                <p class="text-left">WhatsApp Suporte 01 - (75) 9 8889-1567</p>
             </div>
         </div>
 

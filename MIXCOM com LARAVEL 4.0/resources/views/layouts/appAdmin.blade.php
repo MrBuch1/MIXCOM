@@ -9,7 +9,6 @@
     <link href="{{ asset('http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext')}}" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ asset('https://use.fontawesome.com/releases/v5.2.0/css/all.css')}}" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"crossorigin="anonymous">
     <link href="{{asset('css/app.css')}}" rel = "stylesheet">
-    <link href="{{asset('css/style.css')}}" rel = "stylesheet">
     <link href="{{asset('css/side-bar.css')}}" rel = "stylesheet">
     <title>MIXCOM - Administrador</title>
 </head>
@@ -38,7 +37,7 @@
                             </li>
                         </ul>
                     </li>
-                  <!--  <li @if($current == "categorias") class = "active" @endif>
+                    <!--  <li @if($current == "categorias") class = "active" @endif>
                         <a href="#categoriasSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Categorias</a>
                         <ul class="collapse list-unstyled" id="categoriasSubmenu">
                             <li>
@@ -56,7 +55,7 @@
                         <a href="#produtosSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Produtos</a>
                         <ul class="collapse list-unstyled" id="produtosSubmenu">
                             <li>
-                                <a href="/produtos/novo">Novo</a>
+                                <a href="{{ route('novo.produto') }}">Novo</a>
                             </li>
                             <li>
                                 <a href="{{ route('produtos.listar') }}">Listar</a>
@@ -76,10 +75,8 @@
                     </li>
                 </ul>
             </nav>
-
             <!-- Page Content  -->
             <div id="content">
-
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
 
@@ -98,7 +95,6 @@
         </div>
         <script src="{{asset('js/app.js')}}" type = "text/javascript"></script>
         <script src="{{asset('js/side-bar.js')}}" type = "text/javascript"></script>
-
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <!-- Popper.JS -->

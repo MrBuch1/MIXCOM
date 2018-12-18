@@ -13,8 +13,13 @@ Route::prefix('/admin')->group(function () {
     Route::get('/login', 'Auth\AdminLoginController@index')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('/', 'AdminController@index')->name('admin.index');
-    Route::get('/Lista de Produtos', 'ProdutoController@store')->name('produtos.listar');
-    
+    Route::get('/produtos', 'ProdutoController@index');
+    Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
+    Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
+    Route::post('/produtos', 'ProdutoController@store');
+
+
+
 });
 
 
@@ -66,7 +71,7 @@ Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
 
 
 /*---------------------------------------Rotas testes--------------------------------------*/
-//Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
+Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
 
 use App\User;
 use App\Endereco;

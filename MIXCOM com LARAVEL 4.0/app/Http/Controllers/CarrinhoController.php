@@ -153,6 +153,22 @@ class CarrinhoController extends Controller
             return redirect()->route('carrinho.index');
         }
 
+        
+        PedidoProduto::where([
+            'pedido_id' => $idpedido
+            ])->update([
+                'status' => 'RE'
+            ]);
+        Pedido::where([
+                'id' => $idpedido
+            ])->update([
+                'status' => 'RE'
+            ]);
+
+        //$req->session()->flash('mensagem-sucesso', 'Compra concluída com sucesso!');
+        return (new MercadoPagoController)->index($idpedido);
+        //return redirect()->route('carrinho.compras');
+        
         PedidoProduto::where([
             'pedido_id' => $idpedido
             ])->update([
@@ -163,10 +179,6 @@ class CarrinhoController extends Controller
             ])->update([
                 'status' => 'PA'
             ]);
-
-        $req->session()->flash('mensagem-sucesso', 'Compra concluída com sucesso!');
-        return (new MercadoPagoController)->index($idpedido);
-        //return redirect()->route('carrinho.compras');
     }
 
     public function compras()

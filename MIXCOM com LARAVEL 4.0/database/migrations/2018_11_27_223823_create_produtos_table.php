@@ -16,7 +16,6 @@ class CreateProdutosTable extends Migration
             $table->string('codtipo');
             $table->string('marca');
             $table->decimal('valor', 6, 2);
-            $table->string('categoria');
             $table->text('descricao');
             $table->string('imagem');
             $table->text('caracteristica');
@@ -26,6 +25,8 @@ class CreateProdutosTable extends Migration
             $table->string('comprimento');
             $table->string('diametro');
             $table->enum('ativo', ['S', 'N'])->default('S');
+            $table->integer('categoria_id')->unsigned();
+            $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->rememberToken();
             $table->timestamps();
         });
