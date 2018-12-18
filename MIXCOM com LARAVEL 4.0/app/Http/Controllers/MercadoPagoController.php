@@ -36,7 +36,6 @@ class MercadoPagoController extends Controller
         $somapedido = DB::table('pedido_produtos')->where('pedido_id', $idpedido)->sum('valor');
         $pedido = (float)$somapedido;
 
-        
         $preference_data = array (
             "items" => array (
                 array (

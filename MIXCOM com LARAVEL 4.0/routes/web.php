@@ -2,16 +2,27 @@
 
 
 
-/*---------------------------------------Inicio------------------use Symfony\Component\Routing\Route;--------------------*/
+/*---------------------------------------Inicio--------------------------------------*/
 
 Route::get('/', function () {  return view('index'); });
 
 /*------------------------------------------------------------------------------------*/
 
 /*---------------------------------------Admin--------------------------------------*/
+Route::prefix('/admin')->group(function () {
+    Route::get('/login', 'Auth\AdminLoginController@index')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/produtos', 'ProdutoController@index');
+    Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
+    Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
+    Route::post('/produtos', 'ProdutoController@store');
 
-Route::get('admin/login', 'Auth\AdminLoginController@index')->name('admin.login');
-Route::post('admin/login', 'Auth\AdminLoginController@login')->name('admin.login');
+
+
+});
+
+
 /*Route::get('admin/cadastrar-produto', 'ProdutoController@create');
 Route::post('/produtos', 'ProdutoController@store');
 Route::get('/produtos', 'ProdutoController@store');
@@ -25,6 +36,13 @@ Route::post('/admin/editar-produto/{id}', 'ProdutoController@update');*/
 Auth::routes();
 Route::get('/CadastroFisico', function () {  return view('auth/cadastroFis'); });
 Route::get('/CadastroJuridico', function () {  return view('auth/cadastroJur'); });
+
+
+Route::get('/editarFis/{id}', 'Auth\RegisterController@editFis');
+Route::post('/editarFis/{id}', 'Auth\RegisterController@update');
+
+Route::get('/editarJur/{id}', 'Auth\RegisterController@editJur');
+Route::post('/editarJur/{id}', 'Auth\RegisterController@update');
 
 /*------------------------------------------------------------------------------------*/
 
