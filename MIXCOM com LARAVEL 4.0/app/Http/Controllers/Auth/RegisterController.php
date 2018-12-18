@@ -68,7 +68,7 @@ class RegisterController extends Controller
                 'cnpj' => $data['cnpj'],
                 'rsocial' => $data['rsocial']
                 ]);
-            }
+            } 
 
         return $user;
     }
@@ -94,6 +94,40 @@ class RegisterController extends Controller
         $user->endereco()->save($endereco);
 
 
+    }
+
+    public function editFis($id)
+    {
+        $user = User::find($id);
+        $userfis = UserFis::find($id);
+        return view('auth\editarFis', compact('user','userfis'));
+    }
+
+    public function editJur($id)
+    {
+        $user = User::find($id);
+        $userfis = UserFis::find($id);
+        return view('auth\editarJur', compact('user','userjur'));
+    }
+
+     public function update(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->nome = $request->input('name');
+        $user->telefone = $request->input('telefone');
+        $user->email = $request->input('email');
+
+        if(isset($data['cpf'])){
+                Userfis::find($id);
+                $userfis->cpf = $request->input('cpf');
+            } else {
+                Userjur::find($id);
+                $userjur->cnpj = $request->input('cnpj');
+                $userjur->rsocial = $request->input('rsocial');
+            }
+
+        $user->save();
+        return redirect('/users');
     }
 
 }
