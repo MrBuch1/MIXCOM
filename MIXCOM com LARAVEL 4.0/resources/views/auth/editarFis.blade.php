@@ -10,18 +10,12 @@
     </div>
     <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8">
-            <form method="POST" action="editarFis/{{$user->id}}">
+            <form method="POST" action="/editarFis/{{$user->id}}">
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-12">
                         <input id="name" type="text" placeholder="{{$user->name}}" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
                         name="name" value="{{ old('name') }}" required autofocus>
-
-                        @if ($errors->has('name'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('name') }}</strong>
-                        </span>
-                        @endif
                     </div>
                 </div>
 
@@ -30,21 +24,11 @@
                         <input id="cpf" type="text" placeholder="{{$userfis->cpf}}" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}"
                         name="cpf" value="{{ old('cpf') }}" required autofocus>
 
-                        @if ($errors->has('cpf'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('cpf') }}</strong>
-                        </span>
-                        @endif
                     </div>
                     <div class="form-group col-sm-5">
                         <input id="telefone" type="text" placeholder="{{$user->telefone}}" class="form-control{{ $errors->has('telefone') ? ' is-invalid' : '' }}"
                         name="telefone" value="{{ old('telefone') }}" required autofocus>
 
-                        @if ($errors->has('telefone'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('telefone') }}</strong>
-                        </span>
-                        @endif
                     </div>
                 </div>
             
@@ -53,11 +37,6 @@
                         <input id="email" type="email" placeholder="{{$user->email}}" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                         name="email" value="{{ old('email') }}" required>
 
-                        @if ($errors->has('email'))
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $errors->first('email') }}</strong>
-                        </span>
-                        @endif
                     </div>
                     <div class="form-grup col-sm-6">
                         <input id="email2" type="email2" placeholder="Confirme o seu Email" class="form-control{{ $errors->has('email2') ? ' is-invalid' : '' }}"
