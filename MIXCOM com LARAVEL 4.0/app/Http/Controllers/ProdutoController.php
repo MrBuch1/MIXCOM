@@ -69,11 +69,12 @@ class ProdutoController extends Controller
         $produto->descricao = $request->input('descProduto');
         $produto->tipo = $request->input('tipoProduto');
         $produto->categoria_id = $request->input('catProduto');
+        $produto->caracteristica = $request->input('caracProduto');
         $produto->valor = $request->input('pcProduto');
-        $path = $request->file('imagemProduto')->store('images', 'public');
+        $path = $request->file('imagemProduto')->store('imagens', 'public');
         $produto->imagem = $path;
         $produto->save();
-        return redirect('/admin.produtos.index');
+        return redirect('/admin');
 
     }
 
@@ -81,7 +82,7 @@ class ProdutoController extends Controller
         public function edit($id){
 
             $registros = Produto::find($id);
-            return view("editar-produto", compact('registros'));
+            return view("admin/editar-produto", compact('registros'));
 
         }
 

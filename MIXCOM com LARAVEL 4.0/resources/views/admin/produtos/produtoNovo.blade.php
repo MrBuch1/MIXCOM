@@ -27,6 +27,9 @@
             <option value = "Catraca">Soluções de Estacionamento</option></option>
         </select>
 
+        <label for="carac">Características do Produto</label>
+        <textarea class = "form-control" name="caracProduto" id = "carac" placeholder = "Dados técnicos, marca, memória, etc."></textarea>
+
         <label for="pc">Preço do Produto</label>
         <input type = "number" step="any" class = "form-control" name="pcProduto" id = "pc" placeholder = "Preço do Produto">
 

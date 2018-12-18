@@ -19,11 +19,11 @@ class CreateProdutosTable extends Migration
             $table->text('descricao');
             $table->string('imagem');
             $table->text('caracteristica');
-            $table->string('peso');
-            $table->string('altura');
-            $table->string('largura');
-            $table->string('comprimento');
-            $table->string('diametro');
+            $table->string('peso')->nullable();
+            $table->string('altura')->nullable();
+            $table->string('largura')->nullable();
+            $table->string('comprimento')->nullable();
+            $table->string('diametro')->nullable();
             $table->enum('ativo', ['S', 'N'])->default('S');
             $table->integer('categoria_id')->unsigned();
             $table->foreign('categoria_id')->references('id')->on('categorias');

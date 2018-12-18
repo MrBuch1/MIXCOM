@@ -1,5 +1,4 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.appAdmin', ['current'=>'admin.produtos.produtoNovo'])
 
     <h1>Editar Produto</h1>
     <form action = "/admin/editar-produto/{{$registro->id}}" method="POST" enctype="multipart/form-data">
