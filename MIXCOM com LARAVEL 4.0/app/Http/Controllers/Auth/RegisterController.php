@@ -110,7 +110,7 @@ class RegisterController extends Controller
         return view('auth\editarJur', compact('user','userjur'));
     }
 
-     public function update(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $user = User::find($id);
         $user->nome = $request->input('name');

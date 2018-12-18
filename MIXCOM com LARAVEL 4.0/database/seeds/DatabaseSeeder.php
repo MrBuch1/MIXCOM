@@ -9,5 +9,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(CategoriasSeeder::class);
         $this->call(ProdutoSeeder::class);
+        $this->call(AdminSeeder::class);
     }
 }

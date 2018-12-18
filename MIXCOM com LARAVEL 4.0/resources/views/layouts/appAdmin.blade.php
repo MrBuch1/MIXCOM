@@ -55,7 +55,7 @@
                         <a href="#produtosSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Produtos</a>
                         <ul class="collapse list-unstyled" id="produtosSubmenu">
                             <li>
-                                <a href="{{ route('novo.produto') }}">Novo</a>
+                                <a href="{{ route('novo.produto') }}">Novo +</a>
                             </li>
                             <li>
                                 <a href="{{ route('produtos.listar') }}">Listar</a>

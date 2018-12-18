@@ -18,6 +18,15 @@
             @endforeach
         </select>
 
+        <label for="tipo">Tipo do Produto</label>
+        <select id="tipo" name = "tipoProduto" class="form-control">
+            <option value = "Catraca">Catraca</option></option>
+            <option value = "Catraca">Registrador Eletrônico de Ponto Biométrico</option></option>
+            <option value = "Catraca">Registrador Eletrônico de Ponto Cartográfico</option></option>
+            <option value = "Catraca">Controlador de Acesso</option></option>
+            <option value = "Catraca">Soluções de Estacionamento</option></option>
+        </select>
+
         <label for="pc">Preço do Produto</label>
         <input type = "number" step="any" class = "form-control" name="pcProduto" id = "pc" placeholder = "Preço do Produto">
 
@@ -26,7 +35,7 @@
 
 
     </div>
-    <button type="submit" class = "btn btn-success btn-sm">Salvar</button>
+    <button type="submit" class = "btn btn-primary btn-sm">Salvar</button>
     <button type="cancel" class = "btn btn-danger btn-sm">Cancelar</button>
 </form>
 @endsection

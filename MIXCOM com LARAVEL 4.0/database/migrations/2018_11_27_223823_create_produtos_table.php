@@ -12,9 +12,9 @@ class CreateProdutosTable extends Migration
         Schema::create('produtos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->string('tipo');
-            $table->string('codtipo');
-            $table->string('marca');
+            $table->string('tipo')->nullable();
+            $table->string('codtipo')->nullable();
+            $table->string('marca')->nullable();
             $table->decimal('valor', 6, 2);
             $table->text('descricao');
             $table->string('imagem');

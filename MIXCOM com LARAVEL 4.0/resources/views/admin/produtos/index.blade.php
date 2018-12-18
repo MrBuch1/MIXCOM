@@ -29,8 +29,8 @@
                 <td>{{ $p->categoria}}</td>
 
                 <td>
-                    <a class = "btn btn-primary" href="/produtos/editar/{{$p->id}}">Editar</a>
-                    <a class = "btn btn-danger" href="/produtos/apagar/{{$p->id}}">Excluir</a>
+                    <a class = "btn btn-primary my-1" href="/produtos/editar/{{$p->id}}">Editar</a>
+                    <a class = "btn btn-danger my-1" href="/produtos/apagar/{{$p->id}}">Excluir</a>
                 </td>
             </tr>
             @endforeach

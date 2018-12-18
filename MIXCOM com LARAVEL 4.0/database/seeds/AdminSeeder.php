@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class AdminSeeder extends Seeder
 {
@@ -15,7 +16,7 @@ class AdminSeeder extends Seeder
 
             'name' => 'MIXCOM',
             'email' => 'mixcom@gmail.com',
-            'password' => 'mixcom12345',
+            'password' => Hash::make('mixcom12345'),
         ]);
     }
 }

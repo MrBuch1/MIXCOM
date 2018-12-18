@@ -67,6 +67,7 @@ class ProdutoController extends Controller
         $produto = new Produto();
         $produto->nome = $request->input('nomeProduto');
         $produto->descricao = $request->input('descProduto');
+        $produto->tipo = $request->input('tipoProduto');
         $produto->id_categoria = $request->input('catProduto');
         $produto->valor = $request->input('pcProduto');
         $path = $request->file('imagemProduto')->store('images', 'public');
@@ -76,30 +77,32 @@ class ProdutoController extends Controller
 
     }
 
-/*
-public function edit($id){
 
-$registros = Produto::find($id);
-return view("editar-produto", compact('registros'));
+        public function edit($id){
 
-}
+            $registros = Produto::find($id);
+            return view("editar-produto", compact('registros'));
 
-public function update(Request $request, $id){
-$produto = Produto::find($id);
-$img_antiga = $produto->imagem;
-$produto->nome = $request->input('nomeProduto');
-$produto->descricao = $request->input('descProduto');
-$produto->id_categoria = $request->input('catProduto');
-$produto->quantidade = $request->input('qtdProduto');
-$produto->preco = $request->input('pcProduto');
-if($request->file('imagemProduto') != null){
-$path = $request->file('imagemProduto')->store('images', 'public');
-$produto->imagem = $path;
-Storage::disk('public')->delete($img_antiga);
+        }
 
-}
-$produto->save();
-return redirect('/produtos');
+        public function update(Request $request, $id){
+            $produto = Produto::find($id);
+            $img_antiga = $produto->imagem;
+            $produto->nome = $request->input('nomeProduto');
+            $produto->descricao = $request->input('descProduto');
+            $produto->id_categoria = $request->input('catProduto');
+            $produto->quantidade = $request->input('qtdProduto');
+            $produto->preco = $request->input('pcProduto');
+            if($request->file('imagemProduto') != null){
+            $path = $request->file('imagemProduto')->store('images', 'public');
+            $produto->imagem = $path;
+            Storage::disk('public')->delete($img_antiga);
 
-}*/
+            $produto->save();
+            return redirect('/produtos');
+
+        }
+            
+
+    }
 }
