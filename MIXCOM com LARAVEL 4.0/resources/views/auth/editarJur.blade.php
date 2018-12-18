@@ -10,7 +10,7 @@
     </div>
     <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8">
-            <form method="POST" action="cadastroJur/{{$user->id}}">
+            <form method="POST" action="editarJur/{{$user->id}}">
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-6">
@@ -24,7 +24,7 @@
                         @endif
                     </div>
                     <div class="form-group col-sm-6">
-                        <input id="rsocial" type="text" placeholder="{{$user->rsocial}}" class="form-control{{ $errors->has('rsocial') ? ' is-invalid' : '' }}"
+                        <input id="rsocial" type="text" placeholder="{{$userjur->rsocial}}" class="form-control{{ $errors->has('rsocial') ? ' is-invalid' : '' }}"
                         name="rsocial" value="{{ old('rsocial') }}" required autofocus>
 
                         @if ($errors->has('rsocial'))
@@ -37,7 +37,7 @@
 
                 <div class="form-row">
                     <div class="form-group col-sm-7">
-                        <input id="cnpj" type="text" placeholder="{{$user->cnpj}}" class="form-control{{ $errors->has('cnpj') ? ' is-invalid' : '' }}"
+                        <input id="cnpj" type="text" placeholder="{{$userjur->cnpj}}" class="form-control{{ $errors->has('cnpj') ? ' is-invalid' : '' }}"
                         name="cnpj" value="{{ old('cnpj') }}" required autofocus>
 
                         @if ($errors->has('cnpj'))
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
-                    <button type="submit" class="btn btn-outline-primary mr-2">{{ __('Cadastrar')}}</button>
+                    <button type="submit" class="btn btn-outline-success mr-2">{{ __('Salvar')}}</button>
                 </div>
 
 

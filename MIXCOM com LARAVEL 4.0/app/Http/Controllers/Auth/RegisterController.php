@@ -99,13 +99,15 @@ class RegisterController extends Controller
     public function editFis($id)
     {
         $user = User::find($id);
-        return view('editarFis', compact('user'));
+        $userfis = UserFis::find($id);
+        return view('auth\editarFis', compact('user','userfis'));
     }
 
     public function editJur($id)
     {
         $user = User::find($id);
-        return view('editarJur', compact('user'));
+        $userfis = UserFis::find($id);
+        return view('auth\editarJur', compact('user','userjur'));
     }
 
      public function update(Request $request, $id)
@@ -117,11 +119,11 @@ class RegisterController extends Controller
 
         if(isset($data['cpf'])){
                 Userfis::find($id);
-                $user->cpf = $request->input('cpf');
+                $userfis->cpf = $request->input('cpf');
             } else {
                 Userjur::find($id);
-                $user->cpf = $request->input('cnpj');
-                $user->cpf = $request->input('rsocial');
+                $userjur->cnpj = $request->input('cnpj');
+                $userjur->rsocial = $request->input('rsocial');
             }
 
         $user->save();

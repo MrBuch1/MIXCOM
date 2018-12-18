@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('pagina_conteudo')
-<br>br>
+<br><br>
 <!--Inicio Form-->
 <div class="container">
     <div class="row">
@@ -10,7 +10,7 @@
     </div>
     <div class="row justify-content-center mb-5">
         <div class="col-sm-12 col-md-10 col-lg-8">
-            <form method="POST" action="cadastroFis/{{$user->id}}">
+            <form method="POST" action="editarFis/{{$user->id}}">
                 @csrf
                 <div class="form-row">
                     <div class="form-group col-sm-12">
@@ -27,7 +27,7 @@
 
                 <div class="form-row">
                     <div class="form-group col-sm-7">
-                        <input id="cpf" type="text" placeholder="{{$user->cpf}}" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}"
+                        <input id="cpf" type="text" placeholder="{{$userfis->cpf}}" class="form-control{{ $errors->has('cpf') ? ' is-invalid' : '' }}"
                         name="cpf" value="{{ old('cpf') }}" required autofocus>
 
                         @if ($errors->has('cpf'))
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
-                    <button type="submit" class="btn btn-outline-primary mr-2">{{ __('Cadastrar')}}</button>
+                    <button type="submit" class="btn btn-outline-success mr-2">{{ __('Salvar')}}</button>
                 </div>
 
 
