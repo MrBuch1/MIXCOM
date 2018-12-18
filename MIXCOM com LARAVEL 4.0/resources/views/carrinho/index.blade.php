@@ -72,7 +72,7 @@
             </div>
             <div class="ml-auto mr-4">
                 <div class="ml-5 row">
-                    <a class="btn btn-outline-success mr-3 offset-8" href="{{ route('index') }}">Compre Mais!</a>
+                    <a class="btn btn-outline-success mr-3 offset-8" href="{{ route('inicio') }}">Compre Mais!</a>
                     <form method="POST" action="{{ route('carrinho.concluir') }}">
                         {{ csrf_field() }}
                         <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">

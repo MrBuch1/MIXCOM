@@ -107,7 +107,7 @@
                             </label>
                         </div>
                     </div>
-                    <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
+                    <a href="{{route('inicio')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
                     <button type="submit" class="btn btn-outline-primary mr-2">{{ __('Cadastrar')}}</button>
                 </div>
 

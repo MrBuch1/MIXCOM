@@ -57,7 +57,7 @@
                                 <button type="submit" class="btn btn-outline-success">
                                     {{ __('Entrar') }}
                                 </button>
-                                <a href="{{route('index')}}" class="btn btn-outline-primary">
+                                <a href="{{route('inicio')}}" class="btn btn-outline-primary">
                                     {{ __('Voltar') }}
                                 </a>
                                 <a class="btn btn-link" href="{{ route('password.request') }}">

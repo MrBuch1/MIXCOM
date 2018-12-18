@@ -57,7 +57,7 @@
                         @endif
                     </div>
                 </div>
-               
+                
                 
                 <div class="form-row">
                     <div class="form-group col-sm-6">
@@ -108,7 +108,7 @@
                             </label>
                         </div>
                     </div>
-                    <a href="{{route('index')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
+                    <a href="{{route('ininio')}}" class="btn btn-outline-danger mr-2">{{ __('Voltar')}}</a>
                     <button type="submit" class="btn btn-outline-success mr-2">{{ __('Salvar')}}</button>
                 </div>
 
