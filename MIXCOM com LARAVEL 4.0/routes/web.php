@@ -53,7 +53,7 @@ Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
 
 
 /*---------------------------------------Rotas testes--------------------------------------*/
-//Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
+Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
 
 use App\User;
 use App\Endereco;

@@ -82,6 +82,10 @@
                     </form>
                 </div>
             </div>
+            <div class="center-align container my-5">
+                <h3 class="my-5">Aproveite e veja também!</h3>
+                @component('components.carousel_prod')@endcomponent
+            </div>
             
         @empty
             <h5 style="margin-left: 425px">Não há nenhum pedido no carrinho</h5>

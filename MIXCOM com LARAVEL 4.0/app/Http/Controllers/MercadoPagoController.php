@@ -48,13 +48,6 @@ class MercadoPagoController extends Controller
             )
         );
 
-        try {
-            $preference = MP::create_preference($preference_data);
-            return redirect()->to($preference['response']['init_point']);
-        } catch (Exception $e){
-            dd($e->getMessage());
-        }
-
         PedidoProduto::where([
             'pedido_id' => $idpedido
             ])->update([
@@ -65,5 +58,12 @@ class MercadoPagoController extends Controller
             ])->update([
                 'status' => 'PA'
             ]);
+
+        try {
+            $preference = MP::create_preference($preference_data);
+            return redirect()->to($preference['response']['init_point']);
+        } catch (Exception $e){
+            dd($e->getMessage());
+        }
     }
 }
