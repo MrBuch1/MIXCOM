@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use App\Userfis;
 use App\Userjur;
 use App\Endereco;
+use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -66,7 +67,7 @@ class RegisterController extends Controller
                 Userjur::create([
                 'user_id' => $user->id,
                 'cnpj' => $data['cnpj'],
-                'rsocial' => $data['rsocial']
+                'rsocial' => $data['rsocial'],
                 ]);
             } 
 
@@ -76,7 +77,7 @@ class RegisterController extends Controller
     public function store(Request $request)
     {
         $user = new User();
-        $user->nome = $request->input('nome');
+        $user->name = $request->input('name');
         $user->telefone = $request->input('telefone');
         $user->email = $request->input('email');
 
@@ -99,35 +100,42 @@ class RegisterController extends Controller
     public function editFis($id)
     {
         $user = User::find($id);
-        $userfis = UserFis::find($id);
+        $userfis = UserFis::find($id)->get();
         return view('auth\editarFis', compact('user','userfis'));
     }
 
     public function editJur($id)
     {
         $user = User::find($id);
-        $userfis = UserFis::find($id);
+        $userjur = Userjur::find($id);
         return view('auth\editarJur', compact('user','userjur'));
     }
 
-     public function update(Request $request, $id)
+    public function updatefis(Request $request, $id)
     {
         $user = User::find($id);
-        $user->nome = $request->input('name');
+        $userfis = Userfis::find($id);
+        $user->name = $request->input('name');
         $user->telefone = $request->input('telefone');
         $user->email = $request->input('email');
-
-        if(isset($data['cpf'])){
-                Userfis::find($id);
-                $userfis->cpf = $request->input('cpf');
-            } else {
-                Userjur::find($id);
-                $userjur->cnpj = $request->input('cnpj');
-                $userjur->rsocial = $request->input('rsocial');
-            }
+        $userfis->cpf = $request->input('cpf');
 
         $user->save();
-        return redirect('/users');
+        return redirect('/index');
+    }
+
+    public function updatejur(Request $request, $id)
+    {
+        $user = User::find($id);
+        $userjur = Userjur::find($id);
+        $user->name = $request->input('name');
+        $user->telefone = $request->input('telefone');
+        $user->email = $request->input('email');
+        $userjur->rsocial = $request->input('rsocial');
+        $userjur->cnpj = $request->input('cnpj');
+
+        $user->save();
+        return redirect('/index');
     }
 
 }

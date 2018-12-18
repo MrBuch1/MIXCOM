@@ -34,10 +34,10 @@ Route::get('/CadastroJuridico', function () {  return view('auth/cadastroJur'); 
 
 
 Route::get('/editarFis/{id}', 'Auth\RegisterController@editFis');
-Route::post('/editarFis/{id}', 'Auth\RegisterController@update');
+Route::post('/editarFis/{id}', 'Auth\RegisterController@updatefis');
 
 Route::get('/editarJur/{id}', 'Auth\RegisterController@editJur');
-Route::post('/editarJur/{id}', 'Auth\RegisterController@update');
+Route::post('/editarJur/{id}', 'Auth\RegisterController@updatejur');
 
 /*------------------------------------------------------------------------------------*/
 
