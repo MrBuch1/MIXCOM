@@ -10,26 +10,26 @@
 
             <label for="tipo">Tipo</label>
             <select id="tipo" name = "tipo" class="form-control" placeholder = "{{$registro->tipo}}">
-              <option value="catraca">Catraca</option>
-              <option value="controlador de acesso por biometria facial">Biometria facial</option>
-              <option value="controlador de acesso">Controlador de acesso</option>
-              <option value="solucoes de estacionamento">Soluções de estacionamento</option>
-              <option value="registrador eletronico de ponto">Registrador eletronico de ponto</option>
-              <option value="cartografico">Cartografico</option>
-              <option value="controle de ponto">Controle de ponto</option>
-              <option value="controle de acesso">Controle de acesso</option>
+                <option value="catraca">Catraca</option>
+                <option value="controlador de acesso por biometria facial">Biometria facial</option>
+                <option value="controlador de acesso">Controlador de acesso</option>
+                <option value="solucoes de estacionamento">Soluções de estacionamento</option>
+                <option value="registrador eletronico de ponto">Registrador eletronico de ponto</option>
+                <option value="cartografico">Cartografico</option>
+                <option value="controle de ponto">Controle de ponto</option>
+                <option value="controle de acesso">Controle de acesso</option>
             </select>
 
             <label for="codtipo">Codigo tipo</label>
             <select id="codtipo" name = "codtipo" class="form-control" placeholder = "{{$registro->codtipo}},{{$registro->nome}}">
-              <option value="1">COD 1 - Catraca</option>
-              <option value="2">COD 2 - Biometria facial</option>
-              <option value="3">COD 3 - Controlador de acesso</option>
-              <option value="4">COD 4 - Soluções de estacionamento</option>
-              <option value="5">COD 5 - Registrador eletronico de ponto</option>
-              <option value="6">COD 6 - Cartografico</option>
-              <option value="7">COD 7 - Controle de ponto</option>
-              <option value="8">COD 8 - Controle de acesso</option>
+                <option value="1">COD 1 - Catraca</option>
+                <option value="2">COD 2 - Biometria facial</option>
+                <option value="3">COD 3 - Controlador de acesso</option>
+                <option value="4">COD 4 - Soluções de estacionamento</option>
+                <option value="5">COD 5 - Registrador eletronico de ponto</option>
+                <option value="6">COD 6 - Cartografico</option>
+                <option value="7">COD 7 - Controle de ponto</option>
+                <option value="8">COD 8 - Controle de acesso</option>
             </select>
 
             <label for="marca">Marca</label>
@@ -40,7 +40,7 @@
 
             <label for="categoria">Categoria</label>
             <select id="categoira" name = "catProduto" class="form-control" placeholder = "{{$registro->categoria}}">
-              @foreach($cats as $c)
+                @foreach($cats as $c)
                     <option value = "{{$c->id}}">{{$c->nome}}</option>
                 @endforeach
             </select>

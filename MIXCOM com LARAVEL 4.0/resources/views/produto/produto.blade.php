@@ -20,7 +20,7 @@
             <table>
                 <tr>
                     <td class="espaco" width="229" valign="top">
-                        <p><img class="img-responsive" style="width: 300px;" src="{{ asset($registro->imagem) }}"></p>
+                        <p><img class="img-responsive" style="width: 300px;" src="{{ route('inicio') }}/storage/{{ $registro->imagem }}"></p>
                     </td>
                     <td width="571" valign="top">
                         <p>

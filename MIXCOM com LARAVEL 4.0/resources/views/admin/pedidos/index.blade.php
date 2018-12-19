@@ -11,17 +11,18 @@
             <th scope="col">Nome do produto</th>
             <th scope="col">Valor do pedido</th>
             <th scope="col">Status</th>
-        </tr>
-    </thead>
-    <tbody>
-
-        @foreach ($user as $p)
+            </tr>
+        </thead>
+        <tbody>
+        @foreach ($compras as $p)
         <tr>
-            <td>{{$p->id }}</td>
+            <td>{{ $p->id }}</td>
             <td>
-             {{ $p->name}}
+                @if ($p->id == $p->pedido_id)
+                {{ $p->name }}
+                @endif
             </td>
-            <td>{{ $p->produto->nome }}</td>
+            <td>{{$p->produto->nome }}</td>
             <td>{{$p->valor}}</td>
             <td>{{$p->status}}</td>
             <!--<td>

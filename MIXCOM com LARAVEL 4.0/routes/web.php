@@ -59,12 +59,13 @@ Route::get('/carrinho/adicionar', function() {
 Route::get('/produto/{id}', 'ProdutoController@index');
 Route::get('/produtos', 'ProdutoController@index')->name('index');
 Route::get('/produto/{id}', 'ProdutoController@produto')->name('produto');
-Route::get('/produto/categoria/{codtipo}', 'ProdutoController@productList');
+Route::get('/produto/categoria/{id}', 'ProdutoController@productList');
 Route::get('/produtos', 'ProdutoController@index');
 
 Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
 Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
 Route::get('/produtos/editar/{id}', 'ProdutoController@edit')->name('produtos.editar');
+Route::get('/produtos/apagar/{id}', 'ProdutoController@destroy');
 Route::post('/produtos', 'ProdutoController@store');
 Route::post('/produtos/editar/{id}', 'ProdutoController@update');
 
