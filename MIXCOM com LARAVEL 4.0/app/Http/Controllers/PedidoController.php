@@ -186,15 +186,22 @@ class PedidoController extends Controller
     public function compras()
     {
 
-        $users = Pedido::where([
+        $compras = Pedido::where([
+            'status' => 'PA',
+            'user_id' => Auth::id()
+        ])->orderBy('updated_at', 'desc')->get();
 
-        ])->join('users', 'user_id', 'pedidos.user_id')->get();
+        $user = PedidoProduto::where([
+            'status' => 'PA',
+            'pedido_id' => Auth::id()
+        ])->orderBy('updated_at', 'desc')->get();
 
-        $compras = PedidoProduto::where([
+        $cancelados = Pedido::where([
+            'status' => 'CA',
+            'user_id' => Auth::id()
+        ])->orderBy('updated_at', 'desc')->get();
 
-        ])->get();
-
-        return view('admin.pedidos.index', compact('compras', 'users'));
+        return view('admin.pedidos.index', compact('compras', 'user'));
 
     }
 

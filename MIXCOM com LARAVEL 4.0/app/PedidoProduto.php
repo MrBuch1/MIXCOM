@@ -12,9 +12,10 @@ class PedidoProduto extends Model
         'status',
         'valor'
     ];
-    
+
     public function produto()
     {
         return $this->belongsTo('App\Produto', 'produto_id', 'id');
     }
+
 }

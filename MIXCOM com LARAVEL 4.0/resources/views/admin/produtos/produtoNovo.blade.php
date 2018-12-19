@@ -21,9 +21,7 @@
         <label for="tipo">Tipo do Produto</label>
         <select id="tipo" name = "tipoProduto" class="form-control">
             <option value = "Catraca">Catraca</option></option>
-            <option value = "Catraca">Registrador Eletrônico de Ponto Biométrico</option></option>
-            <option value = "Catraca">Registrador Eletrônico de Ponto Cartográfico</option></option>
-            <option value = "Catraca">Controlador de Acesso</option></option>
+7            <option value = "Catraca">Controlador de Acesso</option></option>
             <option value = "Catraca">Soluções de Estacionamento</option></option>
         </select>
 
