@@ -70,10 +70,12 @@ class ProdutoController extends Controller
         $produto->nome = $request->input('nomeProduto');
         $produto->descricao = $request->input('descProduto');
         $produto->tipo = $request->input('tipoProduto');
+        $produto->codtipo = $request->input('codtipo');
         $produto->categoria_id = $request->input('catProduto');
         $produto->caracteristica = $request->input('caracProduto');
+        $produto->marca = $request->input('marcaProduto');
         $produto->valor = $request->input('pcProduto');
-        $path = $request->file('imagemProduto')->store('imagens', 'public');
+        $path = $request->file('imagemProduto')->store('imagens/Produtos', 'public');
         $produto->imagem = $path;
         $produto->save();
         return redirect()->route('admin.index');

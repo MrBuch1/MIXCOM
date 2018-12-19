@@ -10,7 +10,7 @@
                 <div class="col-sm-2 col-md-2 col-lg-2">
                     <img class="align-self-start mr-3 rounded-circle border border-dark" src="{{ asset('imagens/Desenvolvedores/lays.jpg') }}" style="width: 110px; height: 100px;" alt="Generic placeholder image">
                 </div>
-                 <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="col-sm-7 col-md-7 col-lg-7">
                     <div class="media-body">
                         <div class="container">
                         <h2 class="card-title">Lays Santos Brito Pereira </h2>
@@ -54,7 +54,7 @@
                 <div class="col-sm-2 col-md-2 col-lg-2">
                     <img class="align-self-start mr-3 rounded-circle border border-dark" src="{{ asset('imagens/Desenvolvedores/lucas.jpg') }}" style="width: 110px; height: 100px;" alt="Generic placeholder image">
                 </div>
-                 <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="col-sm-7 col-md-7 col-lg-7">
                     <div class="media-body">
                         <div class="container">
                         <h2 class="card-title">Lucas de Sousa Santana</h2>
@@ -94,7 +94,7 @@
                 <div class="col-sm-2 col-md-2 col-lg-2">
                     <img class="align-self-start mr-3 rounded-circle border border-dark" src="{{ asset('imagens/Desenvolvedores/Marcelo.jpg') }}" style="width: 110px; height: 100px;" alt="Generic placeholder image">
                 </div>
-                 <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="col-sm-7 col-md-7 col-lg-7">
                     <div class="media-body">
                         <div class="container">
                         <h2 class="card-title">Marcelo Moreira de Oliveira</h2>
@@ -120,7 +120,7 @@
                     <div class="my-3">
                     <a class="btn btn-outline-info rounded-circle" href="{{asset('https://www.facebook.com/Marcelo.M.de.Olliveira')}}" ><i class="fab fa-facebook-square"></i></a>
                     <a class="btn btn btn-outline-success rounded-circle" href="{{asset('https://api.whatsapp.com/send?phone=5575991778281&text=envie%20uma%20menssagem')}}"><i class="fab fa-whatsapp"></i></a>
-                   <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: marcelomra.oliveira@gmail.com"><i class="far fa-envelope"></i>
+                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: marcelomra.oliveira@gmail.com"><i class="far fa-envelope"></i>
                     </button>
                     </div>
                 </div>
