@@ -18,6 +18,8 @@ class ProdutoController extends Controller
             'ativo' => 'S',
         ])->get();
         $registros = Produto::paginate(9);
+        $cats = Categoria::all();
+
         return view('produto.index', compact('registros'));
     }
 

@@ -62,14 +62,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li @if($current == "clientes") class = "active" @endif >
-                        <a href="#clientesSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Clientes</a>
+                    <li @if($current == "pedidos") class = "active" @endif >
+                        <a href="#clientesSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Pedidos</a>
                         <ul class="collapse list-unstyled" id="clientesSubmenu">
                             <li>
-                                <a href="/clientes/novo">Nova</a>
-                            </li>
-                            <li>
-                                <a href="/clientes">Listar</a>
+                                <a href="{{ route("pedidos") }}">Listar</a>
                             </li>
                         </ul>
                     </li>
