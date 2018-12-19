@@ -68,7 +68,7 @@
                                 <td colspan="2">
                                     <button type="submit" class="btn btn-outline-danger col l12 s12 m12 my-4" style="margin-bottom: 50px" data-toggle="tooltip" data-placement="top" title="Deseja cancelar a compra?">
                                         Cancelar Compra
-                                    </button>   
+                                    </button>
                                 </td>
                                 <td colspan="3"></td>
                             </tr>
@@ -115,7 +115,7 @@
                                 <img width="100" height="100" src="{{ asset($pedido_produto->produto->imagem) }}">
                             </td>
                             <td>{{ $pedido_produto->produto->nome }}</td>
-                            <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>                            
+                            <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
                             <td>R$ {{ number_format($total_produto, 2, ',', '.') }}</td>
                         </tr>
                         @endforeach

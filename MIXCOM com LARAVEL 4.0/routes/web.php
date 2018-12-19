@@ -5,7 +5,7 @@
 /*---------------------------------------Inicio--------------------------------------*/
 
 Route::get('/', function () {  return view('index'); })->name('inicio');
-
+Route::get('/desenvolvedores', function (){return view('desenvolvedores');});
 /*------------------------------------------------------------------------------------*/
 
 /*---------------------------------------Admin--------------------------------------*/
@@ -13,7 +13,7 @@ Route::prefix('/admin')->group(function () {
     Route::get('/login', 'Auth\AdminLoginController@index')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('/', 'AdminController@index')->name('admin.index');
-    Route::get('/pedidos', 'PedidoController@pedidos')->name('pedidos');
+    Route::get('/pedidos', 'PedidoController@compras')->name('pedidos');
 });
 
 

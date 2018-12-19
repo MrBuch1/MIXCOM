@@ -14,7 +14,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/stylesProdutos.css') }}" rel="stylesheet">
     <link rel="#" href="{{ asset('imagens/logo.png')}}">
-    
+
 
 </head>
 
@@ -56,7 +56,7 @@
 
             <div class="col-12 mt-5">
                 <blockquote class="blockquote text-center">
-                    <a href="#" class="blockquote-footer">&copy; 2018 Desenvolvido pela <cite title="Titulo"> Equipe de
+                    <a href="/desenvolvedores" class="blockquote-footer">&copy; 2018 Desenvolvido pela <cite title="Titulo"> Equipe de
                         PFC
                         - MIXCOM</cite></a>
                     </blockquote>
