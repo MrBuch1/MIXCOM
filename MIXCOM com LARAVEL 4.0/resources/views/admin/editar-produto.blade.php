@@ -2,11 +2,11 @@
 
 @section('body')
     <h1>Editar Produto</h1>
-    <form action = "/produtos" method="POST" enctype="multipart/form-data">
+    <form action = "/produtos/editar/{{$registro->id}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class = "form-group">
             <label for="nome">Nome do Produto</label>
-            <input type = "text" class = "form-control" name="nome" id = "nome" placeholder = "{{$registro->nome}}">
+            <input type = "text" class = "form-control" name="nomeProduto" id = "nome" placeholder = "{{$registro->nome}}">
 
             <label for="tipo">Tipo</label>
             <select id="tipo" name = "tipo" class="form-control" placeholder = "{{$registro->tipo}}">
@@ -39,10 +39,10 @@
             <input type="number" class = "form-control" name="valor" id = "valor" placeholder = "{{$registro->valor}}"></input>
 
             <label for="categoria">Categoria</label>
-            <select id="categoira" name = "categoria" class="form-control" placeholder = "{{$registro->categoria}}">
-              <option value="controle de acesso">Controle de acesso</option>
-              <option value="relogio de ponto">Relogio de ponto</option>
-              <option value="software">Software</option>
+            <select id="categoira" name = "catProduto" class="form-control" placeholder = "{{$registro->categoria}}">
+              @foreach($cats as $c)
+                    <option value = "{{$c->id}}">{{$c->nome}}</option>
+                @endforeach
             </select>
 
             <label for="descricao">Descrição do Produto</label>

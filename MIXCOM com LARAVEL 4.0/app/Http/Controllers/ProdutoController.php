@@ -80,20 +80,23 @@ class ProdutoController extends Controller
 
 
         public function edit($id){
-
+            $cats = Categoria::all();
             $registro = Produto::find($id);
-            return view('admin.editar-produto', compact('registro'));
+            return view('admin.editar-produto', compact('registro', 'cats'));
 
         }
 
         public function update(Request $request, $id){
             $produto = Produto::find($id);
             $img_antiga = $produto->imagem;
-            $produto->nome = $request->input('nomeProduto');
-            $produto->descricao = $request->input('descProduto');
-            $produto->id_categoria = $request->input('catProduto');
-            $produto->quantidade = $request->input('qtdProduto');
-            $produto->preco = $request->input('pcProduto');
+            $produto->nome           = $request->input('nomeProduto') != null ? $request->input('nomeProduto') : $produto->nome;
+            $produto->tipo           = $request->input('tipo') != null ? $request->input('tipo') : $produto->tipo;
+            $produto->codtipo        = $request->input('codtipo') != null ? $request->input('codTipo') : $produto->codtipo;
+            $produto->marca          = $request->input('marca') != null ? $request->input('marca') : $produto->marca;
+            $produto->descricao      = $request->input('descricao') != null ? $request->input('descricao') : $produto->descricao;
+            $produto->categoria_id   = $request->input('catProduto') != null ? $request->input('catProduto') : $produto->categoria_id;
+            $produto->caracteristica = $request->input('caracteristica') != null ? $request->input('caracteristica') : $produto->caracteristica;
+            $produto->valor          = $request->input('valor') != null ? $request->input('valor') : $produto->valor;
             
             if($request->file('imagemProduto') != null){
                 $path = $request->file('imagemProduto')->store('images', 'public');
@@ -102,6 +105,6 @@ class ProdutoController extends Controller
             }
 
             $produto->save();
-            return redirect('/admin.index');
+            return redirect()->route('admin.index');
     }
 }
