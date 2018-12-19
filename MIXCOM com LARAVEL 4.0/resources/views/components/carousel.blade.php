@@ -11,7 +11,7 @@
                 <div class="carousel-item active">
                     <img class="img-responsive d-block w-100" src="imagens/banner.jpg" alt="">
                     <div class="carousel-caption d-none d-md-block">
-                        <img src="imagens/Produtos/banner01.jpg" class="rounded-circle img-responsive col-5" style="margin-bottom: -210px; margin-left: 650px; width: 400px;">
+                        <img src="imagens/Produtos/banner01.jpg" class="rounded-circle img-responsive col-5" style="margin-bottom: -55px; margin-left: 650px; width: 400px;">
                         <div class="col-8 text-justify">
                             <h1>Controlador
                                 de Acesso</h1>

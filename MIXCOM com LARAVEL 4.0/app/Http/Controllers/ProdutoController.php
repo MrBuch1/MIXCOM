@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Produto;
 use App\Categoria;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 
 class ProdutoController extends Controller
@@ -95,7 +96,7 @@ class ProdutoController extends Controller
             $img_antiga = $produto->imagem;
             $produto->nome           = $request->input('nomeProduto') != null ? $request->input('nomeProduto') : $produto->nome;
             $produto->tipo           = $request->input('tipo') != null ? $request->input('tipo') : $produto->tipo;
-            $produto->codtipo        = $request->input('codtipo') != null ? $request->input('codTipo') : $produto->codtipo;
+            $produto->codtipo        = $request->input('codtipo') != null ? $request->input('codtipo') : $produto->codtipo;
             $produto->marca          = $request->input('marca') != null ? $request->input('marca') : $produto->marca;
             $produto->descricao      = $request->input('descricao') != null ? $request->input('descricao') : $produto->descricao;
             $produto->categoria_id   = $request->input('catProduto') != null ? $request->input('catProduto') : $produto->categoria_id;
@@ -110,5 +111,13 @@ class ProdutoController extends Controller
 
             $produto->save();
             return redirect()->route('admin.index');
+    }
+
+    public function destroy($id)
+    {
+        $produto = Produto::find($id);
+        Storage::disk('public')->delete($produto->imagem);
+        $produto->delete();
+        return redirect("/produtos");
     }
 }
