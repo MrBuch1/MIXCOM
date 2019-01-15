@@ -20,7 +20,7 @@
                     @foreach($registros as $registro)
 					<div class="card table-responsive" style="width: 15em; word-wrap: break-word; margin: 5px">
 						<br>
-					<img src="{{ route('inicio') }}/storage/{{ $registro->imagem }}" class="img-responsive card-img-top" style= "align-self: center; width: 50%" >
+					<img src="{{ asset($registro->imagem)}}" class="img-responsive card-img-top" style= "align-self: center; width: 100px; height: 100px;" >
 						<div class="card-body">
 
 							<a href="{{ route('produto', $registro->id) }}">

@@ -11,6 +11,7 @@ use App\Userfis;
 use App\Userjur;
 use App\Endereco;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RegisterController extends Controller
 {
@@ -136,6 +137,14 @@ class RegisterController extends Controller
 
         $user->save();
         return redirect('/index');
+    }
+
+    public function listar(){
+        $users = DB::table('users')->select('name')->orderBy('updated_at', 'desc')->get();
+        $users = DB::table('users')->select('email')->orderBy('updated_at', 'desc')->get();
+        $users = DB::table('users')->select('telefone')->orderBy('updated_at', 'desc')->get();
+
+        return view('admin.usuarios.index', compact('listar', 'users'));
     }
 
 }

@@ -49,7 +49,8 @@ class PedidoController extends Controller
 
         $idpedido = Pedido::consultaId([
             'user_id' => $idusuario,
-            'status' => 'RE' // Reservada
+            'status' => 'RE', // Reservada
+            //'valor' => $pedido
         ]);
 
         if (empty($idpedido)) {
@@ -65,7 +66,7 @@ class PedidoController extends Controller
         PedidoProduto::create([
             'pedido_id' => $idpedido,
             'produto_id' => $idproduto,
-            'valor' => $produto->valor,
+            //'valor' => $produto->valor,
             'status' => 'RE'
         ]);
 

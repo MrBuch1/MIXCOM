@@ -34,7 +34,7 @@ class MercadoPagoController extends Controller
             $idpedido = DB::table('pedido_produtos')->max('pedido_id');
         }
         $somapedido = DB::table('pedido_produtos')->where('pedido_id', $idpedido)->sum('valor');
-        $pedido = (float)$somapedido;
+        $pedido = (int)$somapedido;
 
         $compra = DB::table('pedido_produtos')->where('pedido_id', $idpedido)->value('pedido_id');
 

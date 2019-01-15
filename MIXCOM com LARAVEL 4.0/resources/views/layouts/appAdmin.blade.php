@@ -70,6 +70,14 @@
                             </li>
                         </ul>
                     </li>
+                    <li @if($current == "usuarios") class = "active" @endif >
+                        <a href="#usuariosSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Usuários</a>
+                        <ul class="collapse list-unstyled" id="usuariosSubmenu">
+                            <li>
+                                <a href="{{ route("usuarios") }}">Listar</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <!-- Page Content  -->

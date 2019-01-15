@@ -26,7 +26,7 @@ class CreateProdutosTable extends Migration
             $table->string('diametro')->nullable();
             $table->enum('ativo', ['S', 'N'])->default('S');
             $table->integer('categoria_id')->unsigned();
-            $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->foreign('categoria_id')->references('id', 'nome')->on('categorias');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -26,7 +26,7 @@
                         {{ $p->descricao }}
                 </td>
                 <td>{{ $p->valor}}</td>
-                <td>{{ $p->categoria}}</td>
+                <td>{{ $p->categoria_id}}</td>
 
                 <td>
                     <a class = "btn btn-primary my-1" href="/produtos/editar/{{$p->id}}">Editar</a>
