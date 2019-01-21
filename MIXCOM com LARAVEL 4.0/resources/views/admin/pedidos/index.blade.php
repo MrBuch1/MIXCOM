@@ -14,21 +14,12 @@
             </tr>
         </thead>
         <tbody>
-        @foreach ($compras as $p)
+        @foreach ($pedidos as $p)
         <tr>
             <td>{{ $p->id }}</td>
-            <td>{{ $p->user_id }}
-                <!--@if ($p->id == $p->pedido_id)
-                {{ $p->name }}
-                @endif-->
-            </td>
+            <td>{{ $p->name }}</td>
             <td>{{$p->produto_id}}</td>
             <td>{{$p->valor}}</td>
-            <!-- <td>{{$p->status}}</td> -->
-            <!--<td>
-                <a href="/produtos/editar/{{$p->id}}" class="btn btn-sm btn-primary">Editar</a>
-                <a href="/produtos/apagar/{{$p->id}}" class="btn btn-sm btn-danger">Apagar</a>
-            </td>-->
         </tr>
         @endforeach
     </tbody>
