@@ -278,13 +278,14 @@ class PedidoController extends Controller
             ->select('pedido_produtos.*', 'users.name', 'pedidos.id', 'pedido.')->orderBy('updated_at', 'desc')->get();
         return view('admin.pedidos.index', compact('listar', 'pedidos'));
         */
-
+        
         $pedidos = DB::table('pedidos')
             ->join('pedido_produtos', 'pedidos.id', '=', 'pedido_produtos.pedido_id')
             ->join('users', 'pedidos.user_id', '=', 'users.id')
             ->join('produtos', 'pedido_produtos.produto_id', '=', 'produtos.id')
             ->select('pedidos.*', 'users.name', 'pedido_produtos.produto_id', 'pedido_produtos.valor', 'produtos.nome')->orderBy('updated_at', 'desc')->get();
         return view('admin.pedidos.index', compact('listar', 'pedidos'));
+
     }
 
 

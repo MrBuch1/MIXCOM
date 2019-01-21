@@ -6,7 +6,7 @@
         @csrf
         <div class = "form-group">
             <label for="nome">Nome do Produto</label>
-            <input type = "text" class = "form-control" name="nomeProduto" id = "nome" placeholder = "{{$registro->nome}}">
+            <input type = "text" class = "form-control" name="nomeProduto" id = "nome" placeholder = "{{$registro->nome_produto}}">
 
             <label for="tipo">Tipo</label>
             <select id="tipo" name = "tipo" class="form-control" placeholder = "{{$registro->tipo}}">

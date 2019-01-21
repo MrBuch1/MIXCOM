@@ -15,6 +15,7 @@ Route::prefix('/admin')->group(function () {
     Route::get('/', 'AdminController@index')->name('admin.index');
     Route::get('/pedidos', 'PedidoController@listar')->name('pedidos');
     Route::get('/clientes', 'Auth\RegisterController@listar')->name('usuarios');
+    Route::get('/produto', 'ProdutoController@listar')->name('produtos.listar');
 });
 
 
@@ -63,7 +64,7 @@ Route::get('/produto/{id}', 'ProdutoController@produto')->name('produto');
 Route::get('/produto/categoria/{id}', 'ProdutoController@productList');
 Route::get('/produtos', 'ProdutoController@index');
 
-Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
+//Route::get('/produto', 'ProdutoController@produtoAdmin')->name('produtos.listar');
 Route::get('/produtos/novo', 'ProdutoController@create')->name('novo.produto');
 Route::get('/produtos/editar/{id}', 'ProdutoController@edit')->name('produtos.editar');
 Route::get('/produtos/apagar/{id}', 'ProdutoController@destroy');

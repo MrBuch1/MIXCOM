@@ -68,7 +68,7 @@ class ProdutoController extends Controller
     public function store(Request $request)
     {
         $produto = new Produto();
-        $produto->nome = $request->input('nomeProduto');
+        $produto->nome_produto = $request->input('nomeProduto');
         $produto->descricao = $request->input('descProduto');
         $produto->tipo = $request->input('tipoProduto');
         $produto->codtipo = $request->input('codtipo');
@@ -79,7 +79,7 @@ class ProdutoController extends Controller
         $path = $request->file('imagemProduto')->store('imagens/Produtos', 'public');
         $produto->imagem = $path;
         $produto->save();
-        return redirect()->route('admin.index');
+        return redirect()->route('produtos.listar');
 
     }
 
@@ -94,7 +94,7 @@ class ProdutoController extends Controller
         public function update(Request $request, $id){
             $produto = Produto::find($id);
             $img_antiga = $produto->imagem;
-            $produto->nome           = $request->input('nomeProduto') != null ? $request->input('nomeProduto') : $produto->nome;
+            $produto->nome_produto   = $request->input('nomeProduto') != null ? $request->input('nomeProduto') : $produto->nome_produto;
             $produto->tipo           = $request->input('tipo') != null ? $request->input('tipo') : $produto->tipo;
             $produto->codtipo        = $request->input('codtipo') != null ? $request->input('codtipo') : $produto->codtipo;
             $produto->marca          = $request->input('marca') != null ? $request->input('marca') : $produto->marca;
@@ -110,7 +110,7 @@ class ProdutoController extends Controller
             }
 
             $produto->save();
-            return redirect()->route('admin.index');
+            return redirect()->route('produtos.listar');
     }
 
     public function destroy($id)
@@ -119,5 +119,12 @@ class ProdutoController extends Controller
         //Storage::disk('public')->delete($produto->imagem);
         $produto->delete();
         return redirect()->route('admin.index');
+    }
+
+    public function listar(){
+        $produtos = DB::table('categorias')
+            ->join('produtos', 'categorias.id', '=', 'produtos.categoria_id')
+            ->select('categorias.*', 'categorias.nome', 'produtos.id', 'nome_produto', 'produtos.descricao', 'produtos.valor')->get();
+            return view('admin.produtos.index', compact('listar', 'produtos'));
     }
 }
