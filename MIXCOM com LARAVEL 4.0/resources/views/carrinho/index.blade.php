@@ -39,7 +39,7 @@
 
                     <tr>
                         <td>
-                            <img width="150" height="100" style="margin-right: -50px" src="/storage/{{ $pedido_produto->produto->imagem }}">
+                            <img width="150" height="100" style="margin-right: -50px" src="{{ asset($pedido_produto->produto->imagem) }}">
                         </td>
 
                         <td class="center-align">

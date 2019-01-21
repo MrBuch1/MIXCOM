@@ -21,7 +21,7 @@
         <td>
             <b>Cidade: </b>{{ $u->cidade }}<br>    
             <b>Estado: </b>{{ $u->uf }}<br>
-            <b>Rua: </b>{{ $u->cidade }} - <b>Número: </b>{{ $u->numero}} <br>
+            <b>Rua: </b>{{ $u->rua }} - <b>Número: </b>{{ $u->numero}} <br>
             <b>Bairro: </b>{{ $u->bairro }} - <b>Cep: </b>{{ $u->cep }}<br>
             <b>Complemento: </b>{{ $u->complemento }}
         </td>

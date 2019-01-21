@@ -58,7 +58,7 @@
                                 <a href="{{ route('novo.produto') }}">Novo +</a>
                             </li>
                             <li>
-                                <a href="{{ route('produtos.listar') }}">Listar</a>
+                                <a href="{{ route('produtos.listar') }}">Listar ═</a>
                             </li>
                         </ul>
                     </li>

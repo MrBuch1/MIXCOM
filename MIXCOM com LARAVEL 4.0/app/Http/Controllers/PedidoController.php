@@ -10,6 +10,7 @@ use App\Produto;
 use App\PedidoProduto;
 use App\CupomDesconto;
 use App\User;
+use Illuminate\Support\Facades\DB;
 
 class PedidoController extends Controller
 {
@@ -271,6 +272,10 @@ class PedidoController extends Controller
 
         public function pedidos()
     {
-
+        $users = DB::table('pedidos')
+            //->join('users', 'pedidos.id', '=', 'pedidos.user_id')
+            ->join('pedido_produtos', 'pedidos.id', '=', 'pedido_produtos.pedido_id')
+            ->select('pedidos.*', 'pedido_produtos.produto_id', 'pedido_produtos.valor')->orderBy('updated_at', 'desc')->get();
+        return view('admin.pedidos.index', compact('pedidos', 'pedidos'));
     }
 }
