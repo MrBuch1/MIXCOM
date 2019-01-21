@@ -24,7 +24,7 @@
 						<div class="card-body">
 
 							<a href="{{ route('produto', $registro->id) }}">
-								<h6 class="card-title text-dark my-3 ">{{$registro->nome}}</h6>
+								<h6 class="card-title text-dark my-3 ">{{$registro->nome_produto}}</h6>
 							</a>
 							<p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
 							<h5 class=" distancia card-title mb-2 text-muted my-3">{{$registro->valor}}</h5>

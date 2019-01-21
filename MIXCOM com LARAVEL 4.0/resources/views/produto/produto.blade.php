@@ -24,7 +24,7 @@
                     </td>
                     <td width="571" valign="top">
                         <p>
-                            <h4 align="center"><strong>{{$registro->nome}}</strong></h4><br>
+                            <h4 align="center"><strong>{{$registro->nome_produto}}</strong></h4><br>
                             <p align="justify" class="Estilo2">{{$registro->descricao}}</p>
                             <br>
                             <table class="table  table-bordered table-condensed">

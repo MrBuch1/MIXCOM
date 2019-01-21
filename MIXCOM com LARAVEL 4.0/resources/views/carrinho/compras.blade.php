@@ -53,7 +53,7 @@
                                 <td>
                                     <img width="100" height="100" src="{{ asset($pedido_produto->produto->imagem) }}">
                                 </td>
-                                <td>{{ $pedido_produto->produto->nome }}</td>
+                                <td>{{ $pedido_produto->produto->nome_produto }}</td>
                                 <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
                                 <td>R$ {{ number_format($total_produto, 2, ',', '.') }}</td>
                             </tr>

@@ -54,7 +54,7 @@
                             </div>
                             <a href="#" onclick="carrinhoRemoverProduto({{ $pedido->id }}, {{ $pedido_produto->produto_id }}, 0)" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Retirar produto do carrinho?"></a>
                         </td>
-                        <td> {{ $pedido_produto->produto->nome }} </td>
+                        <td> {{ $pedido_produto->produto->nome_produto }} </td>
                         <td>R$ {{ number_format($pedido_produto->produto->valor, 2, ',', '.') }}</td>
                         @php
                             $total_produto = $pedido_produto->valores - $pedido_produto->descontos;

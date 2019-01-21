@@ -156,7 +156,7 @@ class ProdutoSeeder extends Seeder
             'tipo' => 'controlador de acesso',
             'codtipo' => '3',
             'marca' => '',
-            'valor' => '4500.00',
+            'valor' => '3500.00',
             'categoria_id' => 1,
             'descricao' => 'O Controlador de Acesso – MD 5705 é um equipamento prático e moderno para o controle de acesso através de comparação e identificação do padrão de impressões digitais. Pode ser utilizado em empresas de pequeno a grande porte. Controla a abertura de portas, catracas ou torniquetes, controlando o acesso através de um processo completamente a prova de fraudes.',
             'imagem' => "imagens//Produtos/01.png",
