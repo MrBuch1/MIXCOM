@@ -269,8 +269,21 @@ class PedidoController extends Controller
         return redirect()->route('carrinho.compras');
     }
 
-        public function pedidos()
-    {
+    public function listar(){
+ 
+        /*
+        $pedidos = DB::table('pedido_produtos')
+            ->join('pedidos', 'pedidos_produto.pedido', '=', 'pedidos.id')
+            ->select('pedido_produtos.*', 'users.name', 'pedidos.id', 'pedido.')->orderBy('updated_at', 'desc')->get();
+        return view('admin.pedidos.index', compact('listar', 'pedidos'));
+        */
 
+        $pedidos = DB::table('pedidos')
+            ->join('pedido_produtos', 'pedidos.id', '=', 'pedido_produtos.pedido_id')
+            ->join('users', 'pedidos.user_id', '=', 'users.id')
+            ->select('pedidos.*', 'users.name', 'pedido_produtos.produto_id', 'pedido_produtos.valor')->orderBy('updated_at', 'desc')->get();
+        return view('admin.pedidos.index', compact('listar', 'pedidos'));
     }
+
+
 }

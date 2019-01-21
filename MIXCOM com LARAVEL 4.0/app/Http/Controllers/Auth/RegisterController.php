@@ -141,11 +141,6 @@ class RegisterController extends Controller
 
     public function listar(){
  
- /*
-        $users = DB::table('users')->select('name','email','telefone')->orderBy('updated_at', 'desc')->get();
-        $end = DB::table('enderecos')->select('rua','cidade','bairro','numero','complemento','uf','cep')->orderBy('updated_at', 'desc')->get();
-        return view('admin.usuarios.index', compact('listar', 'users','end'));
-*/
         $users = DB::table('users')
             ->join('enderecos', 'users.id', '=', 'enderecos.user_id')
             ->select('users.*', 'enderecos.rua', 'enderecos.cidade', 'enderecos.bairro', 'enderecos.numero', 'enderecos.complemento', 'enderecos.uf', 'enderecos.cep')->orderBy('updated_at', 'desc')->get();
