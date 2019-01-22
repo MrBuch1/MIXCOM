@@ -3,10 +3,12 @@
 
 @component('components.carousel') @endcomponent
 
+
 <!--Produtos-->
 <div class="container">
-    <h1 class="display-3 text-center my-5">Produtos</h1>
+    <h1 class="display-3 text-center my-5">Mais Vendidos 😉</h1>
     <div class="card-deck">
+        
         <div class="card">
             <img class="img-responsive card-img-top" style="width:295px" src="{{ asset('imagens\Produtos/Evo.jpg')}}" alt="">
             <div class="card-body">
@@ -14,7 +16,7 @@
                 <p class="card-subtitle text-muted my-3">Madis MD REP REVO é o relógio perfeito para quem quer a segurança dos dados
                     de registro dos funcionários. Além disso, possui sistema próprio em nuvem para tratamento de pontos.
                 </p>
-                <a href="#" class="btn btn-outline-primary">Comprar R$ 2.000,00</a>
+                <!-- <a href="#" class="btn btn-outline-primary">Comprar R$ 2.500,00</a> -->
             </div>
             <div class="card-footer">
                 <small class="text-muted">Relógio top</small>
@@ -27,7 +29,7 @@
                 <p class="card-subtitle mb-2 text-muted my-3">Uma das melhores marcas no mercado, a TopData lançou
                     seu mais novo equipamento: Inner Rep Plus, com módulo biomérico com agilidade de gravação e registro de ponto.
                 </output></p>
-                <a href="#" class="btn btn-outline-primary">Comprar R$ 2.000,00</a>
+                <!-- <a href="#" class="btn btn-outline-primary">Comprar R$ 2.500,00</a> -->
             </div>
             <div class="card-footer">
                 <small class="text-muted">A melhor biometria</small>
@@ -41,7 +43,7 @@
                     O iPointline possui certificado INMETRO e oferece um sistema próprio de tratamento de pontos integrado
                     em nuvem.
                 </p>
-                <a href="#" class="btn btn-outline-primary">Comprar R$ 2.000,00</a>
+                <!-- <a href="#" class="btn btn-outline-primary">Comprar R$ 2.500,00</a> -->
             </div>
             <div class="card-footer">
                 <small class="text-muted">Topissimo</small>
@@ -54,6 +56,7 @@
 </div>
 
 <!--Fim Produtos-->
+
 <div class="container">
     <div class="col-12 mb-3">
         <hr>

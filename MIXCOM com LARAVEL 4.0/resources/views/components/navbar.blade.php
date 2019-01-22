@@ -15,16 +15,16 @@
                     <a class="nav-link" href="/">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Produtos">A Empresa</a>
+                    <a class="nav-link" href="/empresa">A Empresa</a>
                 </li>
                 <li class="nav-item">
                     <a href="/produtos" id="produtos" class="nav-link">Produtos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Sobre-nos">Nossos Serviços</a>
+                    <a class="nav-link" href="/servicos">Nossos Serviços</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Sobre-nos">Cliente</a>
+                    <a class="nav-link" href="/clientes">Clientes</a>
                 </li>
             </ul>
             @guest

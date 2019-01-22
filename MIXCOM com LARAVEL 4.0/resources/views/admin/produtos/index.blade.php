@@ -25,7 +25,7 @@
                 <div class="collapse multi-collapse" id="multiCollapseExample2">
                         {{ $p->descricao }}
                 </td>
-                <td>{{ $p->valor}}</td>
+                <td>R$ {{ $p->valor}}</td>
                 <td>{{ $p->nome}}</td>
 
                 <td>

@@ -18,7 +18,7 @@
         <tr>
             <td>00{{ $p->id }}</td>
             <td>{{ $p->name }}</td>
-            <td>{{$p->nome}}</td>
+            <td>{{$p->nome_produto}}</td>
             <td>R$ {{$p->valor}},00</td>
         </tr>
         @endforeach

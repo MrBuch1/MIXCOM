@@ -143,7 +143,8 @@ class RegisterController extends Controller
  
         $users = DB::table('users')
             ->join('enderecos', 'users.id', '=', 'enderecos.user_id')
-            ->select('users.*', 'enderecos.rua', 'enderecos.cidade', 'enderecos.bairro', 'enderecos.numero', 'enderecos.complemento', 'enderecos.uf', 'enderecos.cep')->orderBy('updated_at', 'desc')->get();
+            ->select('users.*', 'enderecos.rua', 'enderecos.cidade', 'enderecos.bairro', 
+            'enderecos.numero', 'enderecos.complemento', 'enderecos.uf', 'enderecos.cep')->orderBy('updated_at', 'desc')->get();
         return view('admin.usuarios.index', compact('listar', 'users'));
     }
 

@@ -4,8 +4,11 @@
 
 /*---------------------------------------Inicio--------------------------------------*/
 
-Route::get('/', function () {  return view('index'); })->name('inicio');
-Route::get('/desenvolvedores', function (){return view('desenvolvedores');});
+Route::get('/', function () { return view('index'); })->name('inicio');
+Route::get('/desenvolvedores', function (){ return view('desenvolvedores'); });
+Route::get('/empresa', function(){ return view('empresa'); });
+Route::get('/servicos', function(){ return view('servicos'); });
+Route::get('/clientes', function(){ return view('clientes'); });
 /*------------------------------------------------------------------------------------*/
 
 /*---------------------------------------Admin--------------------------------------*/
@@ -71,12 +74,15 @@ Route::get('/produtos/apagar/{id}', 'ProdutoController@destroy');
 Route::post('/produtos', 'ProdutoController@store');
 Route::post('/produtos/editar/{id}', 'ProdutoController@update');
 
+/*--------------------------------------Pagamento------------------------------------*/
+Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
+
 
 /*------------------------------------------------------------------------------------*/
 
 
 /*---------------------------------------Rotas testes--------------------------------------*/
-Route::get('/pagamento', 'MercadoPagoController@index')->name('pagamento');
+
 
 use App\User;
 use App\Endereco;

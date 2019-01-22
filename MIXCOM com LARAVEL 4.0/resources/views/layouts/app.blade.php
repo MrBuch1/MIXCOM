@@ -37,10 +37,12 @@
         <div class=" col-sm-4 ml-3">
             <h3>Contatos</h3>
             <div class="list-group text-center">
-                <p class="text-left">Telefone:(75) 3626-8508</p>
+                <p class="text-left">Telefone: (75) 3626-8508</p>
                 <p class="text-left">Alex Lira - alexlira.rh@gmail.com</p>
                 <p class="text-left">Lívia Andrade - liviaadm2013@gmail.com</p>
                 <p class="text-left">WhatsApp Suporte 01 - (75) 9 8889-1567</p>
+                <p class="text-left">WhatsApp Suporte 02 - (75) 9 8183-5365</p>
+                <p class="text-left">WhatsApp Suporte 03 - (75) 9 8869-3232</p>
             </div>
         </div>
 
@@ -49,7 +51,6 @@
             <div class="btn-group-vertical btn-block btn-group-lg" role="group">
                 <a class="btn btn-outline-primary" href="https://www.facebook.com/Mixcompontoeacesso/?timeline_context_item_type=intro_card_work&timeline_context_item_source=100003811757067&fref=tag"><i
                     class="fab fa-facebook"></i> Facebook</a>
-                    <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter"></i> Twitter</a>
                     <a class="btn btn-outline-danger" href="#"><i class="fab fa-instagram"></i> Instagram</a>
                 </div>
             </div>
@@ -66,6 +67,7 @@
             </div>
         </div>
         <!--Fim Rodapé-->
+
     <!--Inicio modal Cadastro-->
     <div class="modal fade" id="Cadastrar" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
@@ -101,6 +103,7 @@
     <script src="{{ URL::to('js/produtos.js') }}" type="text/javascript"></script>
     <script type="text/javascript" src="{{ URL::to('js/carrinho.js')}}"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    
     <!-- BEGIN JIVOSITE CODE {literal} -->
     <script type='text/javascript'>
         (function(){ var widget_id = 'qCM74wTOwS';var d=document;var w=window;function l(){var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();

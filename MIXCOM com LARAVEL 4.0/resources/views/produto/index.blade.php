@@ -2,7 +2,7 @@
 @section('pagina_conteudo')
 <br><br><br><br>
 <div class="container">
-	<h1 class="center-align">Produtos</h1>
+	<h1 class="display-3 text-center">Produtos</h1>
 	<div class="container">
 		<div class="row">
 			<div class="caixa col-md-3 col-sm-3 col-xs-3">
@@ -26,9 +26,8 @@
 							<a href="{{ route('produto', $registro->id) }}">
 								<h6 class="card-title text-dark my-3 ">{{$registro->nome_produto}}</h6>
 							</a>
-							<p class="distancia card-subtitle mb-2 text-muted my-3">A vista:</p>
+							<p class="distancia card-subtitle mb-2 text-muted my-3">À vista:</p>
 							<h5 class=" distancia card-title mb-2 text-muted my-3">{{$registro->valor}}</h5>
-							<p class=" distancia card-subtitle mb-2 text-muted my-3">10x de R$113,55 sem juros</p>
 						</div>
 
 						<div class="card-footer cor1">

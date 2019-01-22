@@ -80,7 +80,7 @@
                     <div class="my-3">
                     <a class="btn btn-outline-info rounded-circle" href="{{asset('https://www.facebook.com/lucas.santana.1010')}}"><i class="fab fa-facebook-square"></i></a>
                     <a class="btn btn btn-outline-success rounded-circle" href="{{asset('https://api.whatsapp.com/send?phone=5575983014336&text=envie%20uma%20mensagem')}}"><i class="fab fa-whatsapp"></i></a>
-                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: lucassantana.profissional@gmail.com"><i class="far fa-envelope"></i>
+                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: lucas.dsousast@gmail.com"><i class="far fa-envelope"></i>
                     </button>
                     </div>
                 </div>

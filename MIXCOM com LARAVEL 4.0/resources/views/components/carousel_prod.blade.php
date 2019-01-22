@@ -15,22 +15,22 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <a href="/produto/12">
-                                    <img src="{{ asset('imagens/Produtos/hexa-b.jpg') }}" alt="Image" style="max-width:100%;">
+                                    <img src="{{ asset('imagens/Produtos/hexa-b.jpg') }}" alt="Image" style="width:200px; height:200px;">
                                 </a>
                             </div>
                             <div class="col-md-3">
                                 <a href="/produto/9">
-                                    <img src="{{ asset('imagens/Produtos/esta.jpg') }}" alt="Image" style="max-width:80%;">
+                                    <img src="{{ asset('imagens/Produtos/esta.jpg') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                             <div class="col-md-3">
                                 <a href="/produto/6">
-                                    <img src="{{ asset('imagens/Produtos/faci.png') }}" alt="Image" style="max-width:30%;">
+                                    <img src="{{ asset('imagens/Produtos/faci.png') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                             <div class="col-md-3">
                                 <a href="/produto/4">
-                                    <img src="{{ asset('imagens/Produtos/catraca_sw1.png') }}" alt="Image" style="max-width:50%;">
+                                    <img src="{{ asset('imagens/Produtos/catraca_sw1.png') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                         </div>
@@ -42,22 +42,22 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <a href="/produto/7">
-                                    <img src="{{ asset('imagens/Produtos/02.png') }}" alt="Image" style="max-width:50%;">
+                                    <img src="{{ asset('imagens/Produtos/02.png') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                             <div class="col-md-3">
                                 <a href="/produto/28">
-                                    <img src="{{ asset('imagens/Produtos/academia_net.png') }}" alt="Image" style="max-width:50%;">
+                                    <img src="{{ asset('imagens/Produtos/academia_net.png') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                             <div class="col-md-3">
                                 <a href="/produto/22">
-                                    <img src="{{ asset('imagens/Produtos/ponto_4.png') }}" alt="Image" style="max-width:40%;">
+                                    <img src="{{ asset('imagens/Produtos/ponto_4.png') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                             <div class="col-md-3">
                                 <a href="produto/19">
-                                    <img src="{{ asset('imagens/Produtos/cartografico02.jpg') }}" alt="Image" style="max-width:40%;">
+                                    <img src="{{ asset('imagens/Produtos/cartografico02.jpg') }}" alt="Image"  style="width:200px; height:200px;">
                                 </a>
                             </div>
                         </div>

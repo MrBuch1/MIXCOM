@@ -24,15 +24,15 @@
                     </td>
                     <td width="571" valign="top">
                         <p>
-                            <h4 align="center"><strong>{{$registro->nome_produto}}</strong></h4><br>
-                            <p align="justify" class="Estilo2">{{$registro->descricao}}</p>
+                            <h4 valign="center"><strong>{{$registro->nome_produto}}</strong></h4><br>
+                            <p valign="justify" class="Estilo2">{{$registro->descricao}}</p>
                             <br>
                             <table class="table  table-bordered table-condensed">
                                 <tr>
                                     <td>
                                         <center>
                                             <h3 class=" distancia card-title mb-2 my-3">R$ {{$registro->valor}}</h3>
-                                            <p class="distancia card-subtitle mb-2 text-muted my-3">parcele em até 10x sem juros</p>
+                                            <p class="distancia card-subtitle mb-2 text-muted my-3">Parcele em até 10x sem juros</p>
                                             <form method="POST" action="{{ route('carrinho.adicionar') }}">
                                                 {{ csrf_field() }}
                                                 <input type="hidden" name="id" value="{{ $registro->id }}">
@@ -62,7 +62,7 @@
             <table>
                 <tr>
 
-                    <td><a href="#"><img class="img-responsive" src="{{asset ('imagens/carrinho.png')}}" title="Carrinho!"></a></td>
+                    <td><a href="/carrinho"><img class="img-responsive" src="{{asset ('imagens/carrinho.png')}}" title="Carrinho!"></a></td>
 
                 </tr>
 
