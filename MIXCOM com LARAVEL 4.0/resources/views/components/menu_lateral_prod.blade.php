@@ -9,16 +9,18 @@
             POR BIOMETRIA FACIAL</a>
         <a href="/produto/categoria/3" class="list-group-item" data-parent="#sub-menu">CONTROLADOR DE
             ACESSO</a>
+        <a href="/produto/categoria/4" class="list-group-item" data-parent="#sub-menu1">SOLUÇÕES DE
+            ESTACIONAMENTO</a>
     </div>
 
     <a href="#sub-menu1" class=" sidebar-header list-group-item active" data-toggle="collapse" data-parent="#main-menu">RELÓGIOS
         DE PONTO<span class="caret"></span></a>
     <div class="collapse list-group-level1" id="sub-menu1">
         <a href="/produto/categoria/5" class="list-group-item" data-parent="#sub-menu1">REGISTRADOR
-            ELETRÓNICO DE PONTO(REP)</a>
-        <a href="/produto/categoria/6" class="list-group-item" data-parent="#sub-menu1">CARTOGRAFICO</a>
-        <a href="/produto/categoria/4" class="list-group-item" data-parent="#sub-menu1">SOLUÇÕES DE
-            ESTACIONAMENTO</a>
+            ELETRÔNICO DE PONTO BIOMÉTRICO</a>
+        <a href="/produto/categoria/6" class="list-group-item" data-parent="#sub-menu1">REGISTRADOR
+            ELETRÔNICO DE PONTO CARTOGRÁFICO</a>
+        
     </div>
     <a href="#sub-menu2" class=" sidebar-header list-group-item active" data-toggle="collapse" data-parent="#main-menu">SOFTWARES<span
             class="caret"></span></a>
@@ -29,14 +31,14 @@
             ACESSO</a>
     </div>
 
-    <a href="#sub-menu3" class=" sidebar-header list-group-item active" data-toggle="collapse" data-parent="#main-menu">ACESSORIOS<span
+    <a href="#sub-menu3" class=" sidebar-header list-group-item active" data-toggle="collapse" data-parent="#main-menu">ACESSÓRIOS<span
             class="caret"></span></a>
     <div class="collapse list-group-level1" id="sub-menu3">
-        <a href="#" class="list-group-item" data-parent="#sub-menu3">BOBINAS TÉRIMCAS PARA REP</a>
-        <a href="#" class="list-group-item" data-parent="#sub-menu3">CHAPEIRAS</a>
-        <a href="#" class="list-group-item" data-parent="#sub-menu3">CARTÕES 100 UND</a>
-        <a href="#" class="list-group-item" data-parent="#sub-menu3">CRACHÁS</a>
-        <a href="#" class="list-group-item" data-parent="#sub-menu3">FITA</a>
+        <a href="/produto/categoria/9" class="list-group-item" data-parent="#sub-menu3">BOBINAS TÉRMICAS PARA REP</a>
+        <a href="/produto/categoria/10" class="list-group-item" data-parent="#sub-menu3">CHAPEIRAS</a>
+        <a href="/produto/categoria/11" class="list-group-item" data-parent="#sub-menu3">CARTÕES 100 UND</a>
+        <a href="/produto/categoria/12" class="list-group-item" data-parent="#sub-menu3">CRACHÁS</a>
+        <a href="/produto/categoria/13" class="list-group-item" data-parent="#sub-menu3">FITAS DE IMPRESSÃO</a>
 
     </div>
 </div>

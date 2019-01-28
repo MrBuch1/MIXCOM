@@ -118,7 +118,7 @@ class ProdutoController extends Controller
         $produto = Produto::find($id);
         //Storage::disk('public')->delete($produto->imagem);
         $produto->delete();
-        return redirect()->route('admin.index');
+        return redirect()->route('admin.produtos.index');
     }
 
     public function listar(){

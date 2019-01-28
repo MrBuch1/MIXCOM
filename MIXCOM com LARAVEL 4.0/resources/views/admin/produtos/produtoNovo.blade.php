@@ -21,19 +21,25 @@
         <label for="codtipo">Codigo tipo</label>
             <select id="codtipo" name = "codtipo" class="form-control" placeholder = "Código do tipo do produto">
                 <option value="1">COD 1 - Catraca</option>
-                <option value="2">COD 2 - Biometria facial</option>
-                <option value="3">COD 3 - Controlador de acesso</option>
-                <option value="4">COD 4 - Soluções de estacionamento</option>
-                <option value="5">COD 5 - Registrador eletronico de ponto</option>
-                <option value="6">COD 6 - Cartografico</option>
-                <option value="7">COD 7 - Controle de ponto</option>
-                <option value="8">COD 8 - Controle de acesso</option>
+                <option value="2">COD 2 - Biometria Facial</option>
+                <option value="3">COD 3 - Controlador de Acesso</option>
+                <option value="4">COD 4 - Soluções de Estacionamento</option>
+                <option value="5">COD 5 - Registrador Eletrônico de Ponto Biométrico</option>
+                <option value="6">COD 6 - Registrador Eletrônico de Ponto Cartografico</option>
+                <option value="7">COD 7 - Sistema de Controle de Ponto</option>
+                <option value="8">COD 8 - Sistema de Controle de Acesso</option>
+                <option value="9">COD 9 - Bobinas Térmicas</option>
+                <option value="10">COD 10 - Chapeiras</option>
+                <option value="11">COD 11 - Cartões Cartográficos</option>
+                <option value="12">COD 12 - Crachás</option>
+                <option value="13">COD 13 - Fitas de Impressão</option>
             </select>
 
         <label for="tipo">Tipo do Produto</label>
         <select id="tipo" name = "tipoProduto" class="form-control">
             <option value = "Catraca">Catraca</option></option>
-7            <option value = "Catraca">Controlador de Acesso</option></option>
+7           <option value = "Catraca">Controlador de Acesso</option></option>
+            <option value = "Catraca">Relógio de Ponto</option></option>
             <option value = "Catraca">Soluções de Estacionamento</option></option>
         </select>
 

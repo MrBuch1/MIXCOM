@@ -215,7 +215,7 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'Relógio de Ponto Eletrônico EVO',
+            'nome_produto' => 'Relógio Eletrônico de Ponto EVO',
             'tipo' => 'registrador eletronico de ponto',
             'codtipo' => '5',
             'marca' => '',
@@ -234,7 +234,7 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'Relógio de Ponto Eletrônico HEXA',
+            'nome_produto' => 'Relógio Eletrônico de Ponto HEXA',
             'tipo' => 'registrador eletronico de ponto',
             'codtipo' => '5',
             'marca' => '',
@@ -258,14 +258,14 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'Relógio de Ponto Eletrônico REP iDClass',
+            'nome_produto' => 'Relógio Eletrônico de Ponto REP iDClass',
             'tipo' => 'registrador eletronico de ponto',
             'codtipo' => '5',
             'marca' => '',
             'valor' => '2500.00',
             'categoria_id' => 2,
             'descricao' => 'Revolucionando mais uma vez o mercado de Registradores Eletrônicos de Ponto, a Control iD traz ao mercado o REP iDClass. Em conformidade com a Portaria 1.510 e certificado pelo Inmetro, o produto utiliza as mais modernastecnologias. Seu display touchscreen possibilita uma interação amigável e intuitiva com o usuário e seu design inovador, tamanho reduzido e robustez reafirmam a liderança da Control iD no segmento. Certificado pelo Inmetro e homologado pelo Ministério do Trabalho e Emprego Identificação biométria, cartão deproximidade, barras e senha; Mecanismo impressor de alta velocidade e robustez com guilhotina Capacidade para bobina de até 400m (10.000+ tickets por bobina) Comunicação TCP/IP, web server embarcado e duas portas USB (Wi-Fi e GPRS opcionais).',
-            'imagem' => "imagens/Produtos/f1.jpg",
+            'imagem' => "imagens/Produtos/id_class.png",
             'caracteristica' => utf8_encode($this->readData('info/relogio03.txt')),
             'peso' => '',
             'altura' => '',
@@ -277,7 +277,7 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'Relógio de Ponto Eletrônico Inner REP Plus',
+            'nome_produto' => 'Relógio Eletrônico de Ponto Inner REP Plus',
             'tipo' => 'registrador eletronico de ponto',
             'codtipo' => '5',
             'marca' => '',
@@ -296,7 +296,7 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'Relógio de Ponto Eletrônico IDNOX',
+            'nome_produto' => 'Relógio Eletrônico de Ponto IDNOX',
             'tipo' => 'registrador eletronico de ponto',
             'codtipo' => '5',
             'marca' => '',
@@ -315,7 +315,7 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'Prisma SUPER FÁCIL',
+            'nome_produto' => 'Relógio Eletrônico de Ponto Prisma SUPER FÁCIL',
             'tipo' => 'registrador eletronico de ponto',
             'codtipo' => '5',
             'marca' => '',
@@ -323,6 +323,25 @@ class ProdutoSeeder extends Seeder
             'categoria_id' => 2,
             'descricao' => 'O Prisma SUPER FÁCIL é o novo relógio de ponto da Henry desenvolvido para atender as necessidades de pequenas e médias empresas. São quatro modelos, todos homologados pelo Ministério do Trabalho e Emprego, segundo normas da Portaria 1510/2009. Possui a tecnologia 8X e conta com muitos de seus recursos, dentre eles, o Web Server embarcado que dispensa a instalação de softwares de configuração. Com a opção de comunicação Serial, TCP/IP e USB via pen drive, a coleta de dados é rápida e fácil. Este equipamento permite cadastramento de até 15 mil colaboradores e sua memória armazena até oito milhões de registros, o que prolonga a vida útil. Sua bobina de 300 metros imprime até 8.500 comprovantes (tickets) e faz do Prisma SUPER FÁCIL econômico até em sua utilização.',
             'imagem' => "imagens/Produtos/prisma.png",
+            'caracteristica' => utf8_encode($this->readData('info/relogio06.txt')),
+            'peso' => '',
+            'altura' => '27',
+            'largura' => '30',
+            'comprimento' => '25',
+            'diametro' => '',
+
+        ]);
+
+        DB::table('produtos')->insert([
+
+            'nome_produto' => 'Relógio Eletrônico de Ponto iPointLine',
+            'tipo' => 'registrador eletronico de ponto',
+            'codtipo' => '5',
+            'marca' => '',
+            'valor' => '2500.00',
+            'categoria_id' => 2,
+            'descricao' => 'Controlador de ponto com grande poder de processamento com dois processadores, sendo um dedicado para registro de ponto. Também com enorme capacidade de armazenamento de dados já que o Relógio de Ponto possui Memória de Registro de Pontos (MRP) e Memória de Trabalho (MT), permitindo 1,6 milhão de registros.',
+            'imagem' => "imagens/Produtos/ipointline.png",
             'caracteristica' => utf8_encode($this->readData('info/relogio06.txt')),
             'peso' => '',
             'altura' => '27',
@@ -411,7 +430,7 @@ class ProdutoSeeder extends Seeder
 
         DB::table('produtos')->insert([
 
-            'nome_produto' => 'iPonto',
+            'nome_produto' => 'iPonto Full',
             'tipo' => 'controle de ponto',
             'codtipo' => '7',
             'marca' => '',
@@ -446,6 +465,57 @@ class ProdutoSeeder extends Seeder
             ]);
 
         DB::table('produtos')->insert([
+            'nome_produto' => 'Ponto Secullum Web',
+            'tipo' => 'controle de ponto',
+            'codtipo' => '7',
+            'marca' => '',
+            'valor' => '600.00',
+            'categoria_id' => 3,
+            'descricao' => 'Sistema de interface simples e prática e de fácil uso, e o melhor: totalmente em Nuvem. Acesse de onde estiver.',
+            'imagem' => "imagens/Produtos/secullum_web.png",
+            'caracteristica' => utf8_encode($this->readData('info/software02.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        DB::table('produtos')->insert([
+            'nome_produto' => 'Ponto Secullum Gateway',
+            'tipo' => 'controle de ponto',
+            'codtipo' => '7',
+            'marca' => '',
+            'valor' => '600.00',
+            'categoria_id' => 3,
+            'descricao' => 'Sistema feito para quem possui mais de um Relógio de Ponto Biométrico em localidades diferentes. Permite acessar todas as informações de onde estiver.',
+            'imagem' => "imagens/Produtos/gateway.png",
+            'caracteristica' => utf8_encode($this->readData('info/software02.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        DB::table('produtos')->insert([
+            'nome_produto' => 'EzPoint Web',
+            'tipo' => 'controle de ponto',
+            'codtipo' => '7',
+            'marca' => '',
+            'valor' => '600.00',
+            'categoria_id' => 3,
+            'descricao' => 'Sistema de tratamento de ponto totalmente em nuvem, permitindo o usuário acessar de onde estiver. Desenvolvido pela RWTECH, o sistema é exclusivo para relógios PointLine.',
+            'imagem' => "imagens/Produtos/ezpoint.png",
+            'caracteristica' => utf8_encode($this->readData('info/software02.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        DB::table('produtos')->insert([
 
             'nome_produto' => 'Recursos Humanos RHID',
             'tipo' => 'controle de ponto',
@@ -465,9 +535,9 @@ class ProdutoSeeder extends Seeder
 
         //SOFTWARE DE CONTROLE DE ACESSO - COD 08
 
-         DB::table('produtos')->insert([
+        DB::table('produtos')->insert([
 
-            'nome_produto' => 'Secullum Acesso',
+            'nome_produto' => 'Secullum Acesso.net',
             'tipo' => 'controle de acesso',
             'codtipo' => '8',
             'marca' => '',
@@ -483,9 +553,9 @@ class ProdutoSeeder extends Seeder
             'diametro' => '',
             ]);
 
-         DB::table('produtos')->insert([
+        DB::table('produtos')->insert([
 
-            'nome_produto' => 'Secullum Clube',
+            'nome_produto' => 'Secullum Clube.net',
             'tipo' => 'controle de acesso',
             'codtipo' => '8',
             'marca' => '',
@@ -501,9 +571,9 @@ class ProdutoSeeder extends Seeder
             'diametro' => '',
             ]);
 
-         DB::table('produtos')->insert([
+        DB::table('produtos')->insert([
 
-            'nome_produto' => 'Secullum Escola',
+            'nome_produto' => 'Secullum Escola.net',
             'tipo' => 'controle de acesso',
             'codtipo' => '8',
             'marca' => '',
@@ -520,9 +590,9 @@ class ProdutoSeeder extends Seeder
             'diametro' => '',
             ]);
 
-         DB::table('produtos')->insert([
+        DB::table('produtos')->insert([
 
-            'nome_produto' => 'Secullum Estacionamento',
+            'nome_produto' => 'Secullum Estacionamento.net',
             'tipo' => 'controle de acesso',
             'codtipo' => '8',
             'marca' => '',
@@ -538,9 +608,9 @@ class ProdutoSeeder extends Seeder
             'diametro' => '',
             ]);
 
-         DB::table('produtos')->insert([
+        DB::table('produtos')->insert([
 
-            'nome_produto' => 'Secullum Academia',
+            'nome_produto' => 'Secullum Academia.net',
             'tipo' => 'controle de acesso',
             'codtipo' => '8',
             'marca' => '',
@@ -555,23 +625,125 @@ class ProdutoSeeder extends Seeder
             'comprimento' => '',
             'diametro' => '',
             ]);
-            DB::table('produtos')->insert([
+        
+        DB::table('produtos')->insert([
 
-                'nome_produto' => 'Software MD Estacionamento',
-                'tipo' => 'controle de acesso',
-                'codtipo' => '8',
-                'marca' => '',
-                'valor' => '600.00',
-                'categoria_id' => 3,
-                'descricao' => 'O Software para gerenciamento do Sistema de Estacionamento se divide em três módulos, retaguarda, caixa e comunicação. Com banco de dados SQL que oferece total segurança das informações, permite a configuração de níveis de usuários (Supervisor, Fiscal Operador e Operador), e pode ser instalado em um único computador ou separadamente.',
-                'imagem' => "imagens/Produtos/estaaa.jpg",
-                'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
-                'peso' => '',
-                'altura' => '',
-                'largura' => '',
-                'comprimento' => '',
-                'diametro' => '',
-                ]);
+            'nome_produto' => 'Software MD Estacionamento',
+            'tipo' => 'controle de acesso',
+            'codtipo' => '8',
+            'marca' => '',
+            'valor' => '600.00',
+            'categoria_id' => 3,
+            'descricao' => 'O Software para gerenciamento do Sistema de Estacionamento se divide em três módulos, retaguarda, caixa e comunicação. Com banco de dados SQL que oferece total segurança das informações, permite a configuração de níveis de usuários (Supervisor, Fiscal Operador e Operador), e pode ser instalado em um único computador ou separadamente.',
+            'imagem' => "imagens/Produtos/estaaa.jpg",
+            'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        //ACESSÓRIOS
+        //BOBINAS TÉRMICAS - COD 09
+        
+        DB::table('produtos')->insert([ 
+
+            'nome_produto' => 'Bobinas térmicas 300m.',
+            'tipo' => 'acessorios',
+            'codtipo' => '9',
+            'marca' => '',
+            'valor' => '250.00',
+            'categoria_id' => 4,
+            'descricao' => 'Caixa com 6 unidades de Bobinas Térmicas para Relógios de Ponto Biométricos - 300 metros.',
+            'imagem' => "imagens/Produtos/bobinas.jpg",
+            'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        //CHAPEIRAS - COD 10
+        
+        DB::table('produtos')->insert([  
+
+            'nome_produto' => 'Chapeiras para Cartões',
+            'tipo' => 'chapeiras',
+            'codtipo' => '10',
+            'marca' => '',
+            'valor' => '50.00',
+            'categoria_id' => 4,
+            'descricao' => 'Chapeira para cartões de ponto - 30 lugares.',
+            'imagem' => "imagens/Produtos/estaaa.jpg",
+            'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+       
+        //CARTÕES DE PONTO - COD 11
+
+        DB::table('produtos')->insert([
+
+            'nome_produto' => 'Cartões Cartográficos',
+            'tipo' => 'Cartões Cartográficos',
+            'codtipo' => '11',
+            'marca' => '',
+            'valor' => '50.00',
+            'categoria_id' => 3,
+            'descricao' => 'Cartões de Ponto para Relógios de Ponto Cartográficos - 100 unidades.',
+            'imagem' => "imagens/Produtos/estaaa.jpg",
+            'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+        
+        //CRACHÁS - COD 12
+
+        DB::table('produtos')->insert([
+
+            'nome_produto' => 'Crachás',
+            'tipo' => 'Crachás',
+            'codtipo' => '12',
+            'marca' => '',
+            'valor' => '10.00',
+            'categoria_id' => 3,
+            'descricao' => 'Crachá de identificação.',
+            'imagem' => "imagens/Produtos/estaaa.jpg",
+            'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
+
+        //FITAS DE IMPRESSÃO - COD 13   
+        
+        DB::table('produtos')->insert([
+
+            'nome_produto' => 'Fitas de Impressão',
+            'tipo' => 'Fitas de Impressão',
+            'codtipo' => '13',
+            'marca' => '',
+            'valor' => '50.00',
+            'categoria_id' => 3,
+            'descricao' => 'Fitas de impressão para Relógios de Ponto Cartográficos',
+            'imagem' => "imagens/Produtos/estaaa.jpg",
+            'caracteristica' => utf8_encode($this->readData('info/software08.txt')),
+            'peso' => '',
+            'altura' => '',
+            'largura' => '',
+            'comprimento' => '',
+            'diametro' => '',
+            ]);
 
 
          //

@@ -36,7 +36,7 @@
                     <div class="my-3">
                     <a class="btn btn-outline-info rounded-circle" href="{{asset('https://www.facebook.com/laysbrito17')}}" ><i class="fab fa-facebook-square"></i></a>
                     <a class="btn btn btn-outline-success rounded-circle" href="{{asset('https://api.whatsapp.com/send?phone=5575991782583&text=envie%20uma%20menssagem')}}"><i class="fab fa-whatsapp"></i></a>
-                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: laysbrito17@gmail.com"><i class="far fa-envelope"></i>
+                    <a class="btn btn btn-outline-danger rounded-circle" href="mailto:laysbrito17@gmail.com" data-toggle="tooltip" data-placement="bottom" title="E-mail: laysbrito17@gmail.com"><i class="far fa-envelope"></i></a>
                     </button>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                     <div class="my-3">
                     <a class="btn btn-outline-info rounded-circle" href="{{asset('https://www.facebook.com/lucas.santana.1010')}}"><i class="fab fa-facebook-square"></i></a>
                     <a class="btn btn btn-outline-success rounded-circle" href="{{asset('https://api.whatsapp.com/send?phone=5575983014336&text=envie%20uma%20mensagem')}}"><i class="fab fa-whatsapp"></i></a>
-                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: lucas.dsousast@gmail.com"><i class="far fa-envelope"></i>
+                    <a class="btn btn btn-outline-danger rounded-circle" href="mailto:lucas.dsousast@gmail.com" data-toggle="tooltip" data-placement="bottom" title="E-mail: lucas.dsousast@gmail.com"><i class="far fa-envelope"></i></a>
                     </button>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                     <div class="my-3">
                     <a class="btn btn-outline-info rounded-circle" href="{{asset('https://www.facebook.com/Marcelo.M.de.Olliveira')}}" ><i class="fab fa-facebook-square"></i></a>
                     <a class="btn btn btn-outline-success rounded-circle" href="{{asset('https://api.whatsapp.com/send?phone=5575991778281&text=envie%20uma%20menssagem')}}"><i class="fab fa-whatsapp"></i></a>
-                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: marcelomra.oliveira@gmail.com"><i class="far fa-envelope"></i>
+                    <a class="btn btn btn-outline-danger rounded-circle" href="mailto:marcelomra.oliveira@gmail.com" data-toggle="tooltip" data-placement="bottom" title="E-mail: marcelomra.oliveira@gmail.com"><i class="far fa-envelope"></i></a>
                     </button>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                     <div class="my-3">
                     <a class="btn btn-outline-info rounded-circle" href="{{asset('https://www.facebook.com/Tamires.santos14')}}" ><i class="fab fa-facebook-square"></i></a>
                     <a class="btn btn btn-outline-success rounded-circle" href="{{asset('https://api.whatsapp.com/send?phone=5575981144791&text=Envie%20uma%20menssagem')}}"><i class="fab fa-whatsapp"></i></a>
-                    <button type="button" class="btn btn btn-outline-danger rounded-circle" data-toggle="tooltip" data-placement="bottom" title="E-mail: tamires.santos1432@gmail.com"><i class="far fa-envelope"></i>
+                    <a class="btn btn btn-outline-danger rounded-circle" href="mailto:tamires.santos1432@gmail.com" data-toggle="tooltip" data-placement="bottom" title="E-mail: tamires.santos1432@gmail.com"><i class="far fa-envelope"></i></a>
                     </button>
                 </div>
             </div>
