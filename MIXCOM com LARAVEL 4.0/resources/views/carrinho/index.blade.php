@@ -68,17 +68,17 @@
             </table>
             <div class="ml-2 my-3 row">
                 <strong class="flow-text offset-8 offset-m6 offset-s6 right-align">Total do pedido: R$ {{ number_format($total_pedido, 2, ',', '.') }}</strong>
-                
+
             </div>
             <div class="ml-auto mr-4">
                 <div class="ml-5 row">
-                    <a class="btn btn-outline-success mr-3 offset-8" href="{{ route('inicio') }}">Compre Mais!</a>
+                    <a class="btn btn-outline-success mr-3 offset-8" href="produtos">Compre Mais!</a>
                     <form method="POST" action="{{ route('carrinho.concluir') }}">
                         {{ csrf_field() }}
                         <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">
                     <button type="submit" class="btn btn-outline-primary">
                             Concluir compra
-                        </button>   
+                        </button>
                     </form>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <h3 class="my-5">Aproveite e veja também!</h3>
                 @component('components.carousel_prod')@endcomponent
             </div>
-            
+
         @empty
             <h5 style="margin-left: 425px">Não há nenhum pedido no carrinho</h5>
         @endforelse
